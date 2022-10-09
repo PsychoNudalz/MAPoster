@@ -1,0 +1,34 @@
+{
+    "name": "PlayerInputs",
+    "maps": [
+        {
+            "name": "Normal",
+            "id": "67c476ec-96f9-4ae9-8ed0-133eebe51baa",
+            "actions": [
+                {
+                    "name": "Light",
+                    "type": "Button",
+                    "id": "7d89b7f0-3052-4a90-89b0-9a1d5f9c0ddf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1a07e6cc-8af8-4e3f-b4de-930df19ccda3",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Light",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
