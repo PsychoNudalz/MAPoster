@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -13,6 +14,14 @@ public class FileController : MonoBehaviour
 
     [SerializeField]
     private int topSortLayer = 100;
+
+    private void Start()
+    {
+        if (currentPage)
+        {
+            SetCurrentPage(currentPage);
+        }
+    }
 
     [ContextMenu("Set pages")]
     public void SetPages()

@@ -37,8 +37,21 @@ public class PageController : MonoBehaviour
     [ContextMenu("Find all texts")]
     public void FindAllTMPro()
     {
-        textMeshPros = GetComponentsInChildren<TextMeshPro>();
+        List<TextMeshPro> temp = new List<TextMeshPro>(textMeshPros);
+        temp.RemoveAll(item => item == null);
+        foreach (TextMeshPro t in GetComponentsInChildren<TextMeshPro>())
+        {
+            if (!temp.Contains(t))
+            {
+                temp.Add(t);
+            }
+        }
+
+        textMeshPros = temp.ToArray();
+
     }
+
+
 
     [ContextMenu("Set colour to renders")]
     public void SetColour()
@@ -56,14 +69,17 @@ public class PageController : MonoBehaviour
     
     public void SetSortLayer(int i)
     {
+        int x = 0;
         foreach (SpriteRenderer spriteRenderer in spriteRenderers)
         {
-            spriteRenderer.sortingOrder = i;
+            
+            spriteRenderer.sortingOrder = i+x;
+            x++;
         }
 
         foreach (TextMeshPro textMeshPro in textMeshPros)
         {
-            textMeshPro.sortingOrder = i+1;
+            textMeshPro.sortingOrder = i+1+x;
         }
     }
 
