@@ -10,8 +10,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private LightController lightController;
 
-    [SerializeField]
     private bool isLight;
+
+    [Header("Magnifying Controller")]
+    [SerializeField]
+    private MagnifyingGlassController magnifyingGlassController;
+
+    private bool isMag;
 
     // Start is called before the first frame update
     void Start()
@@ -24,20 +29,42 @@ public class PlayerController : MonoBehaviour
         {
             MoveLight();
         }
+
+        if (magnifyingGlassController && isMag)
+        {
+            MoveMag();
+        }
     }
 
     private void MoveLight()
     {
-        
-        Vector3 mousePos = Mouse.current.position.ReadValue();   
-        mousePos.z=Camera.main.nearClipPlane;
-        Vector3 worldPos=Camera.main.ScreenToWorldPoint(mousePos);
-        worldPos.z = 0;
+        var worldPos = GetMousePos();
         lightController.SetPosition(worldPos);
     }
+
+    private void MoveMag()
+    {
+        var worldPos = GetMousePos();
+        magnifyingGlassController.SetPosition(worldPos);
+    }
+
+    private static Vector3 GetMousePos()
+    {
+        Vector3 mousePos = Mouse.current.position.ReadValue();
+        mousePos.z = Camera.main.nearClipPlane;
+        Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+        worldPos.z = 0;
+        return worldPos;
+    }
+
 
     public void OnLight(InputAction.CallbackContext callbackContext)
     {
         isLight = callbackContext.performed;
+    }
+
+    public void OnMag(InputAction.CallbackContext callbackContext)
+    {
+        isMag = callbackContext.performed;
     }
 }

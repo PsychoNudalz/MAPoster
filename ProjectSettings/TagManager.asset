@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - MagnifyingRenderer
   - 
   - 
   - 
@@ -46,6 +46,12 @@ TagManager:
     locked: 0
   - name: Page
     uniqueID: 3872077047
+    locked: 0
+  - name: Items
+    uniqueID: 4094399739
+    locked: 0
+  - name: MagnifyingRenderer
+    uniqueID: 2713996055
     locked: 0
   - name: VFX
     uniqueID: 3201958111
