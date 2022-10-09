@@ -15,6 +15,9 @@ public class FileController : MonoBehaviour
     [SerializeField]
     private int topSortLayer = 100;
 
+    [SerializeField]
+    private Animator animator;
+
     private void Start()
     {
         if (currentPage)
@@ -38,5 +41,6 @@ public class FileController : MonoBehaviour
 
         pageController.SetActive(true, topSortLayer);
         currentPage = pageController;
+        animator?.SetTrigger("Flip");
     }
 }
