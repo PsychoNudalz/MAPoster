@@ -46,6 +46,17 @@
                     "action": "Mag",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0d71d925-0343-43bb-9e45-3a48c65b60b0",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mag",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
