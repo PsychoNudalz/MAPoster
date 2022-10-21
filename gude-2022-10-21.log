@@ -1,0 +1,4 @@
+14:18:52:723 [WARN]	WGudeRequest::applyAutoDetectProxyAutoConfigSettings Failed to autodetect proxy settings. WinHTTP Unable To Download Script. last error code = 12167 
+14:18:53:549 [WARN]	WGudeRequest::applyAutoDetectProxyAutoConfigSettings Failed to autodetect proxy settings. WinHTTP Unable To Download Script. last error code = 12167 
+14:42:12:243 [WARN]	WGudeRequest::applyAutoDetectProxyAutoConfigSettings Failed to autodetect proxy settings. WinHTTP Unable To Download Script. last error code = 12167 
+14:42:12:626 [WARN]	WGudeRequest::applyAutoDetectProxyAutoConfigSettings Failed to autodetect proxy settings. WinHTTP Unable To Download Script. last error code = 12167 

@@ -12,7 +12,8 @@ public enum WireChannel
     Yellow,
     Blue,
     Green,
-    White
+    White,
+    Orange
 }
 
 public class WireController : MonoBehaviour
@@ -23,6 +24,9 @@ public class WireController : MonoBehaviour
 
     [SerializeField]
     private Transform wireHead;
+
+    [SerializeField]
+    private bool useLerp = false;
 
     [SerializeField]
     private float lerpSpeed = 5;
@@ -53,31 +57,28 @@ public class WireController : MonoBehaviour
         {
             case WireChannel.Red:
                 lineRenderer.material.color = Color.red;
-                lineRenderer.material.SetColor("_MainColor", Color.red);
+                lineRenderer.material.SetColor("_Color", Color.red);
                 break;
             case WireChannel.Yellow:
                 lineRenderer.material.color = Color.yellow;
-                lineRenderer.material.SetColor("_MainColor", Color.yellow);
-
-
+                lineRenderer.material.SetColor("_Color", Color.yellow);
                 break;
             case WireChannel.Blue:
                 lineRenderer.material.color = Color.blue;
-                lineRenderer.material.SetColor("_MainColor", Color.blue);
-
-
+                lineRenderer.material.SetColor("_Color", Color.blue);
                 break;
             case WireChannel.Green:
                 lineRenderer.material.color = Color.green;
-                lineRenderer.material.SetColor("_MainColor", Color.green);
-
-
+                lineRenderer.material.SetColor("_Color", Color.green);
                 break;
             case WireChannel.White:
                 lineRenderer.material.color = Color.white;
-                lineRenderer.material.SetColor("_MainColor", Color.white);
-
-
+                lineRenderer.material.SetColor("_Color", Color.white);
+                break;
+            case WireChannel.Orange:
+                Color orange = new Color(1f, .4f, 0f);
+                lineRenderer.material.color = orange;
+                lineRenderer.material.SetColor("_Color", orange);
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -97,13 +98,41 @@ public class WireController : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(transform.position, targetPosition) > deadZone)
+        if (useLerp)
+        {
+            if (Vector3.Distance(transform.position, targetPosition) > deadZone)
+            {
+                MoveWire_Lerp();
+            }
+        }
+        else
         {
             MoveWire();
         }
     }
 
     private void MoveWire()
+    {
+        Vector3 wireTarget = transform.InverseTransformPoint(targetPosition);
+
+        try
+        {
+            lineRenderer.SetPosition(2, wireTarget);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Line renderer error");
+            Debug.LogWarning(e.StackTrace);
+            throw;
+        }
+
+        if (wireHead)
+        {
+            wireHead.position = targetPosition;
+        }
+    }
+
+    private void MoveWire_Lerp()
     {
         Vector3 wireTarget = transform.InverseTransformPoint(targetPosition);
 
@@ -128,7 +157,7 @@ public class WireController : MonoBehaviour
     public void SetPosition(Vector3 targetPos)
     {
         targetPosition = targetPos;
-        MoveWire();
+        MoveWire_Lerp();
     }
 
     private Vector3 GetMousePos()
@@ -144,6 +173,6 @@ public class WireController : MonoBehaviour
     {
         lineRenderer.positionCount = 0;
         lineRenderer.positionCount = 3;
-        lineRenderer.SetPositions(new Vector3[] {lineStartOffset, new Vector3(), new Vector3(-1, 0, 0)});
+        lineRenderer.SetPositions(new Vector3[] { lineStartOffset, new Vector3(), new Vector3(0, 0, 0) });
     }
 }
