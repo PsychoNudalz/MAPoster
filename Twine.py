@@ -1,74 +1,125 @@
 import pyperclip
+
+# https://codebeautify.org/image-to-ascii-art
 def AsciiToTwine(s):
     sSplit = s.split("\n")
+    
+    BLACKLIST=["\\","$","_","*", "`","[","]"]
     output = ""
     for x in sSplit:
         for y in x:
             temp = y
-            if(temp=="\\"or temp=="$"or temp=="_"):
-                if(temp=="`"):
+            if (temp in BLACKLIST):
+                if (temp == "`"):
                     temp = "\'"
-                output+="{{{"+temp+"}}}"
+                 
+                output += "{{{" + temp + "}}}"
             else:
-                output+=temp
-        output+="\n"
+                output += temp
+        output += "\n"
     print(output)
     pyperclip.copy(output)
     return (output)
+
 
 def ArtCleanUp(art):
     output = ''
     for x in art.split("\n"):
         for y in x:
             temp = y
-            if (temp=="$"):
-                temp = "#"
-            output += temp
-        output+="\n"
-    return  output
 
-def InsertTextToArt(art,text):
+            if(temp == "<" or temp == ">"):
+                temp = "|"
+            output += temp
+        output += "\n"
+    return output
+def ReplaceDollar(art):
+    output = ''
+    for x in art.split("\n"):
+        for y in x:
+            temp = y
+            if (temp == "$"):
+                temp = "#"
+    
+            output += temp
+        output += "\n"
+    return output
+
+def InsertTextToArt(art, text):
     output = art
     textIndex = 0
     # artIndex = [0,0]
     textSplit = text.split(" ")
-    for x in range(0,len(output)-1):
+    for x in range(0, len(output) - 1):
         try:
             currnet = output[x]
         except:
             return output;
-        if (output[x]=="$"):
+        replaceChar = "$"
+        if (output[x] == replaceChar):
             # artIndex[0]= x;
             i = x;
             flag = False;
-            while (i<len(art) and output[i]=="$" and not flag):
+            while (i < len(art) and output[i] == replaceChar and not flag):
 
-                i+=1;
-                if (i-x>len(textSplit[textIndex])+1):
-                    output = "".join((output[:x],"<b>"+textSplit[textIndex].upper()+"</b>#",output[i:]))
-                    textIndex+=1
+                i += 1;
+                if (i - x > len(textSplit[textIndex]) + 1):
+                    output = "".join((output[:x], "<b>" + textSplit[textIndex].upper() + "</b>#", output[i-1:]))
+                    textIndex += 1
                     flag = True
-                    if(textIndex==len(textSplit)):
+                    if (textIndex == len(textSplit)):
                         return output;
     return output;
 
+
 def ConvertTxt(fileName, text):
-    fileName+=".txt"
-    file = open("OriginalAscii/"+fileName,"r")
-    art = file.read()
-    if(text!=""):
-        art= InsertTextToArt(art,text)
+    art, fileName = ReadFile(fileName)
+
+    art = ArtCleanUp(art)
+    print(art)
+    print()
+    if (text != ""):
+        art = InsertTextToArt(art, text)
         print("\nInsert Complete\n")
         print(art)
-    art = ArtCleanUp(art)
-    newAscii = AsciiToTwine(art)
-    file.close()
+    
+    art = ReplaceDollar(art)
+    art = AsciiToTwine(art)
+
+
+
+    pyperclip.copy(art)
     file = open("Modified/" + fileName, "w+")
-    file.write(newAscii)
+    file.write(art)
     file.close()
+
+
+def ReadFile(fileName):
+    fileName += ".txt"
+    file = open("OriginalAscii/" + fileName, "r")
+    art = file.read()
+    file.close()
+    return art, fileName
+
+
+def DoubleSize(s):
+    sSplit = s.split("\n")
+    output = ""
+    temp = ""
+    for x in sSplit:
+        temp = ""
+        for y in x:
+            temp += y * 2
+        output += (temp + "\n") * 2
+    pyperclip.copy(output)
+    return output
+
 
 def ConvertTxt2(s):
-    ConvertTxt(s,"")
+    ConvertTxt(s, "")
 
+
+# print(DoubleSize(ReadFile("WakeUpTheKids")[0]))
 # ConvertTxt("HD","I am a Hair Dresser")
-ConvertTxt("HD", "I wake up And get dressed. I am a Hair Dresser")
+# ConvertTxt("HD", "I wake up And get dressed. I am a Hair Dresser")
+ConvertTxt("WakeUpTheKids","I wake the kids up for school")
