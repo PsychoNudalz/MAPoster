@@ -7,6 +7,7 @@ def AsciiToTwine(s):
     BLACKLIST=["\\","$","_","*", "`","[","]"]
     output = ""
     for x in sSplit:
+        output += "<p>"
         for y in x:
             temp = y
             if (temp in BLACKLIST):
@@ -16,7 +17,7 @@ def AsciiToTwine(s):
                 output += "{{{" + temp + "}}}"
             else:
                 output += temp
-        output += "\n"
+        output += "</p>\n"
     print(output)
     pyperclip.copy(output)
     return (output)
@@ -122,4 +123,5 @@ def ConvertTxt2(s):
 # print(DoubleSize(ReadFile("WakeUpTheKids")[0]))
 # ConvertTxt("HD","I am a Hair Dresser")
 # ConvertTxt("HD", "I wake up And get dressed. I am a Hair Dresser")
-ConvertTxt("WakeUpTheKids","I wake the kids up for school")
+# ConvertTxt("WakeUpTheKids","I wake the kids up for school")
+ConvertTxt("DriveTheKids", "I drive the kids to school")
