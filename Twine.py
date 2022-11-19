@@ -1,11 +1,13 @@
 import pyperclip
 
+
+TAGHEADERS = [" <div id=\"AsciiArt\" class=\"AsciiArt\">\n","\n</div>"]
 # https://codebeautify.org/image-to-ascii-art
 def AsciiToTwine(s):
     sSplit = s.split("\n")
     
     BLACKLIST=["\\","$","_","*", "`","[","]"]
-    output = ""
+    output = TAGHEADERS[0]
     for x in sSplit:
         output += "<p>"
         for y in x:
@@ -18,6 +20,8 @@ def AsciiToTwine(s):
             else:
                 output += temp
         output += "</p>\n"
+    output += TAGHEADERS[1]
+
     print(output)
     pyperclip.copy(output)
     return (output)
@@ -90,14 +94,14 @@ def ConvertTxt(fileName, text):
 
 
     pyperclip.copy(art)
-    file = open("Modified/" + fileName, "w+")
+    file = open("Modified/" + fileName+"_"+text[0:min(len(text),10)]+".txt", "w+")
     file.write(art)
     file.close()
 
 
 def ReadFile(fileName):
-    fileName += ".txt"
-    file = open("OriginalAscii/" + fileName, "r")
+    # fileName += ".txt"
+    file = open("OriginalAscii/" + fileName +".txt","r")
     art = file.read()
     file.close()
     return art, fileName
@@ -127,4 +131,6 @@ def ConvertTxt2(s):
 # ConvertTxt("DriveTheKids", "I drive the kids to school")
 # ConvertTxt("DriveToWork", "I then drive to work")
 # ConvertTxt("LunchText", "What to eat?")
-ConvertTxt("HB-Lunch", "You eat a Cheese bread sticks with a cup of Dirty French")
+# ConvertTxt("HB-Lunch", "You eat a Cheese bread sticks with a cup of Dirty French")
+# ConvertTxt("Eat","I prepare my breakfast")
+ConvertTxt("InstantCoffee","I make and drink my 2 instant coffees")

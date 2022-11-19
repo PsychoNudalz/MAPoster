@@ -1,3 +1,4 @@
+ <div id="AsciiArt" class="AsciiArt">
 <p>                                                                   </p>
 <p>                                                                   </p>
 <p>                                                                   </p>
@@ -37,3 +38,5 @@
 <p></p>
 <p></p>
 <p></p>
+
+</div>
