@@ -124,4 +124,7 @@ def ConvertTxt2(s):
 # ConvertTxt("HD","I am a Hair Dresser")
 # ConvertTxt("HD", "I wake up And get dressed. I am a Hair Dresser")
 # ConvertTxt("WakeUpTheKids","I wake the kids up for school")
-ConvertTxt("DriveTheKids", "I drive the kids to school")
+# ConvertTxt("DriveTheKids", "I drive the kids to school")
+# ConvertTxt("DriveToWork", "I then drive to work")
+# ConvertTxt("LunchText", "What to eat?")
+ConvertTxt("HB-Lunch", "You eat a Cheese bread sticks with a cup of Dirty French")
