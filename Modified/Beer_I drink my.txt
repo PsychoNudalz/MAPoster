@@ -1,0 +1,38 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p>                         !txxxxxt!</p>
+<p>                       ;(xxxxxxxxx(;</p>
+<p>                       +d<b>I</b>#<b>DRINK</b>##d+</p>
+<p>                         |{{{*}}}duxud{{{*}}}|</p>
+<p>                         |{{{*}}}duxud{{{*}}}|</p>
+<p>                         |{{{*}}}duxud{{{*}}}|</p>
+<p>                         |{{{*}}}duxud{{{*}}}|</p>
+<p>                         |{{{*}}}duxud{{{*}}}|</p>
+<p>                       +d##duxud##d+</p>
+<p>                       +d##duxud##d+</p>
+<p>                     lO##hzxxxxxzh##Ol</p>
+<p>                     lO{{{*}}}UxxxxxxxxxU{{{*}}}Ol</p>
+<p>                     lO{{{*}}}UxxxxxxxxxU{{{*}}}Ol</p>
+<p>                   "U##{{{*}}}UQ&<b>MY</b>###&QU{{{*}}}##U"</p>
+<p>                   "UWLxxQ&<b>0%</b>###&QxxLWU"</p>
+<p>                   "UWLJ#<b>BEER,</b>#####JLWU"</p>
+<p>                   "U<b>IT</b>#<b>WAS</b>#<b>NICE</b>#<b>AND</b>##U"</p>
+<p>                     lO<b>RELAXING</b>#####Ol</p>
+<p>                     lO#############Ol</p>
+<p>                     lO#############Ol</p>
+<p>                     lO#############Ol</p>
+<p>                     lO#############Ol</p>
+<p>                     lO#############Ol</p>
+<p>                     lO#############Ol</p>
+<p>                   "U#################U"</p>
+<p>                   "UWLJ###########JLWU"</p>
+<p>                   "UWLJ###########JLWU"</p>
+<p>                   "UWLJ###########JLWU"</p>
+<p>                   "UWLxxxxxxxxxxxxxLWU"</p>
+<p>                   "U##{{{*}}}UxxxxxxxxxU{{{*}}}##U"</p>
+<p>                     lO#############Ol</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

@@ -13,9 +13,7 @@ def AsciiToTwine(s):
         for y in x:
             temp = y
             if (temp in BLACKLIST):
-                if (temp == "`"):
-                    temp = "\'"
-                 
+
                 output += "{{{" + temp + "}}}"
             else:
                 output += temp
@@ -33,11 +31,15 @@ def ArtCleanUp(art):
         for y in x:
             temp = y
 
-            if(temp == "<" or temp == ">"):
+            if(temp in ["<",">","{","}"]):
                 temp = "|"
+            if (temp == "`"):
+                temp = "\'"
             output += temp
         output += "\n"
     return output
+
+
 def ReplaceDollar(art):
     output = ''
     for x in art.split("\n"):
@@ -61,6 +63,12 @@ def InsertTextToArt(art, text):
         except:
             return output;
         replaceChar = "$"
+
+        if(len(textSplit[textIndex])>5):
+            print("WARNING: LONG WORD:", textSplit[textIndex])
+            # if(textSplit[textIndex]=="nights"):
+            #     print("this")
+
         if (output[x] == replaceChar):
             # artIndex[0]= x;
             i = x;
@@ -74,6 +82,7 @@ def InsertTextToArt(art, text):
                     flag = True
                     if (textIndex == len(textSplit)):
                         return output;
+    print("ERROR: DID NOT FINISH INSERTING TEXT:",textSplit[textIndex])
     return output;
 
 
@@ -133,4 +142,11 @@ def ConvertTxt2(s):
 # ConvertTxt("LunchText", "What to eat?")
 # ConvertTxt("HB-Lunch", "You eat a Cheese bread sticks with a cup of Dirty French")
 # ConvertTxt("Eat","I prepare my breakfast")
-ConvertTxt("InstantCoffee","I make and drink my 2 instant coffees")
+# ConvertTxt("InstantCoffee","I make and drink my 2 instant coffees")
+# ConvertTxt("HD-Day","I Resume Cutting hair for clients, listening to stories. Many speak about their days, some Speak of last nights game")
+ConvertTxt("HD-Day-2","Last night game was a close one!")
+ConvertTxt("HD-Day-2","Hell yea brother!!!")
+ConvertTxt("HD-Day-2","Ah, I support the other team...")
+# ConvertTxt("DriveToBar","I finished work and drive to a bar")
+# ConvertTxt("Bar_1","I enter the bar and place my order")
+# ConvertTxt("Beer","I drink my 0% beer, it was nice and relaxing")

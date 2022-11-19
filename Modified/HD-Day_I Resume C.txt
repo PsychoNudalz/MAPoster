@@ -1,0 +1,44 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p>                                           ,C<b>I</b>#####z.</p>
+<p>                                                   tBx</p>
+<p>                                                   tBx</p>
+<p>                                                   tBx</p>
+<p>                                             iZ##L:tBx</p>
+<p>                                           ,Ck?  |###x</p>
+<p>                                           ,C<b>RESUME</b>##x</p>
+<p>                f@#####q|                  ,C######z.</p>
+<p>              1M<b>CUTTING</b>##Q;</p>
+<p>          |wZi1M<b>HAIR</b>#####Q;/%x             ,C<b>FOR</b>#####x</p>
+<p>        :L##Zi1M#########Q;/%#%/        c80<b>CLIENTS,</b>###q8|</p>
+<p>        :Lb{{{_}}}  1M#########Q;  x%/        c80###########q8|</p>
+<p>        :Lb{{{_}}}  1M#########Q;  x%/        c80###########q8|</p>
+<p>        :Lb{{{_}}}    f@#####q|    x%/        c80###########q8|</p>
+<p>        :Lb{{{_}}}      v##a{{{]}}}      x%/        c80###########q8|</p>
+<p>      .z##b ?k##c      +d##X x##{{{*}}}|      c80###########q8|</p>
+<p>      .z#| woY<b>LISTENING</b>###xZB |X{{{*}}}|      c80<b>TO</b>#########q8|</p>
+<p>      .z#| woYxxCHELSEA####3B |X{{{*}}}|         ,CMCxxxxZ@#8|</p>
+<p>      .z#| woY<b>STORIES.</b>####zZB |X{{{*}}}|         ,C<b>MANY</b>####x</p>
+<p>      .z#| woY<b>SPEAK</b>#######zZB |X{{{*}}}|         ,C<b>ABOUT</b>###x</p>
+<p>      .z#| woY<b>THEIR</b>#######zZB |X{{{*}}}|         ,C<b>DAYS,</b>###x</p>
+<p>      .z#| w####pnxxxxxJ##### |X{{{*}}}|         ,C##w |###x</p>
+<p>      .z<b>SOME</b>#<b>SPEAK</b>#<b>OF</b>#<b>LAST</b>######{{{*}}}|         ,C##w |###x</p>
+<p>      .z##b   1M#########Q;   ##{{{*}}}|         ,C##w |###x</p>
+<p>        :L<b>NIGHTS</b>##j  lO<b>GAME</b>###%/           ,C##w |###x</p>
+<p>        :Lb{{{_}}}  1M##j  lO##Q;  x%/           ,C##w |###x</p>
+<p>        :Lb{{{_}}}  1M##j  lO##Q;  x%/           ,C##w |###x</p>
+<p>        :Lb{{{_}}}  1M##j  lO##Q;  x%/        j#############x</p>
+<p>        :Lb{{{_}}}  1M##j  lO##Q;  x%/        j#############x</p>
+<p>        :Lb{{{_}}}?k####j  lO####X'x%/        j#############x|</p>
+<p> #########################################################</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>
