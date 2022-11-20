@@ -1,0 +1,30 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p>                           {{{_}}}xxxx(:</p>
+<p>                         |r{{{_}}}    :(|^</p>
+<p>                         |r{{{_}}}    :(|^</p>
+<p>                         |r{{{_}}}    :(|^</p>
+<p>     {{{_}}}xxxx(:               {{{\}}}r|^|(/</p>
+<p>     {{{_}}}xxtl                  r|^|(</p>
+<p>     {{{_}}}r|                      t</p>
+<p>     {{{_}}}xxxx(:           ltxx{{{\}}}  t</p>
+<p>                       ltxx{{{\}}}  t</p>
+<p> {{{[}}}o<b>I</b>#<b>ASK</b>#<b>IF</b>#<b>HE</b>#<b>SLEPT</b>#<b>WELL...</b>####p~</p>
+<p>   |rxxxxxxx|^       :(xxxxxr|</p>
+<p> {{{[}}}o<b>I</b>#<b>ASK</b>#<b>HOW</b>#<b>WAS</b>#<b>SCHOOL</b>#########p~</p>
+<p>   |rxxxxxxx|^       :(xxxxxr|</p>
+<p> {{{[}}}o<b>TODAY...</b>#<b>I</b>#<b>ASK</b>#<b>WHAT</b>#<b>WOULD</b>#<b>HE</b>#p~</p>
+<p>     {{{_}}}xxxx(:           ltxx{{{_}}}</p>
+<p> {{{[}}}o<b>LIKE</b>#<b>FOR</b>#<b>BREAKFAST...</b>########p~</p>
+<p>   /8x          x8/         'Yo{{{[}}}</p>
+<p>   /8x          x8/         'Yo{{{[}}}</p>
+<p>   /8x          x8/         'Yo{{{[}}}</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

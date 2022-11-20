@@ -1,14 +1,14 @@
  <div id="AsciiArt" class="AsciiArt">
 <p>              |rxr|             ~p0I</p>
-<p>xxxxx{{{_}}}      lt{{{]}}}. .{{{]}}}tl    /8x  I0##0I/8x'Yo{{{[}}}</p>
+<p>xxxxx{{{_}}}      lt{{{]}}}. .{{{]}}}tl    /8x  I0<b>I</b>#0I/8x'Yo{{{[}}}</p>
 <p>xxx{{{]}}}.       lt{{{]}}}. .{{{]}}}tl    /8#8/I0##0I/8x'Yo{{{[}}}</p>
-<p>x|^         lt{{{]}}}. .{{{]}}}tl  {{{[}}}o<b>I</b>#<b>ENTER</b>#<b>THE</b>#<b>BAR</b>####</p>
+<p>x|^         lt{{{]}}}. .{{{]}}}tl  {{{[}}}o<b>ENTER</b>#<b>THE</b>#<b>BAR</b>#<b>AND</b>##</p>
 <p>xxxxx{{{_}}}        |rxr|         'Yo{{{[}}}</p>
 <p>            lt{{{]}}}. .{{{]}}}tl    /8x'Yo{{{[}}}  {{{[}}}oY'x8/I0#</p>
 <p>xxxxx{{{_}}}    :(xxxxxxxxx(:  /8x'Yo{{{[}}}~p##Y'x8/I0#</p>
-<p>xxxxx{{{_}}}    :(xxxxxxxxx(:{{{[}}}o<b>AND</b>#<b>PLACE</b>#<b>MY</b>#######</p>
+<p>xxxxx{{{_}}}    :(xxxxxxxxx(:{{{[}}}o<b>PLACE</b>#<b>MY</b>#<b>ORDER</b>#####</p>
 <p>xxxxxxxxtl:(xxxxxxxxx(:</p>
-<p>xxxxxw<b>ORDER</b>##############################o{{{[}}}</p>
+<p>xxxxxw###################################o{{{[}}}</p>
 <p>xxxxx{{{_}}}                                 'Yo{{{[}}}</p>
 <p>xxxxx{{{_}}}.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xx(:ltxx{{{_}}}'Yo{{{[}}}</p>
 <p>xxxxx{{{_}}}.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xx(:ltxx{{{_}}}'Yo{{{[}}}</p>

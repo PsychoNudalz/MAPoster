@@ -4,11 +4,11 @@
 <p>###J^       l|{{{[}}}'  ?ti      n#t  iq0i</p>
 <p>#0i         l|{{{[}}}'  ?ti      n######0i</p>
 <p>#####n        irxx|</p>
-<p>            l|{{{[}}}'  ?ti    )8#######0i</p>
-<p>#####n    ,)xxxxxxxxx|;  )8#######0i</p>
-<p>#####n    ,)xxxxxxxxxY{{{*}}}0i)8#######0i</p>
-<p><b>SHOULD</b>##{{{*}}}),)xxxxxxxxxY{{{*}}}<b>I</b>#<b>ORDER</b>#<b>A</b>##0i</p>
-<p>#####wxx<b>DRINK</b>#<b>FOR</b>#<b>HIM</b>###xxxw<b>?</b>###MJxxxxxxxti</p>
+<p>            l|{{{[}}}'  ?ti    )8<b>SHOULD</b>#0i</p>
+<p><b>I</b>####n    ,)xxxxxxxxx|;  )8<b>ORDER</b>##0i</p>
+<p><b>A</b>####n    ,)xxxxxxxxxY{{{*}}}0i)8<b>DRINK</b>##0i</p>
+<p><b>FOR</b>#####{{{*}}}),)xxxxxxxxxY{{{*}}}<b>HIM?</b>#######0i</p>
+<p>#####wxx################xxxw####MJxxxxxxxti</p>
 <p>#####n                     n####k{{{_}}}      ?ti</p>
 <p>#####n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n####k{{{_}}}l|xx{{{_}}} ?ti</p>
 <p>#####n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n####k{{{_}}}l|xx{{{_}}} ?ti</p>

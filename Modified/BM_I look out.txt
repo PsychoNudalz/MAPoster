@@ -1,0 +1,21 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>          {{{]}}}a<b>I</b>####a{{{]}}}</p>
+<p>        |wZl     lZw|</p>
+<p>        |wZl     lZw|</p>
+<p>        |wZl     lZw|</p>
+<p>          {{{]}}}aY' 'Ya{{{]}}}</p>
+<p>          {{{]}}}a<b>LOOK</b>#a{{{]}}}</p>
+<p>      "C##Zl|8#8|lZ##C"</p>
+<p>     v<b>OUTSIDE</b>#<b>AND</b>#<b>SEE</b>##v</p>
+<p>   tB<b>THE</b>##Zl     lZ<b>SUN</b>##Bt</p>
+<p>   tB<b>RISE.</b>#<b></b>#Y' 'Y<b>I</b>#<b>AM</b>#<b>A</b>#Bt</p>
+<p>   tB#W1|w##Y' 'Y##w|1W#Bt</p>
+<p>   tB#W1|w##Y' 'Y##w|1W#Bt</p>
+<p>   tB#W1|wZl     lZw|1W#Bt</p>
+<p>   tB#W1|wZl     lZw|1W#Bt</p>
+<p>   tB#W1|w##Y' 'Y##w|1W#Bt</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

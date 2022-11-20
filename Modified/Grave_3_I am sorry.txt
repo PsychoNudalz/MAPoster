@@ -1,0 +1,30 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>     {{{_}}}xxxx|;</p>
+<p>     {{{_}}}xxti</p>
+<p>     {{{_}}}x|</p>
+<p>     {{{_}}}xxxx|;</p>
+<p></p>
+<p><b>I</b>#<b>AM</b>#<b>SORRY</b>#<b>SON.</b>#<b>I</b>##{{{*}}})</p>
+<p>   irxxxxxxx|,             n<b>WISH</b>##0i</p>
+<p><b>I</b>#<b>HAVE</b>#<b>SPENT</b>#<b>MORE</b>##{{{*}}})    )8n      {{{[}}}kJ^</p>
+<p>   irxxxxxxx|,         |k|JOHN SMITH|8|</p>
+<p><b>TIME</b>#<b>WITH</b>#<b>YOU</b>######{{{*}}})  |k|  JUNIOR  |8|</p>
+<p>     {{{_}}}xxxx|;           |k|          |8|</p>
+<p>###################{{{*}}})  |k|   2012   |8|</p>
+<p>   )8n          n#t    |k|     -    |8|</p>
+<p>   )8n          n#t    |k|   2022   |8|</p>
+<p>   )8n          n#t    |k|          |8|</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

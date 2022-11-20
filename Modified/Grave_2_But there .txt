@@ -1,0 +1,30 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>     {{{_}}}xxxx|;</p>
+<p>     {{{_}}}xxti</p>
+<p>     {{{_}}}x|</p>
+<p>     {{{_}}}xxxx|;</p>
+<p></p>
+<p> {{{[}}}k<b>BUT</b>#<b>THERE</b>#<b>WAS</b>#<b>NOTHING</b>#<b>BUT</b>####k{{{_}}}</p>
+<p>   irxxxxxxx|,</p>
+<p> {{{[}}}k<b>SILENCE.</b>#<b>IT</b>#<b>IS</b>#<b>JUST</b>#<b>THE</b>######k{{{_}}}</p>
+<p>   irxxxxxxx|,</p>
+<p> {{{[}}}k<b>IMAGINATION</b>#<b>OF</b>#<b>WHAT</b>#<b>IS</b>#<b>LEFT</b>##k{{{_}}}</p>
+<p>     {{{_}}}xxxx|;</p>
+<p> {{{[}}}k<b>OF</b>#<b>HIM</b>#<b>IN</b>#<b>MY</b>#<b>MIND</b>############k{{{_}}}</p>
+<p>   )8n          n#t          z{{{*}}})</p>
+<p>   )8n          n#t          z{{{*}}})</p>
+<p>   )8n          n#t          z{{{*}}})</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

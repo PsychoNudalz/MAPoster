@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p><b>I</b>#<b>WAIT</b>##{{{*}}})    )8<b>FOR</b>#<b>THE</b>#<b>BUS.</b>#<b>HOPING</b>#<b>TO</b>##t</p>
+<p>#aYxxxxd{{{*}}})  {{{[}}}kkvxxxxxxx<b>GET</b>#####xxxxxxxxxd{{{*}}})</p>
+<p>#aYxxxxd{{{*}}})iq<b>THERE</b>#<b>IN</b>#<b>TIME.</b>#<b>TO</b>#<b>KISS</b>#<b>MY</b>#<b>KID</b>###</p>
+<p>#aYxxxxd{{{*}}})  {{{[}}}kJ^   ^{{{[}}}xxxx{{{[}}}'             z{{{*}}})</p>
+<p>#aYxxxxd{{{*}}})  {{{[}}}kJ^     ,)xx{{{[}}}'             z{{{*}}})</p>
+<p><b>GOOD</b>####{{{*}}})  {{{[}}}kJ^       l|{{{[}}}'             z{{{*}}})</p>
+<p>   )8n      {{{[}}}kJ^   ^{{{[}}}xxxx{{{[}}}'             z{{{*}}})</p>
+<p>   )8n      {{{[}}}kJ^                        z{{{*}}})</p>
+<p>   )8n      {{{[}}}kJ^  ?xxxxxxxx{{{_}}}            z{{{*}}})</p>
+<p>   )8n      {{{[}}}kJ^  ?xxxxxxxx{{{_}}}            z{{{*}}})</p>
+<p>   )8n      {{{[}}}kJ^  ?xxxxxxxx{{{_}}}            z{{{*}}})</p>
+<p>   )8n      {{{[}}}kJ^n##&0xxxx0%<b>NIGHT.</b>#####n z{{{*}}})</p>
+<p>   )8n      {{{[}}}kJ^n#t^{{{[}}}xxxx{{{[}}}'         )8n z{{{*}}})</p>
+<p>   )8n      {{{[}}}kJ^n#t^{{{[}}}xxxx{{{[}}}'         )8n z{{{*}}})</p>
+<p>   )8n      {{{[}}}kJ^n#t^{{{[}}}|;l|{{{[}}}'         )8n z{{{*}}})</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>
