@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>          {{{]}}}a<b>MY</b>###a{{{]}}}</p>
+<p>        |w<b>NAME</b>#<b>IS</b>##w|</p>
+<p>        |wZl     lZw|</p>
+<p>        |wZl     lZw|</p>
+<p></p>
+<p>          {{{]}}}aY' 'Ya{{{]}}}</p>
+<p>          {{{]}}}a#####a{{{]}}}</p>
+<p>      "C##Zl     lZ##C"</p>
+<p>     v%0xxLW#####WLxx0%v</p>
+<p>   tBmxxxxxxOBwxxxxxxxxmBt</p>
+<p>   tBmxxY{{{*}}}<b>JOHN</b>#####{{{*}}}YxxmBt</p>
+<p> |{{{*}}}dnxvkMJxxxxwBOxxJMkvxnd{{{*}}}|</p>
+<p> |{{{*}}}dnpW1 w<b>SMITH</b>####w 1Wpnd{{{*}}}|</p>
+<p> |{{{*}}}dnpW1 woXOBwxxXow 1Wpnd{{{*}}}|</p>
+<p> |{{{*}}}dnpW1 w#########w 1Wpnd{{{*}}}|</p>
+<p> |{{{*}}}dnpW1 woXxxwBOXow 1Wpnd{{{*}}}|</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

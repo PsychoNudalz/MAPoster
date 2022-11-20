@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>                         |rxr|</p>
+<p>          ~p<b>I</b>###x      lt{{{]}}}. .{{{]}}}tl</p>
+<p>          ~p##Y'       lt{{{]}}}. .{{{]}}}tl</p>
+<p>          ~p0I         lt{{{]}}}. .{{{]}}}tl</p>
+<p>          ~p<b>GO</b>##x        |rxr|</p>
+<p>                       lt{{{]}}}. .{{{]}}}tl</p>
+<p>          ~p<b>TO</b>##x    :(xxxxxxxxx(:</p>
+<p>          ~p<b>MY</b>##x    :(xxxxxxxxx(:</p>
+<p>          ~p#####8/  :(xxxxxxxxx(:</p>
+<p><b>USUAL</b>#<b>BAR</b>###################################</p>
+<p>      .{{{]}}}tl~p####x</p>
+<p>      .{{{]}}}tl~p####x.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xxx</p>
+<p>      .{{{]}}}tl~p####x.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xxx</p>
+<p>      .{{{]}}}tl~p0I/8x.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xxx</p>
+<p>      .{{{]}}}tl~p0I/8x.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xxx</p>
+<p>      .{{{]}}}tl~p0I/8x.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xx(:ltxx{{{_}}}.{{{]}}}xxx</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

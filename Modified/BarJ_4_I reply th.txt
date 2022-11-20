@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>                                      {{{_}}}xxxxx</p>
+<p>          iq<b>I</b>###n                        ^{{{[}}}x</p>
+<p>          iq##J^                      {{{_}}}x|</p>
+<p>          iq0i                        {{{_}}}xxxxx</p>
+<p>          iq####n</p>
+<p>                                    irxxxxxx</p>
+<p>        ;<b>REPLY</b>##n                   irxxxxxx</p>
+<p>        ;<b>THANK</b>##n z{{{*}}})           ,)|,irxxxxxx</p>
+<p>        ;<b>YOU</b>#######{{{*}}})           ,)xxxxxxxxxx</p>
+<p>xxxxxxxxxxY{{{*}}}####wxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+<p>       ?tiiq####n                     {{{_}}}xxxxx</p>
+<p>       ?tiiq####n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'{{{_}}}xxxxx</p>
+<p>       ?tiiq####n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'{{{_}}}xxxxx</p>
+<p>       ?tiiq0i)8n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'{{{_}}}x|^{{{[}}}x</p>
+<p>       ?tiiq0i)8n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'{{{_}}}x|^{{{[}}}x</p>
+<p>       ?tiiq0i)8n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'{{{_}}}x|^{{{[}}}x</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

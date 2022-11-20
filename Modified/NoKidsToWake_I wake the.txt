@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p>                                    {{{]}}}a<b>I</b>#<b>WAKE</b>#<b>THE</b>###z.</p>
+<p>                                    {{{]}}}aU"     ,1xxQ8##x</p>
+<p>                                    {{{]}}}aU"   '{{{[}}}|I  |###x</p>
+<p>                                    {{{]}}}aU"   '{{{[}}}|I  |###x</p>
+<p>                                    {{{]}}}aU"     ,1xxQ8##x</p>
+<p> {{{[}}}o##n                              {{{]}}}aU"       ;|Q8##x</p>
+<p> {{{[}}}o##n                              {{{]}}}aU"   '{{{[}}}xxxxQ8##x</p>
+<p> {{{[}}}o##n                              {{{]}}}aU"   '{{{[}}}xxxxQ8##x</p>
+<p> {{{[}}}o##n                              {{{]}}}aU"   '{{{[}}}xxxxQ8##x</p>
+<p> {{{[}}}o##n                              {{{]}}}aU"     ,1xxQ8##x</p>
+<p> {{{[}}}o##qxxxxxxxxxxxxxxxxxxxxxxxw%/    {{{]}}}aU"     ,1xxQ8##x</p>
+<p> {{{[}}}o###@ZxxxxxxxxxxxxxxxxxxxZB#%/    {{{]}}}aU"     ,1),|###x</p>
+<p> {{{[}}}o<b>KIDS</b>###MJxxxxxxxxxxxJ#<b>UP</b>###%/    {{{]}}}aU"     ,1),|###x</p>
+<p> {{{[}}}o<b>FOR</b>#<b>SCHOOL</b>#################%/    {{{]}}}aU"     ,1),|###x</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

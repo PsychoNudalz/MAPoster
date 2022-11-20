@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>                       {{{[}}}k##n          n<b>A</b>####</p>
+<p>          ,)xxxx{{{_}}}    iq0i  n#t           ;J#</p>
+<p>          ,)xx{{{[}}}'     iq0i  n#t        n#t</p>
+<p>          ,)|,       iq0i  n#t        n<b>MAN</b>##</p>
+<p>          ,)xxxx{{{_}}}      {{{[}}}k##n</p>
+<p>                     iq0i  n#t      )8<b>GOT</b>###</p>
+<p>          ,)xxxx{{{_}}}  ;J<b>ME</b>#<b>A</b>#####{{{*}}})    )8######</p>
+<p>          ,)xxxx{{{_}}}  ;J<b>DRINK</b>####{{{*}}})iq0i)8######</p>
+<p>          ,)xxxxxx|;J#########{{{*}}})iq##########</p>
+<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxw#####</p>
+<p>       ?ti,)xxxx{{{_}}}                     n#####</p>
+<p>       ?ti,)xxxx{{{_}}} ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n#####</p>
+<p>       ?ti,)xxxx{{{_}}} ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n#####</p>
+<p>       ?ti,)|,ir{{{_}}} ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n#t;J#</p>
+<p>       ?ti,)|,ir{{{_}}} ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n#t;J#</p>
+<p>       ?ti,)|,ir{{{_}}} ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n#t;J#</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

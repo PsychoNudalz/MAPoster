@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>                         irxx|</p>
+<p>          iq<b>I</b>###n      l|{{{[}}}'  ?ti</p>
+<p>          iq##J^       l|{{{[}}}'  ?ti</p>
+<p>          iq0i         l|{{{[}}}'  ?ti</p>
+<p>          iq####n        irxx|</p>
+<p>                       l|{{{[}}}'  ?ti</p>
+<p>          iq####n    ,)xxxxxxxxx|;</p>
+<p>          iq####n z{{{*}}}),)xxxxxxxxx|;</p>
+<p>          iq<b>ORDER</b>##{{{*}}}),)xxxxxxxxx|;</p>
+<p><b>MY</b>#<b>USUAL</b>#<b>DRINK</b>#<b>TO</b>#<b>FORGET</b>####################</p>
+<p>       ?tiiq####n</p>
+<p>       ?tiiq####n ?xx|;l|xx{{{_}}} ?xx|;l|xx{{{_}}} ?xxx</p>
+<p>       ?tiiq####n ?xx|;l|xx{{{_}}} ?xx|;l|xx{{{_}}} ?xxx</p>
+<p>       ?tiiq0i)8n ?xx|;l|xx{{{_}}} ?xx|;l|xx{{{_}}} ?xxx</p>
+<p>       ?tiiq0i)8n ?xx|;l|xx{{{_}}} ?xx|;l|xx{{{_}}} ?xxx</p>
+<p>       ?tiiq0i)8n ?xx|;l|xx{{{_}}} ?xx|;l|xx{{{_}}} ?xxx</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

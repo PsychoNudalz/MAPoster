@@ -59,37 +59,42 @@ def InsertTextToArt(art, text):
     textIndex = 0
     # artIndex = [0,0]
     textSplit = text.split(" ")
-    for x in range(0, len(output) - 1):
+    replaceChar = "$"
+    x = 0
+    while x <len(output):
         try:
             currnet = output[x]
         except:
             return output;
-        replaceChar = "$"
-
-        if(len(textSplit[textIndex])>5):
-            print("WARNING: LONG WORD:", textSplit[textIndex])
-            # if(textSplit[textIndex]=="nights"):
-            #     print("this")
-
         if (output[x] == replaceChar):
+            if (len(textSplit[textIndex]) > 5):
+                print("WARNING: LONG WORD:", textSplit[textIndex])
             # artIndex[0]= x;
             i = x;
             flag = False;
-            while (i < len(art) and output[i] == replaceChar and not flag):
-
+            test =output[x:x+4]
+            if (test == "$$$$$"):
+                print("1234")
+            while (i <= len(output) and output[i] == replaceChar and not flag):
+                currentText = output[x:i]
                 i += 1;
-                if (i - x > len(textSplit[textIndex]) + 1):
-                    output = "".join((output[:x], "<b>" + textSplit[textIndex].upper() + "</b>#", output[i-1:]))
+                if (i - x > len(textSplit[textIndex])):
+                    output = "".join((output[:x], "<b>" + textSplit[textIndex].upper() + "</b>#", output[i:]))
                     textIndex += 1
                     flag = True
                     if (textIndex == len(textSplit)):
                         return output;
+        x+=1
     print("ERROR: DID NOT FINISH INSERTING TEXT:",textSplit[textIndex])
 
     return output;
 
 
 def ConvertTxt(fileName, text):
+    if("OriginalAscii/" in fileName):
+        fileName =fileName.replace("OriginalAscii/","")
+    if (".txt" in fileName):
+        fileName = fileName.replace(".txt", "")
     art, fileName = ReadFile(fileName)
 
     art = ArtCleanUp(art)
@@ -153,8 +158,15 @@ def ConvertTxt2(s):
 # ConvertTxt("DriveToBar","I finished work and drive to a bar")
 # ConvertTxt("Bar_1","I enter the bar and place my order")
 # ConvertTxt("Beer","I drink my 0% beer, it was nice and relaxing")
-ConvertTxt("Bar_2","I look over and see another person")
-ConvertTxt("Bar_4","Should I order a drink for him ?")
-ConvertTxt("Bar_5","Thank you ...")
-
+# ConvertTxt("Bar_2","I look over and see another person")
+# ConvertTxt("Bar_4","Should I order a drink for him ?")
+# ConvertTxt("Bar_5","Thank you ...")
 # ConvertTxt("DriveToWork","I Make my way back home to rest... waiting for the time to tick to the next day... and the cycle repeats")
+# ConvertTxt("JS", "My name is John Smith")
+# ConvertTxt("NoKidsToWake","I wake the kids up for school")
+# ConvertTxt("Dinner", "I stare at my plate of food, void of life, contemplating what I have done")
+# ConvertTxt("OriginalAscii/BarJ_1.txt","I go to my usual bar")
+# ConvertTxt("OriginalAscii/BarJ_2.txt","I order my usual drink to forget")
+# ConvertTxt("OriginalAscii/BarJ_3.txt", "A man got me a drink")
+# ConvertTxt("OriginalAscii/BarJ_4.txt", "I reply thank you")
+ConvertTxt("TestFile.txt","1 12 123 1234 12345")

@@ -1,0 +1,17 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>#</p>
+<p><b>1</b>#</p>
+<p><b>12</b>#</p>
+<p>asd0wuioehj aod</p>
+<p><b>123</b>#</p>
+<p><b>1234</b>#</p>
+<p><b>12345</b>#</p>
+<p>#######</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>
