@@ -1,36 +1,36 @@
  <div id="AsciiArt" class="AsciiArt">
 <p></p>
-<p>                         !txxxxxt!</p>
-<p>                       ;(xxxxxxxxx(;</p>
-<p>                       +d<b>I</b>#<b>DRINK</b>##d+</p>
-<p>                         |{{{*}}}duxud{{{*}}}|</p>
-<p>                         |{{{*}}}duxud{{{*}}}|</p>
-<p>                         |{{{*}}}duxud{{{*}}}|</p>
-<p>                         |{{{*}}}duxud{{{*}}}|</p>
-<p>                         |{{{*}}}duxud{{{*}}}|</p>
-<p>                       +d##duxud##d+</p>
-<p>                       +d##duxud##d+</p>
-<p>                     lO##hzxxxxxzh##Ol</p>
-<p>                     lO{{{*}}}UxxxxxxxxxU{{{*}}}Ol</p>
-<p>                     lO{{{*}}}UxxxxxxxxxU{{{*}}}Ol</p>
-<p>                   "U##{{{*}}}UQ&<b>MY</b>###&QU{{{*}}}##U"</p>
-<p>                   "UWLxxQ&<b>0%</b>###&QxxLWU"</p>
-<p>                   "UWLJ#<b>BEER,</b>#####JLWU"</p>
-<p>                   "U<b>IT</b>#<b>WAS</b>#<b>NICE</b>#<b>AND</b>##U"</p>
-<p>                     lO<b>RELAXING</b>#####Ol</p>
-<p>                     lO#############Ol</p>
-<p>                     lO#############Ol</p>
-<p>                     lO#############Ol</p>
-<p>                     lO#############Ol</p>
-<p>                     lO#############Ol</p>
-<p>                     lO#############Ol</p>
-<p>                   "U#################U"</p>
-<p>                   "UWLJ###########JLWU"</p>
-<p>                   "UWLJ###########JLWU"</p>
-<p>                   "UWLJ###########JLWU"</p>
-<p>                   "UWLxxxxxxxxxxxxxLWU"</p>
-<p>                   "U##{{{*}}}UxxxxxxxxxU{{{*}}}##U"</p>
-<p>                     lO#############Ol</p>
+<p>                         l|xxxxxti</p>
+<p>                       ,)xxxxxxxxx|;</p>
+<p>                       iq<b>I</b>#<b>DRINK</b>##k{{{_}}}</p>
+<p>                         {{{[}}}kJ^  z{{{*}}})</p>
+<p>                         {{{[}}}kJ^  z{{{*}}})</p>
+<p>                         {{{[}}}kJ^  z{{{*}}})</p>
+<p>                         {{{[}}}kJ^  z{{{*}}})</p>
+<p>                         {{{[}}}kJ^  z{{{*}}})</p>
+<p>                       iq##J^  z##k{{{_}}}</p>
+<p>                       iq##J^  z##k{{{_}}}</p>
+<p>                     ;0##0i     ;J##qi</p>
+<p>                     ;0k{{{_}}}         iqqi</p>
+<p>                     ;0k{{{_}}}         iqqi</p>
+<p>                   ^z##k{{{_}}}         iq##J;</p>
+<p>                   ^z{{{*}}}{{{[}}}             {{{_}}}kJ;</p>
+<p>                   ^z{{{*}}}{{{[}}},)xxxxxxxxx|;{{{_}}}kJ;</p>
+<p>                   ^z<b>MY</b>#<b>0%</b>#<b>BEER,</b>#<b>IT</b>###J;</p>
+<p>                     ;0<b>WAS</b>#<b>NICE</b>#####qi</p>
+<p>                     ;0<b>AND</b>##########qi</p>
+<p>                     ;0<b>RELAXING</b>#####qi</p>
+<p>                     ;0#############qi</p>
+<p>                     ;0#############qi</p>
+<p>                     ;0#############qi</p>
+<p>                     ;0#############qi</p>
+<p>                   ^z#################J;</p>
+<p>                   ^z{{{*}}}{{{[}}}iq#########k{{{_}}}{{{_}}}kJ;</p>
+<p>                   ^z{{{*}}}{{{[}}},)xxxxxxxxx|;{{{_}}}kJ;</p>
+<p>                   ^z{{{*}}}{{{[}}}             {{{_}}}kJ;</p>
+<p>                   ^z{{{*}}}{{{[}}}             {{{_}}}kJ;</p>
+<p>                   ^z##k{{{_}}}         iq##J;</p>
+<p>                     ;0#############qi</p>
 <p></p>
 <p></p>
 <p></p>

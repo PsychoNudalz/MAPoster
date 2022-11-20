@@ -2,6 +2,8 @@ import pyperclip
 
 
 TAGHEADERS = [" <div id=\"AsciiArt\" class=\"AsciiArt\">\n","\n</div>"]
+
+ERRORCOUNT=0;
 # https://codebeautify.org/image-to-ascii-art
 def AsciiToTwine(s):
     sSplit = s.split("\n")
@@ -83,6 +85,7 @@ def InsertTextToArt(art, text):
                     if (textIndex == len(textSplit)):
                         return output;
     print("ERROR: DID NOT FINISH INSERTING TEXT:",textSplit[textIndex])
+
     return output;
 
 
@@ -144,9 +147,14 @@ def ConvertTxt2(s):
 # ConvertTxt("Eat","I prepare my breakfast")
 # ConvertTxt("InstantCoffee","I make and drink my 2 instant coffees")
 # ConvertTxt("HD-Day","I Resume Cutting hair for clients, listening to stories. Many speak about their days, some Speak of last nights game")
-ConvertTxt("HD-Day-2","Last night game was a close one!")
-ConvertTxt("HD-Day-2","Hell yea brother!!!")
-ConvertTxt("HD-Day-2","Ah, I support the other team...")
+# ConvertTxt("HD-Day-2","Last night game was a close one!")
+# ConvertTxt("HD-Day-2","Hell yea brother!!!")
+# ConvertTxt("HD-Day-2","Ah, I support the other team...")
 # ConvertTxt("DriveToBar","I finished work and drive to a bar")
 # ConvertTxt("Bar_1","I enter the bar and place my order")
 # ConvertTxt("Beer","I drink my 0% beer, it was nice and relaxing")
+ConvertTxt("Bar_2","I look over and see another person")
+ConvertTxt("Bar_4","Should I order a drink for him ?")
+ConvertTxt("Bar_5","Thank you ...")
+
+# ConvertTxt("DriveToWork","I Make my way back home to rest... waiting for the time to tick to the next day... and the cycle repeats")

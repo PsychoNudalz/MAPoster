@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>              irxx|        n######0i</p>
+<p>#####n      l|{{{[}}}'  ?ti         ;J##0i</p>
+<p>###J^       l|{{{[}}}'  ?ti      n#t  iq0i</p>
+<p>#0i         l|{{{[}}}'  ?ti      n######0i</p>
+<p>#####n        irxx|</p>
+<p>            l|{{{[}}}'  ?ti    )8#######0i</p>
+<p>#####n    ,)xxxxxxxxx|;  )8#######0i</p>
+<p>#####n    ,)xxxxxxxxxY{{{*}}}0i)8#######0i</p>
+<p><b>SHOULD</b>##{{{*}}}),)xxxxxxxxxY{{{*}}}<b>I</b>#<b>ORDER</b>#<b>A</b>##0i</p>
+<p>#####wxx<b>DRINK</b>#<b>FOR</b>#<b>HIM</b>###xxxw<b>?</b>###MJxxxxxxxti</p>
+<p>#####n                     n####k{{{_}}}      ?ti</p>
+<p>#####n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n####k{{{_}}}l|xx{{{_}}} ?ti</p>
+<p>#####n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n####k{{{_}}}l|xx{{{_}}} ?ti</p>
+<p>#0i)8n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n#t;Jk{{{_}}}l|xx{{{_}}} ?ti</p>
+<p>#0i)8n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n#t;Jk{{{_}}}l|xx{{{_}}} ?ti</p>
+<p>#0i)8n ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'n#t;Jk{{{_}}}l|xx{{{_}}} ?ti</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>
