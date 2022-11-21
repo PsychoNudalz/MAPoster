@@ -1,0 +1,38 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p></p>
+<p> {{{[}}}k<b>I</b>#<b>HAVE</b>#<b>TO</b>#<b>FIRING</b>#<b>ONE</b>#<b>OF</b>#J^</p>
+<p> {{{[}}}kkvxxxPROFILExxxxxxxxxxLMJ^</p>
+<p> {{{[}}}kkvxxxxxxxxxxxxxxxxxxxxLMJ^</p>
+<p> {{{[}}}kkvxTOMxxxxx|^       ,)LMJ^</p>
+<p> {{{[}}}kkvxGREENSxx|^       ,)LMJ^</p>
+<p> {{{[}}}kkvxxxxxxxxx|^       ,)LMJ^  z<b>THEM.</b>#<b>THEY</b>#<b>ARE</b>#<b>UNDER</b>####{{{*}}})</p>
+<p> {{{[}}}kkVERYxxxxxx|^       ,)LMJ^  z&0xxPROFILExxxxxxxxxxxxd{{{*}}})</p>
+<p> {{{[}}}kkvxxxxxxxxx|^       ,)LMJ^  z&0xxxxxxxxxxxxxxxxxxxxxd{{{*}}})</p>
+<p> {{{[}}}kkvxxxxxxxxx|^       ,)LMJ^  z&0xxJOHNxxxri        {{{_}}}xd{{{*}}})</p>
+<p> {{{[}}}kkINTELEGETxxxxxxxxxxxxLMJ^  z&0xxSMITHxxri        {{{_}}}xd{{{*}}})</p>
+<p> {{{[}}}kkvxxxxxxxxxxxxxxxxxxxxLMJ^  z&0xxxxxxxxxri        {{{_}}}xd{{{*}}})</p>
+<p> {{{[}}}kkvxBUTxxxxxxxxxxxxxxxxLMJ^  z&0xxxxNOTxxri        {{{_}}}xd{{{*}}})</p>
+<p> {{{[}}}kkvxxxxxxxxxxxLAZYxxxxxLMJ^  z&0THExxxxxxri        {{{_}}}xd{{{*}}})</p>
+<p> {{{[}}}kkvxxxxxxxxxxxxxxxxxxxxLMJ^  z&0xxxxxxxxxri        {{{_}}}xd{{{*}}})</p>
+<p> {{{[}}}kkANDxxxxxxxxxxxxxxxxxxLMJ^  z&0xxBRIGHTESTxxxxxxxxxxd{{{*}}})</p>
+<p> {{{[}}}kkvxxCOMPLETExxxxTASKSxLMJ^  z&0xSLOWxxxxxxxBUTxxxxxxd{{{*}}})</p>
+<p> {{{[}}}kkvxxxxxxxxxxxxxxxxxxxxLMJ^  z&0xxxxHARDxxxxxWORKINGxd{{{*}}})</p>
+<p> {{{[}}}kkvxxxxLATExxxxxxxxxxxxLMJ^  z&0xxxxxxxxxxxxxxxxxxxxxd{{{*}}})</p>
+<p> {{{[}}}kkvxxxxxxxxxxxxxxxxxxxxLMJ^  z&0xOFTENxxxxxxxSTAYxxxxd{{{*}}})</p>
+<p> {{{[}}}k<b>PERFORMING</b>##############J^  z&0xxxLATExxxxxxxxFORxxxd{{{*}}})</p>
+<p>                               z&0xOVERTIMExxxxxxxTOxxxd{{{*}}})</p>
+<p>                               z&0xCOMPLETExxxxxTASKXxxd{{{*}}})</p>
+<p>                               z########################{{{*}}})</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

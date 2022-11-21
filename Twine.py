@@ -7,7 +7,7 @@ ERRORCOUNT=0;
 # https://codebeautify.org/image-to-ascii-art
 def AsciiToTwine(s):
     sSplit = s.split("\n")
-    
+
     BLACKLIST=["\\","$","_","*", "`","[","]"]
     output = TAGHEADERS[0]
     for x in sSplit:
@@ -49,7 +49,7 @@ def ReplaceDollar(art):
             temp = y
             if (temp == "$"):
                 temp = "#"
-    
+
             output += temp
         output += "\n"
     return output
@@ -104,7 +104,7 @@ def ConvertTxt(fileName, text):
         art = InsertTextToArt(art, text)
         print("\nInsert Complete\n")
         print(art)
-    
+
     art = ReplaceDollar(art)
     art = AsciiToTwine(art)
 
@@ -175,5 +175,10 @@ def ConvertTxt2(s):
 # ConvertTxt("OriginalAscii/Grave_1.txt","I ask if he slept well... I ask how was school today... I ask what would he like for breakfast...")
 # ConvertTxt("OriginalAscii/Grave_2.txt","But there was nothing but silence. It is just the imagination of what is left of him in my mind")
 # ConvertTxt("OriginalAscii/Grave_3.txt","I am sorry son. I wish I have spent more time with you")
-# ConvertTxt("OriginalAscii/BM.txt","I look outside and see the sun rise.  I am a CEO")
-ConvertTxt("OriginalAscii/DecaffCoffee.txt","I drink my decaff coffee")
+# ConvertTxt("OriginalAscii/BM.txt","I wake and see the sun rise.  I am a CEO")
+# ConvertTxt("OriginalAscii/BM.txt","I am a CEO")
+# ConvertTxt("OriginalAscii/DecaffCoffee.txt","I drink my decaff coffee")
+# ConvertTxt("OriginalAscii/Meeting.txt","I go my meeting and listen to endless talking")
+# ConvertTxt("OriginalAscii/Meeting.txt","Having to make big decisions every second ")
+# ConvertTxt("OriginalAscii/BM-Lunch.txt","I enjoy the little peace I have with my Goose with red cabbage and dumpling")
+ConvertTxt("OriginalAscii/Firing.txt","I have to firing one of them. they are under performing")
