@@ -1,0 +1,30 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p>       ?xxxxxxxxxxxxxxxxxxxxxxxxxxxx{{{[}}}'</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p> {{{[}}}k<b>JOHN</b>#<b>SMITH</b>#<b>IS</b>#<b>FIRED</b>#<b>FOR</b>#<b>LACKING</b>#<b>IN</b>#######</p>
+<p> {{{[}}}kJ^                                    ;J#</p>
+<p> {{{[}}}kJ^ ####k{{{]}}} k####t J####J  ####{{{]}}} {{{[}}}k##n  ;J#</p>
+<p> {{{[}}}kJ^ #t       8n   Jk  kJ  #t    {{{[}}}k  n# ;J#</p>
+<p> {{{[}}}kJ^ ####k{{{]}}}   8n   J####J  ####{{{]}}} {{{[}}}k  n# ;J#</p>
+<p> {{{[}}}kJ^ #t       8n   J# 0i   #t    {{{[}}}k  n# ;J#</p>
+<p> {{{[}}}kJ^ #t     k####t Jk  kJ  ####{{{]}}} {{{[}}}k##n  ;J#</p>
+<p> {{{[}}}kJ^                                    ;J#</p>
+<p> {{{[}}}k<b>SKILLS</b>###################################</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p>       ?xxxxxxxxxxxxxxxxxxxxxxxxxxxx{{{[}}}'</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

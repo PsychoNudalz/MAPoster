@@ -91,6 +91,7 @@ def InsertTextToArt(art, text):
 
 
 def ConvertTxt(fileName, text):
+    input("Press enter to start")
     if("OriginalAscii/" in fileName):
         fileName =fileName.replace("OriginalAscii/","")
     if (".txt" in fileName):
@@ -111,9 +112,10 @@ def ConvertTxt(fileName, text):
 
 
     pyperclip.copy(art)
-    file = open("Modified/" + fileName+"_"+text[0:min(len(text),10)]+".txt", "w+")
+    file = open("Modified/" + fileName+"_"+text[0:min(len(text),20)]+".txt", "w+")
     file.write(art)
     file.close()
+    print(fileName,text,"Ascii completed \n")
 
 
 def ReadFile(fileName):
@@ -187,4 +189,12 @@ def ConvertTxt2(s):
 # ConvertTxt("OriginalAscii/DriveToWork.txt","I finish my work and drive home for dinner. What should I eat?")
 # ConvertTxt("OriginalAscii/BM-Dinner.txt","I cook my steak until medium rare... and eat it")
 # ConvertTxt("OriginalAscii/BM-VideoCall.txt","I video call my family on the other side of the world")
-ConvertTxt("OriginalAscii/BM-VideoCall.txt","I ask my family")
+# ConvertTxt("OriginalAscii/BM-VideoCall.txt","I ask my son");input();
+ConvertTxt("OriginalAscii/BM-VideoCall_Son.txt.txt","He replied fine");
+ConvertTxt("OriginalAscii/BM-VideoCall_Son.txt.txt","He replied good");
+ConvertTxt("OriginalAscii/BM-VideoCall_Son.txt.txt","He replied no- thing");
+# ConvertTxt("OriginalAscii/BM-VideoCall.txt","May I Speak to your mother?");
+# ConvertTxt("OriginalAscii/BM-VideoCall_End.txt.txt","I Ended the call and head to bed, waiting for the time to tick to the next day... and the cycle repeats");
+# ConvertTxt("OriginalAscii/BM-FiredText.txt","Tom Green is fired for having a bad work attitude")
+# ConvertTxt("OriginalAscii/BM-FiredText.txt","John Smith is fired for lacking in skills")
+# ConvertTxt("OriginalAscii/BM-FiredText.txt","I wish I made the right decision")
