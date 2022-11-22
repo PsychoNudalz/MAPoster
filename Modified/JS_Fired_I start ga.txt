@@ -1,0 +1,30 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>            l|xxxxxxxxxxxxxxxxxxxxxx{{{[}}}'</p>
+<p>            l|0%<b>I</b>#<b>START</b>#<b>GATHERING</b>#aY{{{[}}}'</p>
+<p>            l|0%<b>MY</b>###k{{{_}}}    n######aY{{{[}}}'</p>
+<p>              )8<b>THINGS</b>#<b>AND</b>#<b>PACK</b>###0i</p>
+<p>              )8<b>IT</b>#<b>IN</b>#<b>A</b>#<b>BOX</b>#<b>AS</b>#<b>I</b>##0i</p>
+<p>              )8<b>AM</b>#<b>FIRED</b>##########0i</p>
+<p>              )8##################0i</p>
+<p>              )8##################0i</p>
+<p> l|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxti</p>
+<p> l|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxti</p>
+<p>   ir{{{_}}}          {{{_}}}x|                   {{{_}}}x|</p>
+<p>   ir{{{_}}}          {{{_}}}x|                   {{{_}}}x|</p>
+<p>   irxxxxxxxxxxxxx|                   {{{_}}}x|</p>
+<p>   ir{{{_}}}          {{{_}}}x|                   {{{_}}}x|</p>
+<p>   ir{{{_}}}          {{{_}}}x|                   {{{_}}}x|</p>
+<p>   ir{{{_}}}          {{{_}}}x|                   {{{_}}}x|</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

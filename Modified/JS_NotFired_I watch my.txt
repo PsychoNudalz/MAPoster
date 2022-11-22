@@ -1,0 +1,30 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>                            'Y<b>I</b>#####Y'</p>
+<p>   /8<b>WATCH</b>#<b>MY</b>#<b>FRIEND</b>#p~     'Y######Y'</p>
+<p>   /8<b>LEAVING</b>#<b>WITH</b>####p~     'Y<b>HIS</b>#0I/8x</p>
+<p>   /8<b>BOX</b>#<b>AFTER</b>#<b>THE</b>###p~     'Y<b>CEO</b>#0I</p>
+<p>   /8<b>SAID</b>#<b>HE</b>#<b>IS</b>######p~           {{{[}}}oY'</p>
+<p>   /8<b>FIRED</b>###########p~  /8###o{{{[}}}~p####x</p>
+<p>   /8################p~  /8###o{{{[}}}~p####x</p>
+<p>   /8################p~  /8###o{{{[}}}~p####x</p>
+<p>          ~p##Y'         /8###########x</p>
+<p>        I0######x               ~p####x</p>
+<p> ltxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxtl</p>
+<p> ltxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxtl</p>
+<p>   |r{{{_}}}          {{{_}}}r|                   {{{_}}}r|</p>
+<p>   |r{{{_}}}          {{{_}}}r|                   {{{_}}}r|</p>
+<p>   |rxxxxxxxxxxxxr|                   {{{_}}}r|</p>
+<p>   |r{{{_}}}          {{{_}}}r|                   {{{_}}}r|</p>
+<p>   |r{{{_}}}          {{{_}}}r|                   {{{_}}}r|</p>
+<p>   |r{{{_}}}          {{{_}}}r|                   {{{_}}}r|</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>
