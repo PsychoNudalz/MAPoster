@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>                                                           </p>
+<p>                                                           </p>
+<p>                                                           </p>
+<p>                                                           </p>
+<p>                                                           </p>
+<p> {{{[}}}oY^    :Lb{{{_}}}  1Mc vW(    |{{{*}}}X'  'X<b>WHAT</b>##Ol (Wv    iZw|          </p>
+<p> {{{[}}}oY^    :Lb{{{_}}}  1Mc v##a{{{]}}}  |{{{*}}}X' n%/         (Wv    iZw|          </p>
+<p> {{{[}}}oY^    :Lb{{{_}}}  1Mc vW(lOq||{{{*}}}X' n%/         (W<b>SHOULD</b>#w|          </p>
+<p> {{{[}}}oY^    :Lb{{{_}}}  1Mc vW(lOq||{{{*}}}X' n%/         (Wv    iZw|          </p>
+<p> {{{[}}}oY^    :Lb{{{_}}}  1Mc vW(  +d<b>I</b>#X' n%/         (Wv    iZw|          </p>
+<p> {{{[}}}o###Bt :L<b>HAVE</b>##c vW(    |{{{*}}}X'  'X<b>WITH</b>##Ol (Wv    iZw|          </p>
+<p>                                                           </p>
+<p>                                                           </p>
+<p>                                                           </p>
+<p>                                                           </p>
+<p>                                                           </p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

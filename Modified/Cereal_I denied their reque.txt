@@ -1,0 +1,30 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>                              ^|(:</p>
+<p>                            .{{{]}}}xx(:</p>
+<p>                           {{{_}}}xxtl</p>
+<p>                         |rxr|</p>
+<p>     {{{_}}}r|               ltxx{{{_}}}    :(|^</p>
+<p>     {{{_}}}xxxx(:         :(xx{{{]}}}. .{{{]}}}xxxx|^</p>
+<p>     {{{_}}}xxxxxxxxxxxxxxxxxxxxxxxxxxxx|^</p>
+<p>     {{{_}}}ub<b>I</b>#<b>DENIED</b>#<b>THEIR</b>########&Lxx|^</p>
+<p>     {{{_}}}ub<b>REQUEST</b>#<b>AND</b>#<b>THEY</b>#<b>HAD</b>##&Lxx|^</p>
+<p>     {{{_}}}ub<b>CEREAL</b>#<b>AS</b>#<b>USUAL</b>#######&Lxx|^</p>
+<p>     {{{_}}}xxza##################BZxx(:</p>
+<p>      .{{{]}}}xxxxL&##############BZtl</p>
+<p>        ^|xxxxZB#########buxxxtl</p>
+<p>            ltxxxxxxxxxxxxxxr|</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

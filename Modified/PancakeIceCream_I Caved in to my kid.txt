@@ -1,0 +1,30 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p></p>
+<p>                  ?xxxxxx{{{[}}}'</p>
+<p>              irxxxxxxxxxxxxx|</p>
+<p>              irxxxti    irxx|</p>
+<p>            l|xxxxxxxxx|,  {{{_}}}xxti</p>
+<p>            l|xxxxxxxxxxxxxxxxti</p>
+<p>            l|xxxxxxxxxxxxxxxxti</p>
+<p>              irxxxxxxxxxxxxx|</p>
+<p>       ?xxxxxxxxxxxxxxxxxxxxxxxxxx|,</p>
+<p> l|xxxxxxxY{{{*}}}<b>I</b>#####Zxxxxxxxxw##&0xxxxxxxxxti</p>
+<p>   )8##Zzk<b>CAVED</b>#<b>IN</b>#&0xxxx0%<b>TO</b>###MJxxxx{{{_}}}</p>
+<p>       ?ti         ^{{{[}}}xxxx{{{[}}}'     ,)xx{{{[}}}'</p>
+<p>     {{{_}}}xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx{{{[}}}'</p>
+<p> l|xxxxxzk<b>MY</b>#<b>KIDS'</b>#<b>DEMANDS</b>####&0xxxxxxxxxti</p>
+<p>     n#Zzk<b>AND</b>#<b>MADE</b>#<b>PANCAKE</b>####&0xxLM####t</p>
+<p>       ?ti           ,)|,       ,)|,</p>
+<p>       ?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx{{{_}}}</p>
+<p> l|xxxxxxxY{{{*}}}<b>WITH</b>#<b>ICE</b>#<b>CREAM</b>######MJLMkvxxxti</p>
+<p>   )8##Zzk######################MJLM##n</p>
+<p>       ?ti           ,)|,       ,)|,</p>
+<p>       ?ti                      ,)|,</p>
+<p>       ?ti</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

@@ -1,0 +1,30 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>       ?xxxxxxxxxxxxxxxxxxxxxxxxxx|,</p>
+<p> l|xxxxxxxY{{{*}}}<b>I</b>#<b>COMPROMISED</b>#<b>AND</b>#&0xxxxxxxxxti</p>
+<p>   )8##Zzk<b>MADE</b>#####&0xxxx0%#####MJxxxx{{{_}}}</p>
+<p>       ?ti         ^{{{[}}}xxxx{{{[}}}'     ,)xx{{{[}}}'</p>
+<p>     {{{_}}}xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx{{{[}}}'</p>
+<p> l|xxxxxzk<b>PANCAKE</b>####MJLM<b>FOR</b>##&0xxxxxxxxxti</p>
+<p>     n#Zzk<b>THEM</b>#######MJLM#####&0xxLM####t</p>
+<p>       ?ti           ,)|,       ,)|,</p>
+<p>       ?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx{{{_}}}</p>
+<p> l|xxxxxxxY{{{*}}}#########MJLM#######MJLMkvxxxti</p>
+<p>   )8##Zzk###########MJLM#######MJLM##n</p>
+<p>       ?ti           ,)|,       ,)|,</p>
+<p>       ?ti                      ,)|,</p>
+<p>       ?ti</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

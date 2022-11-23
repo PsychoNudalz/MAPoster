@@ -112,7 +112,9 @@ def ConvertTxt(fileName, text):
 
 
     pyperclip.copy(art)
-    file = open("Modified/" + fileName+"_"+text[0:min(len(text),20)]+".txt", "w+")
+    temp = text[0:min(len(text),20)]
+    temp = temp.replace("\"","")
+    file = open("Modified/" + fileName+"_"+temp+".txt", "w+")
     file.write(art)
     file.close()
     print(fileName,text,"Ascii completed \n")
@@ -143,7 +145,30 @@ def ConvertTxt2(s):
     ConvertTxt(s, "")
 
 
-# print(DoubleSize(ReadFile("WakeUpTheKids")[0]))
+########BM
+
+# ConvertTxt("OriginalAscii/BM.txt","I wake and see the sun rise.  I am a CEO")
+# ConvertTxt("OriginalAscii/BM.txt","I am a CEO")
+# ConvertTxt("OriginalAscii/DecaffCoffee.txt","I drink my decaff coffee")
+# ConvertTxt("OriginalAscii/Meeting.txt","I go my meeting and listen to endless talking")
+# ConvertTxt("OriginalAscii/Meeting.txt","Having to make big decisions every second ")
+# ConvertTxt("OriginalAscii/BM-Lunch.txt","I enjoy the little peace I have with my Goose with red cabbage and dumpling")
+# ConvertTxt("OriginalAscii/Firing.txt","I have to firing one of them. they are under performing")
+# ConvertTxt("OriginalAscii/DriveToWork.txt","I finish my work and drive home for dinner. What should I eat?")
+# ConvertTxt("OriginalAscii/BM-Dinner.txt","I cook my steak until medium rare... and eat it")
+# ConvertTxt("OriginalAscii/BM-VideoCall.txt","I video call my family on the other side of the world")
+# ConvertTxt("OriginalAscii/BM-VideoCall.txt","I ask my son");input();
+# ConvertTxt("OriginalAscii/BM-VideoCall_Son.txt.txt","He replied fine");
+# ConvertTxt("OriginalAscii/BM-VideoCall_Son.txt.txt","He replied good");
+# ConvertTxt("OriginalAscii/BM-VideoCall_Son.txt.txt","He replied no- thing");
+# ConvertTxt("OriginalAscii/BM-VideoCall.txt","May I Speak to your mother?");
+# ConvertTxt("OriginalAscii/BM-VideoCall_End.txt.txt","I Ended the call and head to bed, waiting for the time to tick to the next day... and the cycle repeats");
+# ConvertTxt("OriginalAscii/BM-FiredText.txt","Tom Green is fired for having a bad work attitude")
+# ConvertTxt("OriginalAscii/BM-FiredText.txt","John Smith is fired for lacking in skills")
+# ConvertTxt("OriginalAscii/BM-FiredText.txt","I wish I made the right decision")
+
+
+########HD
 # ConvertTxt("HD","I am a Hair Dresser")
 # ConvertTxt("HD", "I wake up And get dressed. I am a Hair Dresser")
 # ConvertTxt("WakeUpTheKids","I wake the kids up for school and ask what they want for breakfast")
@@ -164,6 +189,21 @@ def ConvertTxt2(s):
 # ConvertTxt("Bar_4","Should I order a drink for him?")
 # ConvertTxt("Bar_5","Thank you ...")
 # ConvertTxt("DriveToWork","I Make my way back home to rest... waiting for the time to tick to the next day... and the cycle repeats")
+# ConvertTxt("OriginalAscii/WakeUpTheKids.txt","They said Ice Cream on Pancakes")
+# ConvertTxt("OriginalAscii/PancakeIceCream.txt","I Caved in to my kids' demands and made pancake with ice cream")
+# ConvertTxt("OriginalAscii/Pancake.txt","I compromised and made pancake for them")
+# ConvertTxt("OriginalAscii/Cereal.txt","I denied their request and they had cereal as usual")
+# ConvertTxt("OriginalAscii/Eat.txt","\what should I have with my breakfast")
+ConvertTxt("OriginalAscii/Meeting.txt","\"Sales are projecting an increase for the next month\"")
+ConvertTxt("OriginalAscii/Meeting.txt","\"But is will be on the decline the month after\"")
+ConvertTxt("OriginalAscii/Meeting.txt","\"Profits jas been on a decline as well\"")
+ConvertTxt("OriginalAscii/Meeting.txt","\"We are losing money\"")
+ConvertTxt("OriginalAscii/Meeting.txt","\"Productive has be on the fall, all our projects are \"")
+
+
+
+########JS
+
 # ConvertTxt("JS", "My name is John Smith")
 # ConvertTxt("NoKidsToWake","I wake the kids up for school")
 # ConvertTxt("Dinner", "I stare at my plate of food, void of life, contemplating what I have done")
@@ -177,24 +217,7 @@ def ConvertTxt2(s):
 # ConvertTxt("OriginalAscii/Grave_1.txt","I ask if he slept well... I ask how was school today... I ask what would he like for breakfast...")
 # ConvertTxt("OriginalAscii/Grave_2.txt","But there was nothing but silence. It is just the imagination of what is left of him in my mind")
 # ConvertTxt("OriginalAscii/Grave_3.txt","I am sorry son. I wish I have spent more time with you")
-# ConvertTxt("OriginalAscii/BM.txt","I wake and see the sun rise.  I am a CEO")
-# ConvertTxt("OriginalAscii/BM.txt","I am a CEO")
-# ConvertTxt("OriginalAscii/DecaffCoffee.txt","I drink my decaff coffee")
-# ConvertTxt("OriginalAscii/Meeting.txt","I go my meeting and listen to endless talking")
-# ConvertTxt("OriginalAscii/Meeting.txt","Having to make big decisions every second ")
-# ConvertTxt("OriginalAscii/BM-Lunch.txt","I enjoy the little peace I have with my Goose with red cabbage and dumpling")
-# ConvertTxt("OriginalAscii/Firing.txt","I have to firing one of them. they are under performing")
 # ConvertTxt("OriginalAscii/JS_NotFired.txt","I watch my friend leaving with his box after the CEO said he is fired")
 # ConvertTxt("OriginalAscii/JS_Fired.txt","I start gathering my things and pack it in a box as I am fired")
-# ConvertTxt("OriginalAscii/DriveToWork.txt","I finish my work and drive home for dinner. What should I eat?")
-# ConvertTxt("OriginalAscii/BM-Dinner.txt","I cook my steak until medium rare... and eat it")
-# ConvertTxt("OriginalAscii/BM-VideoCall.txt","I video call my family on the other side of the world")
-# ConvertTxt("OriginalAscii/BM-VideoCall.txt","I ask my son");input();
-ConvertTxt("OriginalAscii/BM-VideoCall_Son.txt.txt","He replied fine");
-ConvertTxt("OriginalAscii/BM-VideoCall_Son.txt.txt","He replied good");
-ConvertTxt("OriginalAscii/BM-VideoCall_Son.txt.txt","He replied no- thing");
-# ConvertTxt("OriginalAscii/BM-VideoCall.txt","May I Speak to your mother?");
-# ConvertTxt("OriginalAscii/BM-VideoCall_End.txt.txt","I Ended the call and head to bed, waiting for the time to tick to the next day... and the cycle repeats");
-# ConvertTxt("OriginalAscii/BM-FiredText.txt","Tom Green is fired for having a bad work attitude")
-# ConvertTxt("OriginalAscii/BM-FiredText.txt","John Smith is fired for lacking in skills")
-# ConvertTxt("OriginalAscii/BM-FiredText.txt","I wish I made the right decision")
+
+
