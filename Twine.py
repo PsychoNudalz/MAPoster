@@ -194,12 +194,15 @@ def ConvertTxt2(s):
 # ConvertTxt("OriginalAscii/Pancake.txt","I compromised and made pancake for them")
 # ConvertTxt("OriginalAscii/Cereal.txt","I denied their request and they had cereal as usual")
 # ConvertTxt("OriginalAscii/Eat.txt","\what should I have with my breakfast")
-ConvertTxt("OriginalAscii/Meeting.txt","\"Sales are projecting an increase for the next month\"")
-ConvertTxt("OriginalAscii/Meeting.txt","\"But is will be on the decline the month after\"")
-ConvertTxt("OriginalAscii/Meeting.txt","\"Profits jas been on a decline as well\"")
-ConvertTxt("OriginalAscii/Meeting.txt","\"We are losing money\"")
-ConvertTxt("OriginalAscii/Meeting.txt","\"Productive has be on the fall, all our projects are \"")
-
+# ConvertTxt("OriginalAscii/Meeting.txt","\"Sales are projecting an increase for the next month\"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"But is will be on the decline the month after\"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"Profits jas been on a decline as well\"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"We are losing money\"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"Productive has be on the fall, all our projects are \"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"jibjd adu 'fldlkj.fhbopepo dsifjkhbsd, bjnm fu h.kndf  \"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"What should we do to fix this boss?\"")
+ConvertTxt("OriginalAscii/Clock.txt","the work never ends")
+ConvertTxt("OriginalAscii/Cocktail.txt","Let's relax and forget ")
 
 
 ########JS

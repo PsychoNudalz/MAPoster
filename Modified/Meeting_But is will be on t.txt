@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p></p>
+<p> {{{[}}}oY</p>
+<p> {{{[}}}oY</p>
+<p> {{{[}}}oY                   ltxx{{{_}}}        /8#8/</p>
+<p> {{{[}}}oY x##o{{{[}}}      {{{_}}}xxtl  ltxx{{{_}}}  ^|xx|^/8#8/</p>
+<p> {{{[}}}oY x##o{{{[}}}      {{{_}}}xxtl         ^|xx|^</p>
+<p> {{{[}}}oY                   ltxx{{{_}}}        /8#8/</p>
+<p> {{{[}}}oY x##o{{{[}}}      {{{_}}}xxtl  ltxx{{{_}}}  ^|xx|^/8#8/</p>
+<p> lt{{{]}}} JOHN{{{[}}}  {{{[}}}o##wxxza<b>"BUT</b>#<b>IS</b>#<b>WILL</b>#<b>BE</b>#<b>ON</b>#<b>THE</b>#</p>
+<p> lt{{{]}}} SMI.{{{[}}}      {{{_}}}xxza<b>DECLINE</b>#<b>THE</b>#<b>MONTH</b>###o{{{[}}}</p>
+<p> {{{[}}}oY x##o{{{[}}}      {{{_}}}xxza<b>AFTER"</b>############8/</p>
+<p> {{{[}}}oY x##o{{{[}}}      {{{_}}}xxza##################8/</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

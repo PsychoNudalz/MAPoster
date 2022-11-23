@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p></p>
+<p></p>
+<p> {{{[}}}oY</p>
+<p> {{{[}}}oY</p>
+<p> {{{[}}}oY                   ltxx{{{_}}}        /8#8/</p>
+<p> {{{[}}}oY x##o{{{[}}}      {{{_}}}xxtl  ltxx{{{_}}}  ^|xx|^/8#8/</p>
+<p> {{{[}}}oY x##o{{{[}}}      {{{_}}}xxtl         ^|xx|^</p>
+<p> {{{[}}}oY                   ltxx{{{_}}}        /8#8/</p>
+<p> {{{[}}}oY x##o{{{[}}}      {{{_}}}xxtl  ltxx{{{_}}}  ^|xx|^/8#8/</p>
+<p> lt{{{]}}} JOHN{{{[}}}  {{{[}}}o##wxxza<b>"JIBJD</b>#<b>ADU</b>#############</p>
+<p> lt{{{]}}} SMI.{{{[}}}      {{{_}}}xxza<b>'FLDLKJ.FHBOPEPO</b>####o{{{[}}}</p>
+<p> {{{[}}}oY x##o{{{[}}}      {{{_}}}xxza<b>DSIFJKHBSD,</b>#<b>BJNM</b>##8/</p>
+<p> {{{[}}}oY x##o{{{[}}}      {{{_}}}xxza<b>FU</b>#<b>H.KNDF</b>#<b></b>#<b>"</b>######8/</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>
