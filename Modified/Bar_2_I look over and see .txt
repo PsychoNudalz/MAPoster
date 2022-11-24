@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>              irxx|        {{{_}}}xxxxxx|,</p>
+<p>xxxxx{{{_}}}      l|{{{[}}}'  ?ti         ^{{{[}}}xx|,</p>
+<p>xxx{{{[}}}'       l|{{{[}}}'  ?ti      {{{_}}}x|  ,)|,</p>
+<p>x|,         l|{{{[}}}'  ?ti      {{{_}}}xxxxxx|,</p>
+<p>xxxxx{{{_}}}        irxx|</p>
+<p>            l|{{{[}}}'  ?ti    irxxxxxxx|,</p>
+<p>xxxxx{{{_}}}    ,)xxxxxxxxx|;  irxxxxxxx|,</p>
+<p>xxxxx{{{_}}}    ,)xxxxxxxxxxx|,irxxxxxxx|,</p>
+<p>xxxxxxxxti,)xxxxxxxxxxxxxxxxxxxxxx|,</p>
+<p>xxxxxw<b>I</b>#<b>LOOK</b>#<b>OVER</b>#<b>AND</b>#<b>SEE</b>#<b>THE</b>#<b>SAME</b>#######{{{*}}})</p>
+<p>xxxxx{{{_}}}                     {{{_}}}xxxx|;      z{{{*}}})</p>
+<p>xxxxx{{{_}}} ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'{{{_}}}xxxx|;l|xx{{{_}}} z{{{*}}})</p>
+<p>xxxxx{{{_}}} ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'{{{_}}}xxxx|;l|xx{{{_}}} z{{{*}}})</p>
+<p>x|,ir{{{_}}} ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'{{{_}}}x|^{{{[}}}|;l|xx{{{_}}} z{{{*}}})</p>
+<p>x|,ir{{{_}}} ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'{{{_}}}x|^{{{[}}}|;l|xx{{{_}}} z{{{*}}})</p>
+<p>x|,ir{{{_}}} ?xx|;l|xx{{{_}}} ?xx|;l|{{{[}}}'{{{_}}}x|^{{{[}}}|;l|xx{{{_}}} z{{{*}}})</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

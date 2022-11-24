@@ -1,0 +1,30 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>       ?xxxxxxxxxxxxxxxxxxxxxxxxxxxx{{{[}}}'</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p>       ?ti,)xxxxxxxti             l|{{{[}}}'</p>
+<p>       ?ti,)|,    ?ti             l|{{{[}}}'</p>
+<p>       ?ti,)|,ir{{{_}}} ?ti             l|{{{[}}}'</p>
+<p>       ?ti,)|,    ?ti             l|{{{[}}}'</p>
+<p>       ?ti,)|,ir{{{_}}} ?ti  {{{[}}}k<b>WE</b>#####k{{{_}}}l|{{{[}}}'</p>
+<p>       ?ti,)xxxxxxxt|  <b>SPOKE</b>######aY{{{[}}}'</p>
+<p>       ?ti           iq0i    z####aY{{{[}}}'</p>
+<p>       ?ti           iq0i     ;J##aY{{{[}}}'</p>
+<p>       ?ti           iq0i    z{{{*}}})iqaY{{{[}}}'</p>
+<p>       ?ti             {{{[}}}k#####{{{*}}})  l|{{{[}}}'</p>
+<p>       ?ti                        l|{{{[}}}'</p>
+<p>       ?ti             {{{[}}}k#####{{{*}}})  l|{{{[}}}'</p>
+<p>       ?ti         ;J<b>ABOUT</b>#<b>OUR</b>####aY{{{[}}}'</p>
+<p>       ?ti         ;J<b>DAY</b>#<b>AND</b>#<b>SAID</b>#aY{{{[}}}'</p>
+<p>       ?ti         ;J<b>I</b>#<b><3</b>#<b>YOU</b>#####aY{{{[}}}'</p>
+<p>       ?ti         ;J#############aY{{{[}}}'</p>
+<p>       ?ti           iq#########k{{{_}}}l|{{{[}}}'</p>
+<p>       ?ti           iq#########k{{{_}}}l|{{{[}}}'</p>
+<p>       ?ti           iq#########k{{{_}}}l|{{{[}}}'</p>
+<p>       ?ti           iq#########k{{{_}}}l|{{{[}}}'</p>
+<p>       ?ti           iq#########k{{{_}}}l|{{{[}}}'</p>
+<p>       ?xxxxxxxxxxxxxxxxxxxxxxxxxxxx{{{[}}}'</p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

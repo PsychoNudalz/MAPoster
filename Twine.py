@@ -166,6 +166,16 @@ def ConvertTxt2(s):
 # ConvertTxt("OriginalAscii/BM-FiredText.txt","Tom Green is fired for having a bad work attitude")
 # ConvertTxt("OriginalAscii/BM-FiredText.txt","John Smith is fired for lacking in skills")
 # ConvertTxt("OriginalAscii/BM-FiredText.txt","I wish I made the right decision")
+# ConvertTxt("OriginalAscii/BM-VideoCall_Wife.txt","We spoke about our day and said I <3 you")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"Sales are projecting an increase for the next month\"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"But is will be on the decline the month after\"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"Profits jas been on a decline as well\"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"We are losing money\"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"Productive has be on the fall, all our projects are \"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"jibjd adu 'fldlkj.fhbopepo dsifjkhbsd, bjnm fu h.kndf  \"")
+# ConvertTxt("OriginalAscii/Meeting.txt","\"What should we do to fix this boss?\"")
+# ConvertTxt("OriginalAscii/Clock.txt","the work never ends")
+# ConvertTxt("OriginalAscii/Cocktail.txt","Let's relax and forget ")
 
 
 ########HD
@@ -185,7 +195,7 @@ def ConvertTxt2(s):
 # ConvertTxt("DriveToBar","I finished work and drive to a bar")
 # ConvertTxt("Bar_1","I enter the bar and place my order")
 # ConvertTxt("Beer","I drink my 0% beer, it was nice and relaxing")
-# ConvertTxt("Bar_2","I look over and see another person")
+# ConvertTxt("Bar_2","I look over and see the same client")
 # ConvertTxt("Bar_4","Should I order a drink for him?")
 # ConvertTxt("Bar_5","Thank you ...")
 # ConvertTxt("DriveToWork","I Make my way back home to rest... waiting for the time to tick to the next day... and the cycle repeats")
@@ -194,15 +204,6 @@ def ConvertTxt2(s):
 # ConvertTxt("OriginalAscii/Pancake.txt","I compromised and made pancake for them")
 # ConvertTxt("OriginalAscii/Cereal.txt","I denied their request and they had cereal as usual")
 # ConvertTxt("OriginalAscii/Eat.txt","\what should I have with my breakfast")
-# ConvertTxt("OriginalAscii/Meeting.txt","\"Sales are projecting an increase for the next month\"")
-# ConvertTxt("OriginalAscii/Meeting.txt","\"But is will be on the decline the month after\"")
-# ConvertTxt("OriginalAscii/Meeting.txt","\"Profits jas been on a decline as well\"")
-# ConvertTxt("OriginalAscii/Meeting.txt","\"We are losing money\"")
-# ConvertTxt("OriginalAscii/Meeting.txt","\"Productive has be on the fall, all our projects are \"")
-# ConvertTxt("OriginalAscii/Meeting.txt","\"jibjd adu 'fldlkj.fhbopepo dsifjkhbsd, bjnm fu h.kndf  \"")
-# ConvertTxt("OriginalAscii/Meeting.txt","\"What should we do to fix this boss?\"")
-ConvertTxt("OriginalAscii/Clock.txt","the work never ends")
-ConvertTxt("OriginalAscii/Cocktail.txt","Let's relax and forget ")
 
 
 ########JS
@@ -222,5 +223,8 @@ ConvertTxt("OriginalAscii/Cocktail.txt","Let's relax and forget ")
 # ConvertTxt("OriginalAscii/Grave_3.txt","I am sorry son. I wish I have spent more time with you")
 # ConvertTxt("OriginalAscii/JS_NotFired.txt","I watch my friend leaving with his box after the CEO said he is fired")
 # ConvertTxt("OriginalAscii/JS_Fired.txt","I start gathering my things and pack it in a box as I am fired")
-
-
+# ConvertTxt("OriginalAscii/Clock.txt","I've been working none stop for weeks")
+# ConvertTxt("OriginalAscii/Cocktail.txt","I've been working none stop for weeks")
+# ConvertTxt("OriginalAscii/HD-Day.txt","I Went to get a nice hair cut before seeing my kid")
+ConvertTxt("OriginalAscii/HD-Day.txt","I speak with the hair dresser about last night's game, we supported the same team")
+ConvertTxt("OriginalAscii/HD-Day.txt","I try talking with the hair dresser about last night's game, we supported the opposite team")
