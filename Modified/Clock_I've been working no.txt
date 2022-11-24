@@ -9,7 +9,7 @@
 <p>   |r{{{_}}}          x##o{{{[}}}    /8x          {{{_}}}xxtl</p>
 <p>   |r{{{_}}}          x##o{{{[}}}    /8x          {{{_}}}xxtl</p>
 <p>xxxZ<b>I'VE</b>#<b>BEEN</b>#Y'   I#####Y'         /####&Lx</p>
-<p>xxx{{{]}}}.         /8<b>WORKING</b>##Y'x<b>NONE</b>####Y'   ^|x</p>
+<p>xxx{{{]}}}.         /8<b>WORKING</b>##Y'x<b>NON</b>#####Y'   ^|x</p>
 <p>xxx{{{]}}}.         /8<b>STOP</b>#<b>FOR</b>#Y'x<b>WEEKS</b>###Y'   ^|x</p>
 <p>xxx{{{]}}}.              I0######x             ^|x</p>
 <p>xxx{{{]}}}.           x##o{{{[}}}    /8x             ^|x</p>

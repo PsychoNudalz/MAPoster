@@ -1,0 +1,31 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p>                                            </p>
+<p>                                            </p>
+<p>         0p                                 </p>
+<p>         0p                                 </p>
+<p>     |<b>AT</b>#<b>LEAST</b>#|                            </p>
+<p>         0p                                 </p>
+<p>         0p                                 </p>
+<p>         0p                                 </p>
+<p>         0p                                 </p>
+<p>     n<b>NOW</b>#<b>I</b>###Y                             </p>
+<p>   /8n        /8n                           </p>
+<p> |Y| JOHN SMITH |8|           </p>
+<p> |Y|            |8|       n<b>CAN</b>###0i  </p>
+<p> |Y|    1980    |8|      )8n      {{{[}}}kJ^  </p>
+<p> |Y|      -     |8|    |k|JOHN SMITH|8|    </p>
+<p> |Y|    2022    |8|    |k|  JUNIOR  |8|    </p>
+<p> |Y|            |8|    |k|          |8|    </p>
+<p> |Y|   SUICIDE  |8|    |k|   2012   |8|    </p>
+<p> |o<b>SPEND</b>#<b>TIME</b>####8|    |k|     -    |8|    </p>
+<p> |o<b>WITH</b>#<b>YOU</b>#<b>ON</b>###8|    |k|   2022   |8|    </p>
+<p> <b>THE</b>#<b>OTHER</b>#<b>SIDE</b>####    ################    </p>
+<p>                                            </p>
+<p>                                            </p>
+<p>                                            </p>
+<p>                                            </p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>

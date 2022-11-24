@@ -223,8 +223,14 @@ def ConvertTxt2(s):
 # ConvertTxt("OriginalAscii/Grave_3.txt","I am sorry son. I wish I have spent more time with you")
 # ConvertTxt("OriginalAscii/JS_NotFired.txt","I watch my friend leaving with his box after the CEO said he is fired")
 # ConvertTxt("OriginalAscii/JS_Fired.txt","I start gathering my things and pack it in a box as I am fired")
-# ConvertTxt("OriginalAscii/Clock.txt","I've been working none stop for weeks")
+ConvertTxt("OriginalAscii/Clock.txt","I've been working non stop for weeks")
 # ConvertTxt("OriginalAscii/Cocktail.txt","I've been working none stop for weeks")
 # ConvertTxt("OriginalAscii/HD-Day.txt","I Went to get a nice hair cut before seeing my kid")
-ConvertTxt("OriginalAscii/HD-Day.txt","I speak with the hair dresser about last night's game, we supported the same team")
-ConvertTxt("OriginalAscii/HD-Day.txt","I try talking with the hair dresser about last night's game, we supported the opposite team")
+# ConvertTxt("OriginalAscii/HD-Day.txt","I speak with the hair dresser about last night's game, we supported the same team")
+# ConvertTxt("OriginalAscii/HD-Day.txt","I try talking with the hair dresser about last night's game, we supported the opposite team")
+# ConvertTxt("OriginalAscii/GraveDead.txt","At least now I can spend time with you on the other side")
+# ConvertTxt("OriginalAscii/Grave_1.txt","We sat at home and watched TV together")
+# ConvertTxt("OriginalAscii/Grave_1.txt","\"Hey kid, you wanna grab some ice cream with your old man\"")
+
+
+

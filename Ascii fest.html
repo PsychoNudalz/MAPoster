@@ -865,8 +865,8 @@ TO------WAKE------UP
 &lt;p&gt;&lt;/p&gt;
 
 &lt;/div&gt;
-   (if: $fired is 1)[(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}}-&gt;JS-Fired]]]   
-   (else:)[(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}}-&gt;JS-NotFired]]]
+   (if: $fired is 1)[(align: &quot;===&gt;&lt;=&quot;)[[{{{Do I have to?}}}-&gt;JS-Fired]]]   
+   (else:)[(align: &quot;===&gt;&lt;=&quot;)[[{{{Do I have to?}}}-&gt;JS-NotFired]]]
 </tw-passagedata><tw-passagedata pid="30" name="JS-Dinner" tags="" position="2200,2000" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;                            /%x&lt;/p&gt;
@@ -915,7 +915,9 @@ TO------WAKE------UP
    (if: $boughtDrinks is 1)[(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}}-&gt;JS-Bar-3]]]   
    (else:)[(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}}-&gt;JS-Bar-2]]]</tw-passagedata><tw-passagedata pid="32" name="Start" tags="" position="350,1200" size="100,100"> &quot;You become what you choose&quot;
  
- This game involves you playing as different fathers living their daily lives.  You choices may impact the story.
+ This game involves you playing as different fathers living their daily lives.  Your choices will impact the story.
+ 
+&lt;b&gt;Content warning: this game covers death and suicide&lt;/b&gt;
    (align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;Timer 1]] 
 
 (set: $fired to 0)
@@ -1026,7 +1028,7 @@ TO------WAKE------UP
 &lt;/div&gt;
 (set: $temp to $love &gt;= 4 and $despair&lt;1)
    (align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-Grave-1]]
-(if: $temp)[(align: &quot;===&gt;&lt;=&quot;)[[To Home -&gt;JS-Grave-Happy]]]
+(if: $temp)[(align: &quot;===&gt;&lt;=&quot;)[[To Home -&gt;JS-Home]]]
    </tw-passagedata><tw-passagedata pid="37" name="JS-Grave-1" tags="" position="2900,2100" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;                           {{{_}}}xxxx(:&lt;/p&gt;
@@ -1150,8 +1152,15 @@ TO------WAKE------UP
 &lt;p&gt;&lt;/p&gt;
 
 &lt;/div&gt;
-(if: $despair &gt;= 4)(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-Grave-5]]
-(else:)(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;END]]</tw-passagedata><tw-passagedata pid="41" name="BM-Breakfast-1" tags="" position="1200,1000" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
+{
+ (live: 5s)[
+    (stop:)
+    THE END
+    (if: $despair &gt;= 4)[(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-Grave-5]]]
+	(else:)+(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;END]]
+ ]
+}
+</tw-passagedata><tw-passagedata pid="41" name="BM-Breakfast-1" tags="" position="1200,1000" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;                            /%x&lt;/p&gt;
 &lt;p&gt; {{{[}}}o&lt;b&gt;I&lt;/b&gt;#&lt;b&gt;PREPARE&lt;/b&gt;####c         }{{{*}}}###%/      (W&lt;b&gt;MY&lt;/b&gt;#&lt;b&gt;BREAKFAST&lt;/b&gt;####o{{{[}}}&lt;/p&gt;
@@ -2358,7 +2367,7 @@ TO------WAKE------UP
 &lt;p&gt;&lt;/p&gt;
 
 &lt;/div&gt;
-(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-Lunch]]</tw-passagedata><tw-passagedata pid="85" name="JS-OT" tags="" position="1200,1900" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
+(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-Lunch]]</tw-passagedata><tw-passagedata pid="85" name="JS-OT" tags="" position="1200,1900" size="100,100">  &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;                {{{_}}}xxxxxxxxxx{{{_}}}&lt;/p&gt;
 &lt;p&gt;          :(xxxx{{{_}}}          {{{_}}}xxxx(:&lt;/p&gt;
 &lt;p&gt;          :(xxxx{{{_}}}          {{{_}}}xxxx(:&lt;/p&gt;
@@ -2369,7 +2378,7 @@ TO------WAKE------UP
 &lt;p&gt;   |r{{{_}}}          x##o{{{[}}}    /8x          {{{_}}}xxtl&lt;/p&gt;
 &lt;p&gt;   |r{{{_}}}          x##o{{{[}}}    /8x          {{{_}}}xxtl&lt;/p&gt;
 &lt;p&gt;xxxZ&lt;b&gt;I&#39;VE&lt;/b&gt;#&lt;b&gt;BEEN&lt;/b&gt;#Y&#39;   I#####Y&#39;         /####&amp;Lx&lt;/p&gt;
-&lt;p&gt;xxx{{{]}}}.         /8&lt;b&gt;WORKING&lt;/b&gt;##Y&#39;x&lt;b&gt;NONE&lt;/b&gt;####Y&#39;   ^|x&lt;/p&gt;
+&lt;p&gt;xxx{{{]}}}.         /8&lt;b&gt;WORKING&lt;/b&gt;##Y&#39;x&lt;b&gt;NON&lt;/b&gt;#####Y&#39;   ^|x&lt;/p&gt;
 &lt;p&gt;xxx{{{]}}}.         /8&lt;b&gt;STOP&lt;/b&gt;#&lt;b&gt;FOR&lt;/b&gt;#Y&#39;x&lt;b&gt;WEEKS&lt;/b&gt;###Y&#39;   ^|x&lt;/p&gt;
 &lt;p&gt;xxx{{{]}}}.              I0######x             ^|x&lt;/p&gt;
 &lt;p&gt;xxx{{{]}}}.           x##o{{{[}}}    /8x             ^|x&lt;/p&gt;
@@ -2388,7 +2397,6 @@ TO------WAKE------UP
 &lt;p&gt;&lt;/p&gt;
 
 &lt;/div&gt;
-
 (align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-Lunch]]</tw-passagedata><tw-passagedata pid="86" name="JS-HairCut" tags="" position="1700,2000" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -2433,7 +2441,7 @@ TO------WAKE------UP
 &lt;p&gt;&lt;/p&gt;
 
 &lt;/div&gt;
-(if: $wrongTeam is 1)[(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-HairCut-Correct]]]
+(if: $wrongTeam is 0)[(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-HairCut-Correct]]]
 (else:)[(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-HairCut-Wrong]]]</tw-passagedata><tw-passagedata pid="87" name="JS-HairCut-Correct" tags="" position="1800,1900" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -2524,9 +2532,116 @@ TO------WAKE------UP
 
 &lt;/div&gt;
    [(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}}-&gt;JS-Dinner]]]
-</tw-passagedata><tw-passagedata pid="89" name="JS-Grave-5" tags="" position="3300,2200" size="100,100"></tw-passagedata><tw-passagedata pid="90" name="END" tags="" position="3300,1900" size="100,100">This story ended.. but perhaps you can change his fate?
+</tw-passagedata><tw-passagedata pid="89" name="JS-Grave-5" tags="" position="3300,2200" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
+&lt;p&gt;                                            &lt;/p&gt;
+&lt;p&gt;                                            &lt;/p&gt;
+&lt;p&gt;         0p                                 &lt;/p&gt;
+&lt;p&gt;         0p                                 &lt;/p&gt;
+&lt;p&gt;     |&lt;b&gt;AT&lt;/b&gt;#&lt;b&gt;LEAST&lt;/b&gt;#|                            &lt;/p&gt;
+&lt;p&gt;         0p                                 &lt;/p&gt;
+&lt;p&gt;         0p                                 &lt;/p&gt;
+&lt;p&gt;         0p                                 &lt;/p&gt;
+&lt;p&gt;         0p                                 &lt;/p&gt;
+&lt;p&gt;     n&lt;b&gt;NOW&lt;/b&gt;#&lt;b&gt;I&lt;/b&gt;###Y                             &lt;/p&gt;
+&lt;p&gt;   /8n        /8n                           &lt;/p&gt;
+&lt;p&gt; |Y| JOHN SMITH |8|           &lt;/p&gt;
+&lt;p&gt; |Y|            |8|       n&lt;b&gt;CAN&lt;/b&gt;###0i  &lt;/p&gt;
+&lt;p&gt; |Y|    1980    |8|      )8n      {{{[}}}kJ^  &lt;/p&gt;
+&lt;p&gt; |Y|      -     |8|    |k|JOHN SMITH|8|    &lt;/p&gt;
+&lt;p&gt; |Y|    2022    |8|    |k|  JUNIOR  |8|    &lt;/p&gt;
+&lt;p&gt; |Y|            |8|    |k|          |8|    &lt;/p&gt;
+&lt;p&gt; |Y|   SUICIDE  |8|    |k|   2012   |8|    &lt;/p&gt;
+&lt;p&gt; |o&lt;b&gt;SPEND&lt;/b&gt;#&lt;b&gt;TIME&lt;/b&gt;####8|    |k|     -    |8|    &lt;/p&gt;
+&lt;p&gt; |o&lt;b&gt;WITH&lt;/b&gt;#&lt;b&gt;YOU&lt;/b&gt;#&lt;b&gt;ON&lt;/b&gt;###8|    |k|   2022   |8|    &lt;/p&gt;
+&lt;p&gt; &lt;b&gt;THE&lt;/b&gt;#&lt;b&gt;OTHER&lt;/b&gt;#&lt;b&gt;SIDE&lt;/b&gt;####    ################    &lt;/p&gt;
+&lt;p&gt;                                            &lt;/p&gt;
+&lt;p&gt;                                            &lt;/p&gt;
+&lt;p&gt;                                            &lt;/p&gt;
+&lt;p&gt;                                            &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
-(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;Start]]</tw-passagedata><tw-passagedata pid="91" name="JS-Grave-Happy" tags="" position="2800,2225" size="100,100"></tw-passagedata></tw-storydata>
+&lt;/div&gt;
+{
+ (live: 5s)[
+    (stop:)
+    REUNITED ENDING
+	(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;END]]
+    
+ ]
+}
+</tw-passagedata><tw-passagedata pid="90" name="END" tags="" position="3300,1900" size="100,100">This story ended.. but perhaps you can change his fate?
+
+(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;Start]]</tw-passagedata><tw-passagedata pid="91" name="JS-Home" tags="" position="2800,2225" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;                           {{{_}}}xxxx(:&lt;/p&gt;
+&lt;p&gt;                         |r{{{_}}}    :(|^&lt;/p&gt;
+&lt;p&gt;                         |r{{{_}}}    :(|^&lt;/p&gt;
+&lt;p&gt;                         |r{{{_}}}    :(|^&lt;/p&gt;
+&lt;p&gt;     {{{_}}}xxxx(:               {{{\}}}r|^|(/&lt;/p&gt;
+&lt;p&gt;     {{{_}}}xxtl                  r|^|(&lt;/p&gt;
+&lt;p&gt;     {{{_}}}r|                      t&lt;/p&gt;
+&lt;p&gt;     {{{_}}}xxxx(:           ltxx{{{\}}}  t&lt;/p&gt;
+&lt;p&gt;                       ltxx{{{\}}}  t&lt;/p&gt;
+&lt;p&gt; {{{[}}}o&lt;b&gt;WE&lt;/b&gt;#&lt;b&gt;SAT&lt;/b&gt;#&lt;b&gt;AT&lt;/b&gt;#&lt;b&gt;HOME&lt;/b&gt;#&lt;b&gt;AND&lt;/b&gt;#&lt;b&gt;WATCHED&lt;/b&gt;###p~&lt;/p&gt;
+&lt;p&gt;   |rxxxxxxx|^       :(xxxxxr|&lt;/p&gt;
+&lt;p&gt; {{{[}}}o&lt;b&gt;TV&lt;/b&gt;#&lt;b&gt;TOGETHER&lt;/b&gt;##################p~&lt;/p&gt;
+&lt;p&gt;   |rxxxxxxx|^       :(xxxxxr|&lt;/p&gt;
+&lt;p&gt; {{{[}}}o#############################p~&lt;/p&gt;
+&lt;p&gt;     {{{_}}}xxxx(:           ltxx{{{_}}}&lt;/p&gt;
+&lt;p&gt; {{{[}}}o#############################p~&lt;/p&gt;
+&lt;p&gt;   /8x          x8/         &#39;Yo{{{[}}}&lt;/p&gt;
+&lt;p&gt;   /8x          x8/         &#39;Yo{{{[}}}&lt;/p&gt;
+&lt;p&gt;   /8x          x8/         &#39;Yo{{{[}}}&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+   (align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-Home-2]]</tw-passagedata><tw-passagedata pid="92" name="Untitled Passage" tags="" position="3725,2050" size="100,100"></tw-passagedata><tw-passagedata pid="93" name="JS-Home-2" tags="" position="2800,2350" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;                           {{{_}}}xxxx(:&lt;/p&gt;
+&lt;p&gt;                         |r{{{_}}}    :(|^&lt;/p&gt;
+&lt;p&gt;                         |r{{{_}}}    :(|^&lt;/p&gt;
+&lt;p&gt;                         |r{{{_}}}    :(|^&lt;/p&gt;
+&lt;p&gt;     {{{_}}}xxxx(:               {{{\}}}r|^|(/&lt;/p&gt;
+&lt;p&gt;     {{{_}}}xxtl                  r|^|(&lt;/p&gt;
+&lt;p&gt;     {{{_}}}r|                      t&lt;/p&gt;
+&lt;p&gt;     {{{_}}}xxxx(:           ltxx{{{\}}}  t&lt;/p&gt;
+&lt;p&gt;                       ltxx{{{\}}}  t&lt;/p&gt;
+&lt;p&gt; {{{[}}}o&lt;b&gt;&quot;HEY&lt;/b&gt;#&lt;b&gt;KID,&lt;/b&gt;#&lt;b&gt;YOU&lt;/b&gt;#&lt;b&gt;WANNA&lt;/b&gt;#&lt;b&gt;GRAB&lt;/b&gt;#####p~&lt;/p&gt;
+&lt;p&gt;   |rxxxxxxx|^       :(xxxxxr|&lt;/p&gt;
+&lt;p&gt; {{{[}}}o&lt;b&gt;SOME&lt;/b&gt;#&lt;b&gt;ICE&lt;/b&gt;#&lt;b&gt;CREAM&lt;/b&gt;#&lt;b&gt;WITH&lt;/b&gt;#&lt;b&gt;YOUR&lt;/b&gt;#&lt;b&gt;OLD&lt;/b&gt;#p~&lt;/p&gt;
+&lt;p&gt;   |rxxxxxxx|^       :(xxxxxr|&lt;/p&gt;
+&lt;p&gt; {{{[}}}o&lt;b&gt;MAN&quot;&lt;/b&gt;#########################p~&lt;/p&gt;
+&lt;p&gt;     {{{_}}}xxxx(:           ltxx{{{_}}}&lt;/p&gt;
+&lt;p&gt; {{{[}}}o#############################p~&lt;/p&gt;
+&lt;p&gt;   /8x          x8/         &#39;Yo{{{[}}}&lt;/p&gt;
+&lt;p&gt;   /8x          x8/         &#39;Yo{{{[}}}&lt;/p&gt;
+&lt;p&gt;   /8x          x8/         &#39;Yo{{{[}}}&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+{
+ (live: 5s)[
+    (stop:)
+    ICE CREAM ENDING
+	(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;END]]
+    
+ ]
+}</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

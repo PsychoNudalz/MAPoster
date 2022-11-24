@@ -1,0 +1,30 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p>                           {{{_}}}xxxx(:</p>
+<p>                         |r{{{_}}}    :(|^</p>
+<p>                         |r{{{_}}}    :(|^</p>
+<p>                         |r{{{_}}}    :(|^</p>
+<p>     {{{_}}}xxxx(:               {{{\}}}r|^|(/</p>
+<p>     {{{_}}}xxtl                  r|^|(</p>
+<p>     {{{_}}}r|                      t</p>
+<p>     {{{_}}}xxxx(:           ltxx{{{\}}}  t</p>
+<p>                       ltxx{{{\}}}  t</p>
+<p> {{{[}}}o<b>"HEY</b>#<b>KID,</b>#<b>YOU</b>#<b>WANNA</b>#<b>GRAB</b>#####p~</p>
+<p>   |rxxxxxxx|^       :(xxxxxr|</p>
+<p> {{{[}}}o<b>SOME</b>#<b>ICE</b>#<b>CREAM</b>#<b>WITH</b>#<b>YOUR</b>#<b>OLD</b>#p~</p>
+<p>   |rxxxxxxx|^       :(xxxxxr|</p>
+<p> {{{[}}}o<b>MAN"</b>#########################p~</p>
+<p>     {{{_}}}xxxx(:           ltxx{{{_}}}</p>
+<p> {{{[}}}o#############################p~</p>
+<p>   /8x          x8/         'Yo{{{[}}}</p>
+<p>   /8x          x8/         'Yo{{{[}}}</p>
+<p>   /8x          x8/         'Yo{{{[}}}</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>
