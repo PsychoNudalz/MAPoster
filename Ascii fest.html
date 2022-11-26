@@ -88,8 +88,7 @@ function ToTwine(s, id) {
     document.getElementById(id).innerHTML = output;
     return output;
 }
-</script><tw-passagedata pid="1" name="Timer 1" tags="" position="525,1175" size="100,100">It is time to wake up
-
+</script><tw-passagedata pid="1" name="Timer 1" tags="" position="525,1175" size="100,100">
 &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 
 
@@ -102,9 +101,9 @@ TO------WAKE------UP
 
 &lt;/div&gt;
 
-&gt;[[Wake Up -&gt; BM-WakeUp]]
+[[Wake Up -&gt; BM-WakeUp]]
 
-&gt;[[Keep Sleeping]]
+[[Keep Sleeping]]
 
 </tw-passagedata><tw-passagedata pid="2" name="Keep Sleeping" tags="" position="500,1500" size="100,100">&lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 
@@ -118,9 +117,9 @@ TO------WAKE------UP
 
 &lt;/div&gt;
 
-&gt;[[Wake Up-&gt;HD-WakeUp]]
+[[Wake Up-&gt;HD-WakeUp]]
 
-&gt;[[Keep Sleeping Again]]
+[[Keep Sleeping Again]]
 </tw-passagedata><tw-passagedata pid="3" name="Keep Sleeping Again" tags="" position="500,1800" size="100,100">&lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 
 
@@ -135,7 +134,7 @@ TO------WAKE------UP
 
 [[Keep Sleeping -&gt;Timer 1]] 
 
-(if:$BMEnding+$HDEnding&gt;=1)[[Does it matter -&gt;JS-WakeUp]]
+(if:$BMEnding+$HDEnding&gt;=2)[[Does it matter -&gt;JS-WakeUp]]
 </tw-passagedata><tw-passagedata pid="4" name=" BM-WakeUp" tags="" position="725,975" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;          {{{]}}}a&lt;b&gt;I&lt;/b&gt;####a{{{]}}}&lt;/p&gt;
 &lt;p&gt;        |wZl     lZw|&lt;/p&gt;
@@ -274,7 +273,7 @@ TO------WAKE------UP
 
 &lt;/div&gt;
 [[Cheese bread sticks with a cup of Dirty French -&gt; HD-Lunch-1]]
-[[Goose With Red Cabbage And Dumpling (CEO)-&gt; BM-LunchTrans]]
+(if: false)[[Goose With Red Cabbage And Dumpling (CEO)-&gt; BM-LunchTrans]]
 </tw-passagedata><tw-passagedata pid="10" name=" HD-Lunch-1" tags="" position="1700,1500" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;                                                                   &lt;/p&gt;
 &lt;p&gt;                                                                   &lt;/p&gt;
@@ -363,7 +362,7 @@ TO------WAKE------UP
 
 &lt;/div&gt;
 [[2 Cups Of Instant Coffees-&gt;HD-Breakfast-2]]
-[[Cup Of Decaff Coffee (CEO)-&gt;BM-BreakfastTran]]</tw-passagedata><tw-passagedata pid="13" name="HD-Breakfast-2" tags="" position="1300,1500" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
+(if: false)[[Cup Of Decaff Coffee (CEO)-&gt;BM-BreakfastTran]]</tw-passagedata><tw-passagedata pid="13" name="HD-Breakfast-2" tags="" position="1300,1500" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;        I0&lt;b&gt;I&lt;/b&gt;#&lt;b&gt;MAKE&lt;/b&gt;#&lt;b&gt;AND&lt;/b&gt;#&lt;b&gt;DRINK&lt;/b&gt;#&lt;b&gt;MY&lt;/b&gt;#&lt;b&gt;2&lt;/b&gt;####0I&lt;/p&gt;
@@ -444,26 +443,25 @@ TO------WAKE------UP
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;                                           ,C######z.&lt;/p&gt;
-&lt;p&gt;       /&lt;b&gt;LAST&lt;/b&gt;#&lt;b&gt;NIGHT&lt;/b&gt;#&lt;b&gt;GAME&lt;/b&gt;#&lt;b&gt;WAS&lt;/b&gt;###{{{\}}}                    tBx&lt;/p&gt;
-&lt;p&gt;      |&lt;b&gt;A&lt;/b&gt;#&lt;b&gt;CLOSE&lt;/b&gt;#&lt;b&gt;ONE!&lt;/b&gt;############|                   tBx&lt;/p&gt;
-&lt;p&gt;       {{{\}}}######################/                    tBx&lt;/p&gt;
+&lt;p&gt;                                                   tBx&lt;/p&gt;
+&lt;p&gt;                                                   tBx&lt;/p&gt;
+&lt;p&gt;                                                   tBx&lt;/p&gt;
 &lt;p&gt;                                             iZ##L:tBx&lt;/p&gt;
 &lt;p&gt;                                           ,Ck?  |###x&lt;/p&gt;
 &lt;p&gt;                                           ,C########x&lt;/p&gt;
 &lt;p&gt;                f@#####q|                  ,C######z.&lt;/p&gt;
 &lt;p&gt;              1M#########Q;&lt;/p&gt;
 &lt;p&gt;          |wZi1M#########Q;/%x             ,C########x&lt;/p&gt;
-&lt;p&gt;        :L##Zi1M#########Q;/%#%/          c80#########q8|&lt;/p&gt;
-&lt;p&gt;        :Lb{{{_}}}  1M#########Q;  x%/          c80#########q8|&lt;/p&gt;
-&lt;p&gt;        :Lb{{{_}}}  1M#########Q;  x%/          c80#########q8|&lt;/p&gt;
-&lt;p&gt;        :Lb{{{_}}}    f@#####q|    x%/          c80#########q8|&lt;/p&gt;
-&lt;p&gt;        :Lb{{{_}}}      v##a{{{]}}}      x%/          c80#########q8|&lt;/p&gt;
-&lt;p&gt;      .z##b ?k##c      +d##X x##{{{*}}}|        c80#########q8|&lt;/p&gt;
-&lt;p&gt;      .z#| woY############xZB |X{{{*}}}|        c80#########q8|&lt;/p&gt;
-&lt;p&gt;      .z#| woYxxCHELSEA####3B |X{{{*}}}|         ,CMCxxxxZ@#8|&lt;/p&gt;
-&lt;p&gt;      .z#| woY############zZB |X{{{*}}}|         ,C########x&lt;/p&gt;
-&lt;p&gt;      .z#| woY############zZB |X{{{*}}}|         ,C########x&lt;/p&gt;
-&lt;p&gt;      .z#| woY############zZB |X{{{*}}}|         ,C########x&lt;/p&gt;
+&lt;p&gt;        :L##Zi1M#########Q;/%#%/        c80###########q8|&lt;/p&gt;
+&lt;p&gt;        :Lb{{{_}}}  1M#########Q;  x%/        c80###########q8|&lt;/p&gt;
+&lt;p&gt;        :Lb{{{_}}}  1M#########Q;  x%/        c80###########q8|&lt;/p&gt;
+&lt;p&gt;        :Lb{{{_}}}    f@#####q|    x%/        c80###########q8|&lt;/p&gt;
+&lt;p&gt;        :Lb{{{_}}}      v##a{{{]}}}      x%/        c80###########q8|&lt;/p&gt;
+&lt;p&gt;      .z##b ?k##c      +d##X x##{{{*}}}|      c80###########q8|&lt;/p&gt;
+&lt;p&gt;      .z#| woY&lt;b&gt;&quot;LAST&lt;/b&gt;#&lt;b&gt;NIGHT&lt;/b&gt;#xZB |X{{{*}}}|      c80###########q8|&lt;/p&gt;
+&lt;p&gt;      .z#| woYxxxCHELSEAxxx3B |X{{{*}}}|         ,CMCxxxxZ@#8|&lt;/p&gt;
+&lt;p&gt;      .z#| woY&lt;b&gt;GAME&lt;/b&gt;#&lt;b&gt;WAS&lt;/b&gt;#&lt;b&gt;A&lt;/b&gt;##zZB |X{{{*}}}|         ,C########x&lt;/p&gt;
+&lt;p&gt;      .z#| woY&lt;b&gt;CLOSE&lt;/b&gt;#&lt;b&gt;ONE!&quot;&lt;/b&gt;#zZB |X{{{*}}}|         ,C########x&lt;/p&gt;
 &lt;p&gt;      .z#| w####pnxxxxxJ##### |X{{{*}}}|         ,C##w |###x&lt;/p&gt;
 &lt;p&gt;      .z########################{{{*}}}|         ,C##w |###x&lt;/p&gt;
 &lt;p&gt;      .z##b   1M#########Q;   ##{{{*}}}|         ,C##w |###x&lt;/p&gt;
@@ -474,6 +472,11 @@ TO------WAKE------UP
 &lt;p&gt;        :Lb{{{_}}}  1M##j  lO##Q;  x%/        j#############x&lt;/p&gt;
 &lt;p&gt;        :Lb{{{_}}}?k####j  lO####X&#39;x%/        j#############x|&lt;/p&gt;
 &lt;p&gt; #########################################################&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -615,7 +618,7 @@ TO------WAKE------UP
 &lt;/div&gt;
 
 [[A bottle of alcoholic free beer-&gt;HD-Dinner]]
-[[Wagyu steak (CEO)-&gt;BM-DinnerTrans]]
+(if: false)[[Wagyu steak (CEO)-&gt;BM-DinnerTrans]]
 </tw-passagedata><tw-passagedata pid="20" name="HD-Dinner" tags="" position="2400,1500" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;                         l|xxxxxti&lt;/p&gt;
@@ -1156,7 +1159,7 @@ TO------WAKE------UP
  (live: 5s)[
     (stop:)
     THE END
-    (if: $despair &gt;= 4)[(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-Grave-5]]]
+    (if: $despair &gt;= 3)[(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;JS-Grave-5]]]
 	(else:)+(align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}} -&gt;END]]
  ]
 }
@@ -1183,7 +1186,7 @@ TO------WAKE------UP
 
 &lt;/div&gt;
 [[Cup Of Decaff Coffee-&gt;BM-Breakfast-2]]
-[[2 Cups Of Instant Coffees (Hair Dresser)-&gt;HD-BreakfastTran]]
+(if: false)[[2 Cups Of Instant Coffees (Hair Dresser)-&gt;HD-BreakfastTran]]
 </tw-passagedata><tw-passagedata pid="42" name="BM-BreakfastTran" tags="" position="1200,1200" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;          {{{]}}}a&lt;b&gt;I&lt;/b&gt;#&lt;b&gt;AM&lt;/b&gt;#a{{{]}}}&lt;/p&gt;
 &lt;p&gt;        |wZl     lZw|&lt;/p&gt;
@@ -1348,7 +1351,7 @@ TO------WAKE------UP
 
 &lt;/div&gt;
 [[Goose With Red Cabbage And Dumpling -&gt;BM-Lunch-1]]
-[[Cheese bread sticks with a cup of Dirty French (Hair Dresser)-&gt; HD-LunchTrans]]
+(if: false)[[Cheese bread sticks with a cup of Dirty French (Hair Dresser)-&gt; HD-LunchTrans]]
 </tw-passagedata><tw-passagedata pid="49" name=" HD-LunchTrans" tags="" position="1725,1225" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;          {{{_}}}k&lt;b&gt;I&lt;/b&gt;#&lt;b&gt;AM&lt;/b&gt;#{{{*}}}{{{[}}}          &lt;/p&gt;
 &lt;p&gt;        i0qi     ;0q{{{_}}}        &lt;/p&gt;
@@ -1649,7 +1652,7 @@ TO------WAKE------UP
 
 &lt;/div&gt;
 [[Wagyu steak-&gt;BM-Dinner]]
-[[A bottle of alcoholic free beer (Hair Dresser)-&gt;HD-DinnerTrans]]
+(if: false)[[A bottle of alcoholic free beer (Hair Dresser)-&gt;HD-DinnerTrans]]
 </tw-passagedata><tw-passagedata pid="60" name="BM-Dinner" tags="" position="2400,1000" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;                {{{_}}}xxxxxxxxxx{{{_}}}&lt;/p&gt;
 &lt;p&gt;            l|xx{{{_}}}          {{{_}}}xxti&lt;/p&gt;
@@ -1768,8 +1771,7 @@ TO------WAKE------UP
 [[How was your day?-&gt;BM-VideoCall-Son-1]]
 [[May I speak to your mother?-&gt;BM-VideoCall-Mother]]
 [[Have a good night you two.-&gt;BM-VideoCall-End]]
-</tw-passagedata><tw-passagedata pid="64" name="BM-VideoCall-Son-1" tags="" position="2725,775" size="100,100"> (set: $love to $love+1)
- &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
+</tw-passagedata><tw-passagedata pid="64" name="BM-VideoCall-Son-1" tags="" position="2725,775" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;      .{{{]}}}xxxxxxxxxxxxxxxxxxxxxxxxxxxx{{{]}}}.&lt;/p&gt;
 &lt;p&gt;      .{{{]}}}tl                        lt{{{]}}}.&lt;/p&gt;
 &lt;p&gt;      .{{{]}}}tl:(xxxxxxxtl             lt{{{]}}}.&lt;/p&gt;
@@ -1802,7 +1804,9 @@ TO------WAKE------UP
 
 [[How was school?-&gt;BM-VideoCall-Son-2]]
 [[May I speak to your mother?-&gt;BM-VideoCall-Mother]]
-[[Have a good night you two.-&gt;BM-VideoCall-End]]</tw-passagedata><tw-passagedata pid="65" name="BM-VideoCall-End" tags="" position="3400,900" size="100,100"> (set: $BMEnding to 1)
+[[Have a good night you two.-&gt;BM-VideoCall-End]]
+ (set: $love to $love+1)
+</tw-passagedata><tw-passagedata pid="65" name="BM-VideoCall-End" tags="" position="3400,900" size="100,100"> (set: $BMEnding to 1)
 
 &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;      .{{{]}}}xxxxxxx&lt;b&gt;I&lt;/b&gt;#&lt;b&gt;ENDED&lt;/b&gt;#&lt;b&gt;THE&lt;/b&gt;#&lt;b&gt;CALL&lt;/b&gt;#&lt;b&gt;AND&lt;/b&gt;#{{{]}}}.&lt;/p&gt;
@@ -1865,8 +1869,7 @@ TO------WAKE------UP
 &lt;p&gt;&lt;/p&gt;
 
 &lt;/div&gt;
-   (align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}}-&gt;BM-VideoCall-Mother-2]]</tw-passagedata><tw-passagedata pid="67" name="BM-VideoCall-Son-2" tags="" position="2825,775" size="100,100">
- &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
+   (align: &quot;===&gt;&lt;=&quot;)[[{{{-&gt;}}}-&gt;BM-VideoCall-Mother-2]]</tw-passagedata><tw-passagedata pid="67" name="BM-VideoCall-Son-2" tags="" position="2825,775" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;      .{{{]}}}xxxxxxxxxxxxxxxxxxxxxxxxxxxx{{{]}}}.&lt;/p&gt;
 &lt;p&gt;      .{{{]}}}tl                        lt{{{]}}}.&lt;/p&gt;
 &lt;p&gt;      .{{{]}}}tl:(xxxxxxxtl             lt{{{]}}}.&lt;/p&gt;
@@ -1898,9 +1901,7 @@ TO------WAKE------UP
 &lt;/div&gt;
 [[What did you learn today?-&gt;BM-VideoCall-Son-3]]
 [[May I speak to your mother?-&gt;BM-VideoCall-Mother]]
-[[Have a good night you two.-&gt;BM-VideoCall-End]]</tw-passagedata><tw-passagedata pid="68" name="BM-VideoCall-Son-3" tags="" position="2925,775" size="100,100"> (set: $love to $love+1)
-
- &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
+[[Have a good night you two.-&gt;BM-VideoCall-End]]</tw-passagedata><tw-passagedata pid="68" name="BM-VideoCall-Son-3" tags="" position="2925,775" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;      .{{{]}}}xxxxxxxxxxxxxxxxxxxxxxxxxxxx{{{]}}}.&lt;/p&gt;
 &lt;p&gt;      .{{{]}}}tl                        lt{{{]}}}.&lt;/p&gt;
 &lt;p&gt;      .{{{]}}}tl:(xxxxxxxtl             lt{{{]}}}.&lt;/p&gt;
@@ -1931,7 +1932,9 @@ TO------WAKE------UP
 
 &lt;/div&gt;
 [[May I speak to your mother?-&gt;BM-VideoCall-Mother]]
-[[Have a good night you two.-&gt;BM-VideoCall-End]]</tw-passagedata><tw-passagedata pid="69" name="HD-I Wake The Kids Up-2" tags="" position="900,1500" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
+[[Have a good night you two.-&gt;BM-VideoCall-End]]
+ (set: $love to $love+1)
+</tw-passagedata><tw-passagedata pid="69" name="HD-I Wake The Kids Up-2" tags="" position="900,1500" size="100,100"> &lt;div id=&quot;AsciiArt&quot; class=&quot;AsciiArt&quot;&gt;
 &lt;p&gt;                                                           &lt;/p&gt;
 &lt;p&gt;                                    {{{]}}}a&lt;b&gt;THEY&lt;/b&gt;#&lt;b&gt;SAID&lt;/b&gt;####z.      &lt;/p&gt;
 &lt;p&gt;                                    {{{]}}}aU&quot;     ,1xxQ8##x     &lt;/p&gt;
@@ -2350,17 +2353,17 @@ TO------WAKE------UP
 &lt;p&gt;                z{{{*}}}{{{[}}}&lt;/p&gt;
 &lt;p&gt;              t#t&lt;/p&gt;
 &lt;p&gt; {{{[}}}{{{*}}}J^       )8z    {{{_}}}q0;&lt;/p&gt;
-&lt;p&gt;   )8&lt;b&gt;I&#39;VE&lt;/b&gt;#&lt;b&gt;BEEN&lt;/b&gt;#####q{{{_}}}&lt;/p&gt;
-&lt;p&gt;     n&lt;b&gt;WORKING&lt;/b&gt;####{{{*}}}{{{[}}}&lt;/p&gt;
-&lt;p&gt;      ^J&lt;b&gt;NONE&lt;/b&gt;####t&lt;/p&gt;
-&lt;p&gt;        i0####z&lt;/p&gt;
-&lt;p&gt;          {{{_}}}kJ^&lt;/p&gt;
-&lt;p&gt;          {{{_}}}kJ^&lt;/p&gt;
-&lt;p&gt;          {{{_}}}kJ^&lt;/p&gt;
-&lt;p&gt;          {{{_}}}kJ^&lt;/p&gt;
-&lt;p&gt;          {{{_}}}kJ^&lt;/p&gt;
-&lt;p&gt;        i0####z&lt;/p&gt;
-&lt;p&gt;     n&lt;b&gt;STOP&lt;/b&gt;#&lt;b&gt;FOR&lt;/b&gt;###{{{*}}}{{{[}}}&lt;/p&gt;
+&lt;p&gt;   )8&lt;b&gt;I&lt;/b&gt;#&lt;b&gt;CAN&lt;/b&gt;#&lt;b&gt;FINALLY&lt;/b&gt;###q{{{_}}}&lt;/p&gt;
+&lt;p&gt;     n&lt;b&gt;RELAX&lt;/b&gt;#&lt;b&gt;AND&lt;/b&gt;####{{{*}}}{{{[}}}&lt;/p&gt;
+&lt;p&gt;      ^J&lt;b&gt;SPEND&lt;/b&gt;#####t&lt;/p&gt;
+&lt;p&gt;        i0&lt;b&gt;SOME&lt;/b&gt;##z&lt;/p&gt;
+&lt;p&gt;           {{{_}}}kJ^&lt;/p&gt;
+&lt;p&gt;           {{{_}}}kJ^&lt;/p&gt;
+&lt;p&gt;           {{{_}}}kJ^&lt;/p&gt;
+&lt;p&gt;           {{{_}}}kJ^&lt;/p&gt;
+&lt;p&gt;           {{{_}}}kJ^&lt;/p&gt;
+&lt;p&gt;        i0&lt;b&gt;TIME&lt;/b&gt;##z&lt;/p&gt;
+&lt;p&gt;     n&lt;b&gt;WITH&lt;/b&gt;#&lt;b&gt;MY&lt;/b&gt;#&lt;b&gt;KID&lt;/b&gt;##{{{*}}}{{{[}}}&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
