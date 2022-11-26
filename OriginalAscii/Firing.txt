@@ -2,27 +2,27 @@
 
 
  [k$$$$$$$$$$$$$$$$$$$$$$$$J^
- [kkvxxxPROFILExxxxxxxxxxLMJ^
- [kkvxxxxxxxxxxxxxxxxxxxxLMJ^
- [kkvxTOMxxxxx{^       ,)LMJ^
- [kkvxGREENSxx{^       ,)LMJ^
- [kkvxxxxxxxxx{^       ,)LMJ^  z$$$$$$$$$$$$$$$$$$$$$$$$*)
- [kkVERYxxxxxx{^       ,)LMJ^  z&0xxPROFILExxxxxxxxxxxxd*)
- [kkvxxxxxxxxx{^       ,)LMJ^  z&0xxxxxxxxxxxxxxxxxxxxxd*)
- [kkvxxxxxxxxx{^       ,)LMJ^  z&0xxJOHNxxxri        _xd*)
- [kkINTELEGETxxxxxxxxxxxxLMJ^  z&0xxSMITHxxri        _xd*)
- [kkvxxxxxxxxxxxxxxxxxxxxLMJ^  z&0xxxxxxxxxri        _xd*)
- [kkvxBUTxxxxxxxxxxxxxxxxLMJ^  z&0xxxxNOTxxri        _xd*)
- [kkvxxxxxxxxxxxLAZYxxxxxLMJ^  z&0THExxxxxxri        _xd*)
- [kkvxxxxxxxxxxxxxxxxxxxxLMJ^  z&0xxxxxxxxxri        _xd*)
- [kkANDxxxxxxxxxxxxxxxxxxLMJ^  z&0xxBRIGHTESTxxxxxxxxxxd*)
- [kkvxxCOMPLETExxxxTASKSxLMJ^  z&0xSLOWxxxxxxxBUTxxxxxxd*)
- [kkvxxxxxxxxxxxxxxxxxxxxLMJ^  z&0xxxxHARDxxxxxWORKINGxd*)
- [kkvxxxxLATExxxxxxxxxxxxLMJ^  z&0xxxxxxxxxxxxxxxxxxxxxd*)
- [kkvxxxxxxxxxxxxxxxxxxxxLMJ^  z&0xOFTENxxxxxxxSTAYxxxxd*)
- [k$$$$$$$$$$$$$$$$$$$$$$$$J^  z&0xxxLATExxxxxxxxFORxxxd*)
-                               z&0xOVERTIMExxxxxxxTOxxxd*)
-                               z&0xCOMPLETExxxxxTASKXxxd*)
+ [kkv0=0PROFILE0=00=00=00LMJ^
+ [kkv0=00=00=00=00=00=000LMJ^
+ [kkv0TOM0=000{^       ,)LMJ^`
+ [kkv0GREENS00{^       ,)LMJ^
+ [kkv0=00=00=0{^       ,)LMJ^  z$$$$$$$$$$$$$$$$$$$$$$$$*)
+ [kkVERY0=00=0{^       ,)LMJ^  z&000PROFILE0=00=00=00=0d*)
+ [kkv0=00=00=0{^       ,)LMJ^  z&00=00=00=00=00=00=00=0d*)
+ [kkv0=00=00=0{^       ,)LMJ^  z&000JOHN0=0ri        00d*)
+ [kk=INTELLIGENT==00=00=0LMJ^  z&000SMITH00ri        00d*)
+ [kkv0=00=00=00=00=00=000LMJ^  z&00=00=00=0ri        00d*)
+ [kkv0BUT0=00=00=00=00=00LMJ^  z&00=00NOT00ri        00d*)
+ [kkv0=00=00=000LAZY0=000LMJ^  z&0THE0=00=0ri        00d*)
+ [kkv0=00=00=00=00=00=000LMJ^  z&00=00=00=0ri        00d*)
+ [kkAND0=00=00=00=00=00=0LMJ^  z&000BRIGHTEST0=00=00=00d*)
+ [kkv00COMPLETE0=00TASKS0LMJ^  z&00SLOW0=00=00BUT0=00=0d*)
+ [kkv0=00=00=00=00=00=000LMJ^  z&00=00HARD0=000WORKING0d*)
+ [kkv0=00LATE0=00=00=00=0LMJ^  z&00=00=00=00=00=00=00=0d*)
+ [kkv0=00=00=00=00=00=000LMJ^  z&00OFTEN0=00=00STAY0=00d*)
+ [k$$$$$$$$$$$$$$$$$$$$$$$$J^  z&00=0LATE0=00=000FOR0=0d*)
+                               z&00OVERTIME0=00=00TO0=0d*)
+                               z&00COMPLETE0=000TASK0=0d*)
                                z$$$$$$$$$$$$$$$$$$$$$$$$*)
 
 

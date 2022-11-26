@@ -1,0 +1,22 @@
+ <div id="AsciiArt" class="AsciiArt">
+<p></p>
+<p>                z{{{*}}}{{{[}}}</p>
+<p>              t#t</p>
+<p> {{{[}}}{{{*}}}J^       )8z    {{{_}}}q0;</p>
+<p>   )8<b>I</b>#<b>CAN</b>#<b>FINALLY</b>###q{{{_}}}</p>
+<p>     n<b>RELAX</b>#<b>AND</b>####{{{*}}}{{{[}}}</p>
+<p>      ^J<b>SPEND</b>#####t</p>
+<p>        i0<b>SOME</b>##z</p>
+<p>           {{{_}}}kJ^</p>
+<p>           {{{_}}}kJ^</p>
+<p>           {{{_}}}kJ^</p>
+<p>           {{{_}}}kJ^</p>
+<p>           {{{_}}}kJ^</p>
+<p>        i0<b>TIME</b>##z</p>
+<p>     n<b>WITH</b>#<b>MY</b>#<b>KID</b>##{{{*}}}{{{[}}}</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>
