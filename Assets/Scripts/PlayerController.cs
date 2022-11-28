@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,8 +17,15 @@ public class PlayerController : EntityObject
     
     Rigidbody2D rb;
 
+    [Header("Components")]
+    private LifeSystem lifeSystem;
 
-    // Start is called before the first frame update
+
+    private void Awake()
+    {
+        lifeSystem = GetComponent<LifeSystem>();
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,5 +37,10 @@ public class PlayerController : EntityObject
     {
         speedCurrent = rb.velocity.magnitude;
 
+    }
+
+    public void TakeDamage(float f)
+    {
+        lifeSystem?.TakeDamage(f);
     }
 }
