@@ -7,7 +7,10 @@ using UnityEngine.Events;
 public class PlayerEffects : MonoBehaviour
 {
     [SerializeField]
-    private UnityEvent OnCollision;
+    private UnityEvent onCollisionEvent;
+
+    [SerializeField]
+    private UnityEvent onTakeDamageEvent;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,11 @@ public class PlayerEffects : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        OnCollision.Invoke();
+        onCollisionEvent.Invoke();
+    }
+
+    public void OnTakeDamage()
+    {
+        onTakeDamageEvent.Invoke();
     }
 }

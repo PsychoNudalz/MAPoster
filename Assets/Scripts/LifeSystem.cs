@@ -25,11 +25,10 @@ public class LifeSystem : MonoBehaviour
     private AnimationCurve healthToDisplay;
 
     [Header("Components")]
-    [SerializeField]
-    private PlayerController playerController;
 
     [SerializeField]
     private SpriteRenderer healthSpriteRenderer;
+
 
     private void Start()
     {
@@ -45,7 +44,7 @@ public class LifeSystem : MonoBehaviour
         print("Player: " + this + " " + previousState + " --> " + lifeState);
     }
 
-    public bool TakeDamage(float f)
+    public virtual bool TakeDamage(float f)
     {
         health -= f;
         if (health <= 0)
@@ -59,14 +58,14 @@ public class LifeSystem : MonoBehaviour
         return IsDead();
     }
 
-    public bool IsDead()
+    public virtual bool IsDead()
     {
         return lifeState == LifeState.Dead;
     }
 
     
     [ContextMenu("UpdateHealth")]
-    public void UpdateHealthShader(float h)
+    public  virtual void UpdateHealthShader(float h)
     {
         if (healthSpriteRenderer)
         {

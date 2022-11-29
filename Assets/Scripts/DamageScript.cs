@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
+/// <summary>
+/// to control damaging player
+/// </summary>
 public class DamageScript : MonoBehaviour
 {
     [SerializeField]
