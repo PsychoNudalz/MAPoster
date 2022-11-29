@@ -7,19 +7,16 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class Trigger2DDamage : DamageScript
 {
-    [Header("Damage Values")]
-    [SerializeField]
-    protected float damagePerSecond;
+    [Header("Trigger Damage")]
+
 
     [SerializeField]
-    [Tooltip("Keep value to 0 for single time damage")]
     protected float timeBetweenTick = 0;
 
     [SerializeField]
     private List<LifeSystem> lifeSystems;
 
-    [SerializeField]
-    private string[] tags;
+
 
 
     [SerializeField]
@@ -41,7 +38,7 @@ public class Trigger2DDamage : DamageScript
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (tags.Contains(col.tag))
+        if (damageTags.Contains(col.tag))
         {
             if (col.TryGetComponent(out LifeSystem ls))
             {
@@ -52,7 +49,7 @@ public class Trigger2DDamage : DamageScript
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (tags.Contains(col.tag))
+        if (damageTags.Contains(col.tag))
         {
             if (col.TryGetComponent(out LifeSystem ls))
             {
