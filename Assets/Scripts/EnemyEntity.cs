@@ -7,6 +7,9 @@ using UnityEngine.InputSystem;
 
 public class EnemyEntity : EntityObject
 {
+    [Header("Enemy")]
+    [SerializeField]
+    private float score = 100f;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,5 +50,11 @@ public class EnemyEntity : EntityObject
     public virtual void OnGrabDrag(Vector3 pos)
     {
         
+    }
+
+    public override void OnDeath()
+    {
+        GameManager.AddScoreS(score);
+        base.OnDeath();
     }
 }

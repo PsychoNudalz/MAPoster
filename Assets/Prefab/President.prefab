@@ -1844,15 +1844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6178a1583e509db42bebcadccafde503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityState: 0
-  canGrab: 1
-  onGrabEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  onReleaseEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  startDir: {x: 0.4, y: 1}
+  startDir: {x: 0, y: 0}
   speedStart: 5
   lifeSystem: {fileID: 6066912096493122118}
   playerEffects: {fileID: 933077338004576461}
@@ -4158,8 +4150,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -673704743
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9211,8 +9203,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 10
-      minScalar: 3
+      scalar: 5
+      minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:

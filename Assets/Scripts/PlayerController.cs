@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
-public class PlayerController : EntityObject
+public class PlayerController : MonoBehaviour
 {
     [SerializeField]
     Vector2 startDir;
@@ -30,6 +31,11 @@ public class PlayerController : EntityObject
 
     private void Awake()
     {
+        if (startDir.magnitude < .05f)
+        {
+            startDir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+            startDir = startDir.normalized;
+        }
         if (!lifeSystem)
         {
             lifeSystem = GetComponent<LifeSystem>();

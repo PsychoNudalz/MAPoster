@@ -8,7 +8,8 @@ using UnityEngine.EventSystems;
 public enum EntityState{
     Placed,
     Grabbed,
-    Placing
+    Placing,
+    Death
 }
 public class EntityObject : MonoBehaviour,IPointerEnterHandler,IPointerDownHandler, IPointerUpHandler
 {
@@ -17,27 +18,28 @@ public class EntityObject : MonoBehaviour,IPointerEnterHandler,IPointerDownHandl
     protected EntityState entityState= EntityState.Placed;
     
     [Space(5f)]
+    [Header("Grabbing")]
     [SerializeField]
     private bool canGrab = true;
-
     [SerializeField]
     private UnityEvent onGrabEvent;
     [SerializeField]
     private UnityEvent onReleaseEvent;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    private float placeTimer = 2f;
+
+    [Header("Death")]
+    [SerializeField]
+    private float delayDestroyTimer;
+
+    [SerializeField]
+    private UnityEvent onDeathEvents;
+
+    [SerializeField]
+    private bool disableOnDeath = false;
     
-    
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         
@@ -50,7 +52,6 @@ public class EntityObject : MonoBehaviour,IPointerEnterHandler,IPointerDownHandl
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        print("On Mouse Down "+gameObject);
         OnGrab();
     }
 
@@ -71,8 +72,33 @@ public class EntityObject : MonoBehaviour,IPointerEnterHandler,IPointerDownHandl
 
     public virtual void SwitchState(EntityState es)
     {
+        if (es == EntityState.Death)
+        {
+            return;
+        }
         EntityState previousState = entityState;
         entityState = es;
         print("Entity: "+this+" "+previousState+" --> "+entityState);
+    }
+
+
+    public virtual void OnDeath()
+    {
+        SwitchState(EntityState.Death);
+        onDeathEvents.Invoke();
+        if (disableOnDeath)
+        {
+            StartCoroutine(DelayDeath());
+        }
+        else
+        {
+            Destroy(gameObject,delayDestroyTimer);
+        }
+    }
+
+    IEnumerator DelayDeath()
+    {
+        yield return new WaitForSeconds(delayDestroyTimer);
+        gameObject.SetActive(false);
     }
 }
