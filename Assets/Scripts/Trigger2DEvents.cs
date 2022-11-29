@@ -16,6 +16,7 @@ public class Trigger2DEvents : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        print(gameObject.name);
         onTriggerEnter.Invoke();
     }
 
