@@ -16,9 +16,9 @@ public class WallController : MonoBehaviour
     [SerializeField]
     private AnimationCurve bouncinessCurve;
     
-    [Header("Material")]
+    [Header("Physics Material")]
     [SerializeField]
-    private PhysicsMaterial2D mat;
+    private PhysicsMaterial2D physiocsMat;
 
     [SerializeField]
     private float friction;
@@ -29,20 +29,47 @@ public class WallController : MonoBehaviour
     [SerializeField]
     private Rigidbody2D rb;
 
+    [Header("Material")]
+    [SerializeField]
+    private Renderer renderer;
+
+    [SerializeField]
+    private Material rendererMat;
+
+    [SerializeField]
+    private AnimationCurve matCurve;
+
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        if (!rb)
+        {
+            rb = GetComponent<Rigidbody2D>();
+        }
+
+        if (!renderer)
+        {
+            renderer = GetComponent<Renderer>();
+        }
+
+        rendererMat = renderer.material;
+    }
+
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.sharedMaterial = new PhysicsMaterial2D();
-        mat = rb.sharedMaterial;
-        mat.friction = friction;
-        mat.bounciness= bounciness;
+        physiocsMat = new PhysicsMaterial2D();
+        physiocsMat.friction = friction;
+        physiocsMat.bounciness= bounciness;
+        rb.sharedMaterial = physiocsMat;
+        GetComponent<Collider2D>().sharedMaterial = physiocsMat;
     }
 
     // Update is called once per frame
     void Update()
     {
         timeNow += Time.deltaTime * speed;
+        rendererMat.SetFloat("_GradientTime",timeNow);
         SetMat(frictionCurve.Evaluate(timeNow),bouncinessCurve.Evaluate(timeNow));
     }
 
@@ -50,8 +77,8 @@ public class WallController : MonoBehaviour
     {
         friction = f;
         bounciness = b;
-        mat.friction = friction;
-        mat.bounciness = bounciness;
+        physiocsMat.friction = friction;
+        physiocsMat.bounciness = bounciness;
     }
 
 
