@@ -28,9 +28,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private MovementPredictionScript movementPredictionScript;
 
+    [SerializeField]
+    private PlayerAttackController playerAttackController;
+    
+    public static PlayerController current;
+
 
     private void Awake()
     {
+        current = this;
         if (startDir.magnitude < .05f)
         {
             startDir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
@@ -51,6 +57,11 @@ public class PlayerController : MonoBehaviour
         if (!movementPredictionScript)
         {
             movementPredictionScript = GetComponentInChildren<MovementPredictionScript>();
+        }
+
+        if (!playerAttackController)
+        {
+            playerAttackController = GetComponentInChildren<PlayerAttackController>();
         }
     }
 
@@ -87,5 +98,15 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(.1f);
 
+    }
+
+    public void AddAttack(AttackSet attackSet)
+    {
+        playerAttackController.AddAttack(attackSet);
+    }
+
+    public static void Static_AddAttack(AttackSet attackSet)
+    {
+        current.AddAttack(attackSet);
     }
 }

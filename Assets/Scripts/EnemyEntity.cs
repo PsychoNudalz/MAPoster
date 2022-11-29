@@ -10,6 +10,9 @@ public class EnemyEntity : EntityObject
     [Header("Enemy")]
     [SerializeField]
     private float score = 100f;
+
+    [SerializeField]
+    private AttackSet[] attackSets;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +58,10 @@ public class EnemyEntity : EntityObject
     public override void OnDeath()
     {
         GameManager.AddScoreS(score);
+        foreach (AttackSet set in attackSets)
+        {
+            set.TransferToPlayer();
+        }
         base.OnDeath();
     }
 }
