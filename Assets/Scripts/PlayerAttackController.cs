@@ -16,12 +16,36 @@ public class PlayerAttackController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (attackSets.Count > 0)
+        {
+            UpdateAttackSets();
+        }
         
     }
     public void AddAttack(AttackSet attackSet)
     {
-        attackSets.Add(attackSet);
-        attackSet.GetParent().parent = transform;
-        attackSet.GetParent().transform.position = transform.position;
+        if (!attackSets.Contains(attackSet))
+        {
+            attackSets.Add(attackSet);
+            attackSet.GetParent().parent = transform;
+            attackSet.GetParent().transform.position = transform.position;
+        }
+    }
+
+    public void UpdateAttackSets()
+    {
+        for (int i = 0; i < attackSets.Count; i++)
+        {
+            if (attackSets.Count == 0)
+            {
+                return;
+            }
+            if (attackSets[i].ExceededDuration())
+            {
+                Destroy(attackSets[i].gameObject);
+                attackSets.RemoveAt(i);
+                i--;
+            }
+        }
     }
 }

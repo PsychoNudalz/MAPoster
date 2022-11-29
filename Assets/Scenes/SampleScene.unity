@@ -1025,7 +1025,7 @@ GameObject:
   m_Layer: 0
   m_Name: Launcher
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1046,7 +1046,7 @@ MonoBehaviour:
   projectile: {fileID: 3112296361881362970, guid: dc2e895a97b7401409eddc163a591384, type: 3}
   projectileSpeed: 3
   timeBetweenFire: 0.2
-  projectilePerFire: 999
+  projectilePerFire: 3
   reloadTime: 2
   firePoints: []
 --- !u!4 &1720577266
@@ -1057,7 +1057,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720577264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.66, y: -4.42, z: 0}
+  m_LocalPosition: {x: 0.38, y: -4.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1285,6 +1285,58 @@ RectTransform:
   m_AnchoredPosition: {x: 0.43, y: -0.78}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2019120218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019120220}
+  - component: {fileID: 2019120219}
+  m_Layer: 0
+  m_Name: Launcher (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2019120219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019120218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc4fac68f709b418735d7e66dcf3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileLauncherState: 0
+  fireState: 0
+  projectile: {fileID: 3112296361881362970, guid: dc7e326ab0e43484e81e58a51f9c3593, type: 3}
+  projectileSpeed: 3
+  timeBetweenFire: 0.2
+  projectilePerFire: 3
+  reloadTime: 2
+  firePoints: []
+--- !u!4 &2019120220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019120218}
+  m_LocalRotation: {x: -0, y: -0, z: 0.707107, w: 0.7071066}
+  m_LocalPosition: {x: 5.44, y: -2.53, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1001 &933077337483262416
 PrefabInstance:
   m_ObjectHideFlags: 0

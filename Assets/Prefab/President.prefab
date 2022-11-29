@@ -1981,6 +1981,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  onDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   healthSpriteRenderer: {fileID: 4922840294691870954}
   playerEffects: {fileID: 933077338004576461}
   playerController: {fileID: 933077338004576456}

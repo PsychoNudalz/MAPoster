@@ -79,6 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
+  playerAttackSet: {fileID: 0}
 --- !u!1 &7619995215162538492
 GameObject:
   m_ObjectHideFlags: 0

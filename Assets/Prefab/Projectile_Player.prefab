@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3112296361881362969}
   - component: {fileID: 5914074086216634526}
   m_Layer: 8
-  m_Name: Projectile
-  m_TagString: Projectile
+  m_Name: Projectile_Player
+  m_TagString: Projectile_Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
   dir: {x: 0, y: 1, z: 0}
   lifetime: 5
   impactTags:
-  - Player
+  - Enemy
   - Wall
   impactOnTrigger: 1
   impactEvent:
@@ -110,10 +110,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagePerSecond: 5
   damageTags:
-  - Player
+  - Enemy
   damageLayers:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 128
   needLineOfSight: 0
   allLayers:
     serializedVersion: 2
@@ -244,7 +244,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2135585597343286014, guid: 5aa8b770bc43046bc8d993d0d5b7f4a5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.058823526, g: 1, b: 0.78737617, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -370,8 +370,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1
-      minScalar: 0.5
+      scalar: 0.4
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -539,8 +539,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.1
-      minScalar: 0.01
+      scalar: 0.01
+      minScalar: 0.005
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5134,9 +5134,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5456057676008334372}
   - component: {fileID: 6142248934212630939}
+  - component: {fileID: 7822384905613995218}
+  - component: {fileID: 6839996143209429873}
   m_Layer: 10
   m_Name: LaserDetectCollider
-  m_TagString: Projectile
+  m_TagString: Projectile_Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5182,3 +5184,61 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.31}
   m_EdgeRadius: 0
+--- !u!114 &7822384905613995218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6818086787585399736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18c10ed08f1d54448dc3eac854cebe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeState: 0
+  health_max: 1
+  health: 0
+  healthToDisplay:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onDeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3112296361881362970}
+        m_TargetAssemblyTypeName: Projectile, Assembly-CSharp
+        m_MethodName: OnImpact
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  healthSpriteRenderer: {fileID: 0}
+--- !u!50 &6839996143209429873
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6818086787585399736}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0

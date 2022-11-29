@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 public enum LifeState
@@ -24,6 +25,10 @@ public class LifeSystem : MonoBehaviour
     [SerializeField]
     private AnimationCurve healthToDisplay;
 
+    [Header("On Death")]
+    [SerializeField]
+    protected UnityEvent onDeathEvent;
+
     [Header("Components")]
 
     [SerializeField]
@@ -42,6 +47,13 @@ public class LifeSystem : MonoBehaviour
         LifeState previousState = lifeState;
         lifeState = ls;
         print("Player: " + this + " " + previousState + " --> " + lifeState);
+        OnDeath();
+    }
+
+
+    protected virtual void OnDeath()
+    {
+        onDeathEvent.Invoke();
     }
 
     public virtual bool TakeDamage(float f)

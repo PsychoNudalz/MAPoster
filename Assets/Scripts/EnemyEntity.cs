@@ -57,11 +57,16 @@ public class EnemyEntity : EntityObject
 
     public override void OnDeath()
     {
+        if (entityState == EntityState.Death)
+        {
+            return;
+        }
+
+        base.OnDeath();
         GameManager.AddScoreS(score);
         foreach (AttackSet set in attackSets)
         {
             set.TransferToPlayer();
         }
-        base.OnDeath();
     }
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,26 +10,44 @@ public class Trigger2DEvents : MonoBehaviour
 {
     [SerializeField]
     private UnityEvent onTriggerEnter;
+
     [SerializeField]
     private UnityEvent onTriggerExit;
+
     [SerializeField]
     private UnityEvent onTriggerStay;
 
+    [SerializeField]
+    private string[] tags;
+
     private void OnTriggerEnter2D(Collider2D col)
     {
+        if (!tags.Contains(col.tag))
+        {
+            return;
+        }
+
         print(gameObject.name);
         onTriggerEnter.Invoke();
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D col)
     {
-        onTriggerExit.Invoke();
+        if (!tags.Contains(col.tag))
+        {
+            return;
+        }
 
+        onTriggerExit.Invoke();
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D col)
     {
-        onTriggerStay.Invoke();
+        if (!tags.Contains(col.tag))
+        {
+            return;
+        }
 
+        onTriggerStay.Invoke();
     }
 }
