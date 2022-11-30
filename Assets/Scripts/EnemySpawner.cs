@@ -22,6 +22,12 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private LayerMask invalidLayers;
 
+    [SerializeField]
+    private float checkOffset = 0.1f;
+
+
+    public List<Vector3> CachedPoints => cachedPoints;
+
     private void Awake()
     {
         if (!spawnZone)
@@ -53,6 +59,13 @@ public class EnemySpawner : MonoBehaviour
             while (!CheckPoint(current) && trapCount < trapCount_MAX)
             {
                 current = GetRandomPointInSpawnZone();
+                trapCount += 1;
+            }
+
+            if (trapCount >= trapCount_MAX)
+            {
+                Debug.LogError("Generate failed: "+current);
+                return;
             }
             cachedPoints.Add(current);
         }
@@ -76,7 +89,7 @@ public class EnemySpawner : MonoBehaviour
         foreach (Transform spawnCheckPoint in spawnCheckPoints)
         {
             dir = point -spawnCheckPoint.position;
-            if (!Physics2D.Raycast(spawnCheckPoint.position, dir.normalized, dir.magnitude, invalidLayers))
+            if (!Physics2D.Raycast(spawnCheckPoint.position, dir.normalized, dir.magnitude+checkOffset, invalidLayers))
             {
                 return true;
             }
