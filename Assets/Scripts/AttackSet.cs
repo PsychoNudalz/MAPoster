@@ -52,7 +52,11 @@ public class AttackSet : MonoBehaviour
 
     public bool ExceededDuration()
     {
-        return (attackDuration == 0 || Time.time - startTime > attackDuration);
+        if (attackDuration == 0)
+        {
+            return false;
+        }
+        return (Time.time - startTime > attackDuration);
     }
     
 }
