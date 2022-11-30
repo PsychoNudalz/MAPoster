@@ -14,46 +14,31 @@ public class EnemyEntity : EntityObject
     [SerializeField]
     private AttackSet[] attackSets;
     // Start is called before the first frame update
-    void Start()
+    protected override void StartBehaviour()
     {
-        
+        base.StartBehaviour();
+        SwitchState(EntityState.Placing);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        UpdateBehaviour();
-    }
-    
 
-    void UpdateBehaviour()
+    protected override void SwitchState_Placing()
     {
-        switch (entityState)
+        base.SwitchState_Placing();
+        foreach (AttackSet attackSet in attackSets)
         {
-            case EntityState.Placed:
-                break;
-            case EntityState.Grabbed:
-                UpdateBehaviour_Grabbed();
-                break;
-            case EntityState.Placing:
-                break;
-            default:
-                throw new ArgumentOutOfRangeException();
+            attackSet.SetActive(false);
         }
     }
 
-    void UpdateBehaviour_Grabbed()
+    protected override void SwitchState_Placed()
     {
-        Vector3 mousePos = Mouse.current.position.ReadValue();
-        Vector3 position = Camera.main.ScreenToWorldPoint(mousePos);
-        position.z = transform.position.z;
-        transform.position = position;
+        base.SwitchState_Placed();
+        foreach (AttackSet attackSet in attackSets)
+        {
+            attackSet.SetActive(true);
+        }
     }
-    
-    public virtual void OnGrabDrag(Vector3 pos)
-    {
-        
-    }
+
 
     public override void OnDeath()
     {

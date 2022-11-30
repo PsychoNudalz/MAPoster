@@ -185,3 +185,33 @@ MonoBehaviour:
   attackDuration: 0
   parent: {fileID: 0}
   playerAttackSet: {fileID: 0}
+  onOnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4084543517657927725}
+        m_TargetAssemblyTypeName: ProjectileLaunchScript, Assembly-CSharp
+        m_MethodName: SetFire
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onOffEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4084543517657927725}
+        m_TargetAssemblyTypeName: ProjectileLaunchScript, Assembly-CSharp
+        m_MethodName: SetFire
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

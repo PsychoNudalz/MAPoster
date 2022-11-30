@@ -83,13 +83,15 @@ MonoBehaviour:
   onReleaseEvent:
     m_PersistentCalls:
       m_Calls: []
-  placeTimer: 2
+  placeTimer: 1
+  placeTimerRing: {fileID: 0}
   delayDestroyTimer: 0
   onDeathEvents:
     m_PersistentCalls:
       m_Calls: []
   disableOnDeath: 0
   score: 100
+  attackSets: []
 --- !u!114 &5644105313729916129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,3 +485,4 @@ MonoBehaviour:
   onTriggerStay:
     m_PersistentCalls:
       m_Calls: []
+  tags: []

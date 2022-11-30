@@ -3,9 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
+enum AttackSetState
+{
+    On,
+    Off
+}
 public class AttackSet : MonoBehaviour
 {
+    private AttackSetState attackSetState = AttackSetState.On;
     [SerializeField]
     private float attackDuration;
 
@@ -17,6 +24,13 @@ public class AttackSet : MonoBehaviour
     [SerializeField]
     private AttackSet playerAttackSet = null;
 
+    [Header("On Active")]
+    [SerializeField]
+    private UnityEvent onOnEvent;
+    
+    [SerializeField]
+    private UnityEvent onOffEvent;
+    
     private void Start()
     {
         startTime = Time.time;
@@ -57,6 +71,22 @@ public class AttackSet : MonoBehaviour
             return false;
         }
         return (Time.time - startTime > attackDuration);
+    }
+
+    public void SetActive(bool b)
+    {
+        if (b)
+        {
+            attackSetState = AttackSetState.On;
+            onOnEvent.Invoke();
+
+        }
+        else
+        {
+            attackSetState = AttackSetState.Off;
+            onOffEvent.Invoke();
+
+        }
     }
     
 }
