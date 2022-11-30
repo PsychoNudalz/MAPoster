@@ -98,6 +98,10 @@ public class Projectile : MonoBehaviour
 
     public void OnImpact()
     {
+        if (projectileState == ProjectileState.impacted)
+        {
+            return;
+        }
         // print("Impacted");
         impactEvent.Invoke();
         projectileState = ProjectileState.impacted;

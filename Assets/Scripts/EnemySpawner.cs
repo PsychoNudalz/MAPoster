@@ -98,4 +98,8 @@ public class EnemySpawner : MonoBehaviour
 
         return false;
     }
+    public Vector3 GetRandomPoint()
+    {
+        return cachedPoints[Random.Range(0, cachedPoints.Count)];
+    }
 }
