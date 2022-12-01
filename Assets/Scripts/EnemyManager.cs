@@ -19,6 +19,10 @@ public class EnemyManager : MonoBehaviour
     [SerializeField]
     float lastSpawnTime = float.NegativeInfinity;
 
+    [SerializeField]
+    private float spawnDelay = 0.5f;
+
+
     [Header("Difficulty")]
     [SerializeField]
     private AnimationCurve killToCostIncrease;
@@ -40,6 +44,9 @@ public class EnemyManager : MonoBehaviour
 
     public static EnemyManager current;
 
+    [Header("Effects")]
+    [SerializeField]
+    private ParticleSystem spawnEffects;
 
     private void Awake()
     {
@@ -66,7 +73,7 @@ public class EnemyManager : MonoBehaviour
                     currentEnemy = GetEnemyToSpawn();
                     if (currentEnemy)
                     {
-                        SpawnEnemy(currentEnemy);
+                        SpawnEnemy(currentEnemy,GetRandomPoint());
                     }
                     else
                     {
@@ -110,12 +117,30 @@ public class EnemyManager : MonoBehaviour
         return currentEnemy;
     }
 
-    void SpawnEnemy(EnemyEntity e)
+    void SpawnEnemy(EnemyEntity e, Vector3 currentPoint)
     {
-        Vector3 currentPoint = enemySpawners[Random.Range(0, enemySpawners.Length)].GetRandomPoint();
-        Instantiate(e.gameObject, currentPoint,
-            Quaternion.Euler(0, 0, Random.Range(0, 360)), transform);
         availableCost -= e.Cost;
         currentlyAlive += 1;
+        PlayEffect(currentPoint);
+
+        StartCoroutine(DelayEnemySpawn(e, currentPoint));
+    }
+
+    private Vector3 GetRandomPoint()
+    {
+        return enemySpawners[Random.Range(0, enemySpawners.Length)].GetRandomPoint();
+    }
+
+    IEnumerator DelayEnemySpawn(EnemyEntity e, Vector3 currentPoint)
+    {
+        yield return new WaitForSeconds(spawnDelay);
+        Instantiate(e.gameObject, currentPoint,
+            Quaternion.Euler(0, 0, Random.Range(0, 360)), transform);
+    }
+
+    void PlayEffect(Vector3 pos)
+    {
+        spawnEffects.transform.position = pos;
+        spawnEffects.Play();
     }
 }

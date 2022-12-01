@@ -26,14 +26,19 @@ public class EnemyEntity : EntityObject
         SwitchState(EntityState.Placing);
     }
 
-
-    protected override void SwitchState_Placing()
+    protected override void SwitchState_Grabbed()
     {
-        base.SwitchState_Placing();
+        base.SwitchState_Grabbed();
         foreach (AttackSet attackSet in attackSets)
         {
             attackSet.SetActive(false);
         }
+    }
+
+    protected override void SwitchState_Placing()
+    {
+        base.SwitchState_Placing();
+
     }
 
     protected override void SwitchState_Placed()
