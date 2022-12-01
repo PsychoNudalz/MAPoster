@@ -30,4 +30,9 @@ public class UIManager : MonoBehaviour
             gameOverAnimator.Play("GameOver");
         }
     }
+
+    public void Restart()
+    {
+        GameManager.ResetGame();
+    }
 }
