@@ -62,6 +62,12 @@ public class EnemyEntity : EntityObject
         base.OnDeath();
         GameManager.AddScore_S(score);
         EnemyManager.AddKill_S(cost);
+
+    }
+
+    public void OnDeath_Collision()
+    {
+        OnDeath();
         foreach (AttackSet set in attackSets)
         {
             set.TransferToPlayer();

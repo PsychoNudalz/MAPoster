@@ -113,7 +113,7 @@ MonoBehaviour:
   - Enemy
   damageLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 8320
   needLineOfSight: 0
   allLayers:
     serializedVersion: 2
