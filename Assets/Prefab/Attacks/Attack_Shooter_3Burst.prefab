@@ -132,7 +132,7 @@ MonoBehaviour:
   projectileLauncherState: 0
   fireState: 0
   projectile: {fileID: 3112296361881362970, guid: dc2e895a97b7401409eddc163a591384, type: 3}
-  projectileSpeed: 4
+  projectileSpeed: 8
   timeBetweenFire: 0.1
   projectilePerFire: 3
   reloadTime: 2

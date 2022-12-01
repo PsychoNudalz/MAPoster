@@ -1847,7 +1847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDir: {x: 0, y: 0}
-  speedStart: 5
+  speedStart: 10
   lifeSystem: {fileID: 6066912096493122118}
   playerEffects: {fileID: 933077338004576461}
   movementPredictionScript: {fileID: 589503689155176517}

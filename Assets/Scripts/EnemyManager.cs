@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -21,7 +22,27 @@ public class EnemyManager : MonoBehaviour
 
     [SerializeField]
     private float spawnDelay = 0.5f;
+    [SerializeField]
+    private float spawnQueueDelay = 0.5f;
 
+    struct SpawnSet
+    {
+        private EnemyEntity e;
+        private Vector3 p;
+
+        public EnemyEntity E => e;
+
+        public Vector3 P => p;
+
+        public SpawnSet(EnemyEntity e, Vector3 p)
+        {
+            this.e = e;
+            this.p = p;
+        }
+    }
+
+    private Queue<SpawnSet> spawnQueue = new Queue<SpawnSet>();
+    private Coroutine spawnQueueCoroutine;
 
     [Header("Difficulty")]
     [SerializeField]
@@ -73,7 +94,8 @@ public class EnemyManager : MonoBehaviour
                     currentEnemy = GetEnemyToSpawn();
                     if (currentEnemy)
                     {
-                        SpawnEnemy(currentEnemy,GetRandomPoint());
+                        AddStack(new SpawnSet(currentEnemy,GetRandomPoint()));
+                        // SpawnEnemy(currentEnemy,GetRandomPoint());
                     }
                     else
                     {
@@ -119,8 +141,7 @@ public class EnemyManager : MonoBehaviour
 
     void SpawnEnemy(EnemyEntity e, Vector3 currentPoint)
     {
-        availableCost -= e.Cost;
-        currentlyAlive += 1;
+
         PlayEffect(currentPoint);
 
         StartCoroutine(DelayEnemySpawn(e, currentPoint));
@@ -142,5 +163,34 @@ public class EnemyManager : MonoBehaviour
     {
         spawnEffects.transform.position = pos;
         spawnEffects.Play();
+    }
+    
+    // Stack Handling
+
+    void AddStack(SpawnSet spawnSet)
+    {
+        availableCost -= spawnSet.E.Cost;
+        currentlyAlive += 1;
+        
+        spawnQueue.Enqueue(spawnSet);
+        if (spawnQueueCoroutine == null)
+        {
+            spawnQueueCoroutine = StartCoroutine(SpawnStackCoroutine());
+        }
+    }
+
+    IEnumerator SpawnStackCoroutine()
+    {
+        SpawnSet ss = spawnQueue.Dequeue();
+        SpawnEnemy(ss.E,ss.P);
+        yield return new WaitForSeconds(spawnQueueDelay);
+        if (spawnQueue.Count > 0)
+        {
+            spawnQueueCoroutine = StartCoroutine(SpawnStackCoroutine());
+        }
+        else
+        {
+            spawnQueueCoroutine = null;
+        }
     }
 }
