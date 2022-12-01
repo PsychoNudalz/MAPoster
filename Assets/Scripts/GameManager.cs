@@ -28,8 +28,18 @@ public class GameManager : MonoBehaviour
         scoreText?.SetText(Math.Round(score).ToString());
     }
 
-    public static void AddScoreS(float s)
+    public static void AddScore_S(float s)
     {
         current.AddScore(s);
+    }
+
+    public void GameOver()
+    {
+        UIManager.GameOver_S();
+    }
+
+    public static void GameOver_S()
+    {
+        current.GameOver();
     }
 }

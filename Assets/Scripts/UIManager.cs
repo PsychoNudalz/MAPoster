@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,17 +7,27 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI scoreText;
-    
-    // Start is called before the first frame update
-    void Start()
+    private Animator gameOverAnimator;
+
+
+    public static UIManager current;
+
+    private void Awake()
     {
-        
+        current = this;
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public static void GameOver_S()
     {
-        
+        current.GameOver();
+    }
+
+    public void GameOver()
+    {
+        if (gameOverAnimator)
+        {
+            gameOverAnimator.Play("GameOver");
+        }
     }
 }

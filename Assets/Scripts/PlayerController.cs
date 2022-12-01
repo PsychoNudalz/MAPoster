@@ -5,8 +5,15 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
+
+public enum PlayerState
+{
+    Alive,
+    Dead
+}
 public class PlayerController : MonoBehaviour
 {
+    private PlayerState playerState = PlayerState.Alive;
     [SerializeField]
     Vector2 startDir;
 
@@ -30,6 +37,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private PlayerAttackController playerAttackController;
+    
     
     public static PlayerController current;
 
@@ -73,7 +81,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        speedCurrent = rb.velocity.magnitude;
+        if (playerState == PlayerState.Alive)
+        {
+            speedCurrent = rb.velocity.magnitude;
+        }
     }
 
     private void FixedUpdate()
@@ -100,6 +111,19 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void OnDeath()
+    {
+        GameManager.GameOver_S();
+        playerEffects.OnDeathEvent();
+        playerState = PlayerState.Dead;
+        rb.bodyType = RigidbodyType2D.Static;
+    }
+    
+    
+    
+    
+    
+    
     public void AddAttack(AttackSet attackSet)
     {
         playerAttackController.AddAttack(attackSet);
@@ -109,4 +133,6 @@ public class PlayerController : MonoBehaviour
     {
         current.AddAttack(attackSet);
     }
+    
+    
 }

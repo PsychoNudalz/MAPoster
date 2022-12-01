@@ -46,7 +46,7 @@ public class LifeSystem : MonoBehaviour
     {
         LifeState previousState = lifeState;
         lifeState = ls;
-        print("Player: " + this + " " + previousState + " --> " + lifeState);
+        // print("Player: " + this + " " + previousState + " --> " + lifeState);
         OnDeath();
     }
 

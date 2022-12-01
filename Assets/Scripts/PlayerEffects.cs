@@ -11,6 +11,9 @@ public class PlayerEffects : MonoBehaviour
 
     [SerializeField]
     private UnityEvent onTakeDamageEvent;
+
+    [SerializeField]
+    private UnityEvent onDeathEvent;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +33,10 @@ public class PlayerEffects : MonoBehaviour
     public void OnTakeDamage()
     {
         onTakeDamageEvent.Invoke();
+    }
+
+    public void OnDeathEvent()
+    {
+        onDeathEvent.Invoke();
     }
 }

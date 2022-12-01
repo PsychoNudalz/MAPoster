@@ -52,9 +52,10 @@ public class EnemyEntity : EntityObject
         {
             return;
         }
+        SetAllMainBodyCollider(false);
 
         base.OnDeath();
-        GameManager.AddScoreS(score);
+        GameManager.AddScore_S(score);
         EnemyManager.AddKill_S(cost);
         foreach (AttackSet set in attackSets)
         {
