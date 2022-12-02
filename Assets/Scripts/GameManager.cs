@@ -34,6 +34,14 @@ public class GameManager : MonoBehaviour
         current.AddScore(s);
     }
 
+    public static void AddKill_S(float s, int c)
+    {
+        AddScore_S(s);
+        EnemyManager.AddKill_S(c);
+        PlayerController.Static_UpdateSpeed();
+
+    }
+
     public void GameOver()
     {
         UIManager.GameOver_S();

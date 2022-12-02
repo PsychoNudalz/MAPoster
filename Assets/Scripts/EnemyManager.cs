@@ -69,6 +69,14 @@ public class EnemyManager : MonoBehaviour
     [SerializeField]
     private ParticleSystem spawnEffects;
 
+
+    public int NumberOfKills => numberOfKills;
+
+    public static int GetNumberOfKills()
+    {
+        return current.numberOfKills;
+    }
+
     private void Awake()
     {
         current = this;

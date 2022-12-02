@@ -60,8 +60,7 @@ public class EnemyEntity : EntityObject
         SetAllMainBodyCollider(false);
 
         base.OnDeath();
-        GameManager.AddScore_S(score);
-        EnemyManager.AddKill_S(cost);
+        GameManager.AddKill_S(score,cost);
 
     }
 

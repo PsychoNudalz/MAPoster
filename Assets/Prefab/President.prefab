@@ -1847,7 +1847,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDir: {x: 0, y: 0}
-  speedStart: 10
+  speedRange: {x: 6, y: 10}
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.116259396
+      outSlope: 0.116259396
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.09038199
+    - serializedVersion: 3
+      time: 20
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   lifeSystem: {fileID: 6066912096493122118}
   playerEffects: {fileID: 933077338004576461}
   movementPredictionScript: {fileID: 589503689155176517}
