@@ -189,7 +189,7 @@ MonoBehaviour:
         m_CallState: 2
   disableOnDeath: 0
   mainBodyCollider:
-  - {fileID: 0}
+  - {fileID: 8298492944308672346}
   - {fileID: 3736043166629418663}
   score: 100
   cost: 1

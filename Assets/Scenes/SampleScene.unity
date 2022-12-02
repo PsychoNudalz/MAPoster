@@ -5894,6 +5894,7 @@ MonoBehaviour:
   - {fileID: 99366714}
   enemies:
   - {fileID: 4674784369048989830, guid: c618f46210fb4654a9c46e8dfe62f05e, type: 3}
+  - {fileID: 426373907665714372, guid: e9a774ab9d147cd4da2402510db14933, type: 3}
   timeBetweenSpawn: 5
   lastSpawnTime: -Infinity
   spawnDelay: 1
