@@ -7,6 +7,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2065014271446898938, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dbd6cffbc8dcb0a4c8e138eab7fa0264, type: 2}
+    - target: {fileID: 4090368296550988236, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090368296550988236, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090368296550988236, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090368296550988236, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a4798a66c407bc944a51343f2f9eeada, type: 2}
+    - target: {fileID: 4175003670625078621, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175003670625078621, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175003670625078621, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175003670625078621, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a4798a66c407bc944a51343f2f9eeada, type: 2}
+    - target: {fileID: 4988613362832595733, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dbd6cffbc8dcb0a4c8e138eab7fa0264, type: 2}
     - target: {fileID: 7619995215039744550, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: attackDuration
       value: 5
