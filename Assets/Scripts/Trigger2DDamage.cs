@@ -67,9 +67,16 @@ public class Trigger2DDamage : DamageScript
 
     public override void DealDamage(LifeSystem ls, float damage)
     {
-        foreach (LifeSystem lifeSystem in lifeSystems)
+        try
         {
-            base.DealDamage(lifeSystem, damage);
+            foreach (LifeSystem lifeSystem in lifeSystems)
+            {
+                base.DealDamage(lifeSystem, damage);
+            }
+        }
+        catch (InvalidOperationException e)
+        {
+            
         }
     }
 }

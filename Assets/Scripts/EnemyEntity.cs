@@ -58,6 +58,10 @@ public class EnemyEntity : EntityObject
             return;
         }
         SetAllMainBodyCollider(false);
+        foreach (AttackSet attackSet in attackSets)
+        {
+            attackSet.SetActive(false);
+        }
 
         base.OnDeath();
         GameManager.AddKill_S(score,cost);

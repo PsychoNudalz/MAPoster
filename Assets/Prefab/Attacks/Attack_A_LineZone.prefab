@@ -7,10 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2021722677472082722, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 68f39ad909ef38b4695b40f0f39c4014, type: 2}
     - target: {fileID: 2065014271446898938, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dbd6cffbc8dcb0a4c8e138eab7fa0264, type: 2}
+    - target: {fileID: 3186535324162431835, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 68f39ad909ef38b4695b40f0f39c4014, type: 2}
     - target: {fileID: 4090368296550988236, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -47,9 +55,13 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dbd6cffbc8dcb0a4c8e138eab7fa0264, type: 2}
+    - target: {fileID: 7363987098045098096, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 68f39ad909ef38b4695b40f0f39c4014, type: 2}
     - target: {fileID: 7619995215039744550, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: attackDuration
-      value: 5
+      value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 7619995215039744568, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: m_Name
@@ -101,15 +113,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7619995215162538490, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: damageLayers.m_Bits
-      value: 1024
+      value: 9216
       objectReference: {fileID: 0}
     - target: {fileID: 7619995215162538490, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: damageTags.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7619995215162538490, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: damageTags.Array.data[0]
       value: Projectile_Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619995215162538490, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: damageTags.Array.data[1]
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7619995216643935028, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: m_Color.b
@@ -123,17 +139,25 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8447326247767295640, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 68f39ad909ef38b4695b40f0f39c4014, type: 2}
     - target: {fileID: 9189497691168677800, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: damageLayers.m_Bits
-      value: 1024
+      value: 9216
       objectReference: {fileID: 0}
     - target: {fileID: 9189497691168677800, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: damageTags.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9189497691168677800, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: damageTags.Array.data[0]
       value: Projectile_Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189497691168677800, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
+      propertyPath: damageTags.Array.data[1]
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 9189497691589817071, guid: ed470e2d7bd7618439b3f5c18e16c27a, type: 3}
       propertyPath: m_Color.b

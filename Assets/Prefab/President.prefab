@@ -1847,21 +1847,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDir: {x: 0, y: 0}
-  speedRange: {x: 6, y: 10}
+  speedRange: {x: 6, y: 15}
   speedCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0.116259396
-      outSlope: 0.116259396
+      inSlope: 0.03759609
+      outSlope: 0.03759609
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.09038199
+      outWeight: 0.06821282
     - serializedVersion: 3
-      time: 20
+      time: 30
       value: 1
       inSlope: 0
       outSlope: 0
@@ -2027,6 +2027,15 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
+      inSlope: 0.98693943
+      outSlope: 0.98693943
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.09549795
+      value: 0.094250694
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2034,13 +2043,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1
+      time: 0.998291
       value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 2.4822826
+      outSlope: 2.4822826
+      tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0.057051588
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

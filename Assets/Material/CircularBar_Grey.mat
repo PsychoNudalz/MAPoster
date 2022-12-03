@@ -38,8 +38,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _CircleStrength: 0
-    - _LineWidth: 0.01
+    - _CircleStrength: 1
+    - _LineWidth: 0.02
     - _Radius: 0.39
     - _Rotate: 0
     - _SegmentSpace: 0.02
