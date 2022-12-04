@@ -170,8 +170,9 @@ public class EntityObject : MonoBehaviour, IPointerEnterHandler, IPointerDownHan
 
     protected virtual void UpdateBehaviour_Grabbed()
     {
-        Vector3 mousePos = Mouse.current.position.ReadValue();
-        Vector3 position = Camera.main.ScreenToWorldPoint(mousePos);
+        // Vector3 mousePos = Mouse.current.position.ReadValue();
+        // Vector3 position = Camera.main.ScreenToWorldPoint(mousePos);
+        Vector3 position = CameraController.GetNewMouse();
         position.z = transform.position.z;
         transform.position = position;
     }

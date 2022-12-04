@@ -191,8 +191,8 @@ MonoBehaviour:
   mainBodyCollider:
   - {fileID: 8298492944308672346}
   - {fileID: 3736043166629418663}
-  score: 100
-  cost: 1
+  score: 300
+  cost: 3
   attackSets:
   - {fileID: 4062495090852945298}
 --- !u!50 &-2602808043114857072

@@ -6,24 +6,24 @@
             "id": "2c10a24d-1d2c-4d7f-a59f-0e75b3eb6754",
             "actions": [
                 {
-                    "name": "Click",
-                    "type": "Button",
-                    "id": "89c3cfc8-95c6-4f26-badc-7439f4b49755",
-                    "expectedControlType": "Button",
+                    "name": "MouseLook",
+                    "type": "Value",
+                    "id": "b0dd7479-47e5-4e75-94eb-d52ec7aa4ceb",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "88e5daa6-bb41-4020-86e3-b5d8d893a79e",
-                    "path": "<Mouse>/leftButton",
+                    "id": "4dd79c08-e397-48fe-9844-466b6f7ace2d",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Click",
+                    "action": "MouseLook",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

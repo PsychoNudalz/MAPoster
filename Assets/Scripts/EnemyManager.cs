@@ -15,13 +15,14 @@ public class EnemyManager : MonoBehaviour
     private EnemyEntity[] enemies;
 
     [SerializeField]
-    private float timeBetweenSpawn = 5;
+    private float timeBetweenCheck = 5;
 
     [SerializeField]
-    float lastSpawnTime = float.NegativeInfinity;
+    float lastCheckTime = float.NegativeInfinity;
 
     [SerializeField]
     private float spawnDelay = 0.5f;
+
     [SerializeField]
     private float spawnQueueDelay = 0.5f;
 
@@ -63,6 +64,8 @@ public class EnemyManager : MonoBehaviour
 
     private float minCost = Single.PositiveInfinity;
 
+    private float minimumSpawnCost;
+
     public static EnemyManager current;
 
     [Header("Effects")]
@@ -90,11 +93,18 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        minimumSpawnCost = minCost;
+    }
+
     private void FixedUpdate()
     {
-        if (availableCost > Math.Max(minCost, availableCost / 4f))
+        if (Time.time - lastCheckTime > timeBetweenCheck||currentlyAlive==0)
         {
-            if (Time.time - lastSpawnTime > timeBetweenSpawn)
+            lastCheckTime = Time.time;
+
+            if (availableCost > Math.Max(minCost, availableCost / 2f))
             {
                 EnemyEntity currentEnemy;
                 while (availableCost > minCost)
@@ -102,7 +112,7 @@ public class EnemyManager : MonoBehaviour
                     currentEnemy = GetEnemyToSpawn();
                     if (currentEnemy)
                     {
-                        AddStack(new SpawnSet(currentEnemy,GetRandomPoint()));
+                        AddStack(new SpawnSet(currentEnemy, GetRandomPoint()));
                         // SpawnEnemy(currentEnemy,GetRandomPoint());
                     }
                     else
@@ -149,7 +159,6 @@ public class EnemyManager : MonoBehaviour
 
     void SpawnEnemy(EnemyEntity e, Vector3 currentPoint)
     {
-
         PlayEffect(currentPoint);
 
         StartCoroutine(DelayEnemySpawn(e, currentPoint));
@@ -172,14 +181,14 @@ public class EnemyManager : MonoBehaviour
         spawnEffects.transform.position = pos;
         spawnEffects.Play();
     }
-    
+
     // Stack Handling
 
     void AddStack(SpawnSet spawnSet)
     {
         availableCost -= spawnSet.E.Cost;
         currentlyAlive += 1;
-        
+
         spawnQueue.Enqueue(spawnSet);
         if (spawnQueueCoroutine == null)
         {
@@ -190,7 +199,7 @@ public class EnemyManager : MonoBehaviour
     IEnumerator SpawnStackCoroutine()
     {
         SpawnSet ss = spawnQueue.Dequeue();
-        SpawnEnemy(ss.E,ss.P);
+        SpawnEnemy(ss.E, ss.P);
         yield return new WaitForSeconds(spawnQueueDelay);
         if (spawnQueue.Count > 0)
         {
