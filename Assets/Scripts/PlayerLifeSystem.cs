@@ -16,6 +16,8 @@ public class PlayerLifeSystem : LifeSystem
         {
             playerEffects.OnTakeDamage();
         }
+        CameraController.ShakeCamera_S(0.05f,0.2f);
+
         return base.TakeDamage(f);
     }
     
