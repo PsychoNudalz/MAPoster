@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 // enum LaserState
 // {
@@ -25,6 +26,12 @@ public class LaserController : MonoBehaviour
     [SerializeField]
     private float fireTime;
 
+    // [Header("Events")]
+    // [SerializeField]
+    // private UnityEvent onCharge;
+    //
+    // [SerializeField]
+    // private UnityEvent onFire;
     float fireTime_Now;
 
     private bool isCharging = true;

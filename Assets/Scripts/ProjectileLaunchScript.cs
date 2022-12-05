@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 enum ProjectileLauncherState
 {
@@ -41,6 +42,10 @@ public class ProjectileLaunchScript : MonoBehaviour
 
     [SerializeField]
     private float reloadTime = 2f;
+
+    [Space(5f)]
+    [SerializeField]
+    private UnityEvent onShoot;
 
     [Space(10f)]
     [Header("Components")]
@@ -108,6 +113,8 @@ public class ProjectileLaunchScript : MonoBehaviour
         newProjectile.transform.position = firePoints[firePointIndex].position;
         newProjectile.LaunchProjectile(projectileSpeed, firePoints[firePointIndex].up);
         firePointIndex = (firePointIndex + 1) % firePoints.Length;
+        
+        onShoot.Invoke();
     }
 
     public void Fire()

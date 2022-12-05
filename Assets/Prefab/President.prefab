@@ -1847,7 +1847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDir: {x: 0, y: 0}
-  speedRange: {x: 6, y: 15}
+  speedRange: {x: 6, y: 13}
   speedCurve:
     serializedVersion: 2
     m_Curve:

@@ -77,7 +77,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084543518408782286, guid: 0bb6112095cb9e44faf5b12edccce4e2, type: 3}
       propertyPath: attackDuration
-      value: 60
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855168282183952679, guid: 0bb6112095cb9e44faf5b12edccce4e2, type: 3}
+      propertyPath: volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855168282183952679, guid: 0bb6112095cb9e44faf5b12edccce4e2, type: 3}
+      propertyPath: volumeVariance
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bb6112095cb9e44faf5b12edccce4e2, type: 3}
