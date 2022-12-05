@@ -6001,7 +6001,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.15
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6010,7 +6010,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 10
-      value: 0.12
+      value: 0.3
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6479,12 +6479,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6704b2a8d78dfe64c87003bd59a8fe99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMousePos: {x: 20, y: 20}
+  maxMousePos: {x: 15, y: 10}
   mouseLayer:
     serializedVersion: 2
     m_Bits: 16384
   rotationLayer: {fileID: 706636157}
-  maxEulerRotation: {x: 25, y: -15}
+  maxEulerRotation: {x: 10, y: -7.5}
   rotationToPosMap_x:
     serializedVersion: 2
     m_Curve:
@@ -6552,7 +6552,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   moveLayer: {fileID: 532479085}
-  maxMove: {x: 5, y: 1}
+  maxMove: {x: 2.5, y: 0.2}
   moveToPosMap_x:
     serializedVersion: 2
     m_Curve:

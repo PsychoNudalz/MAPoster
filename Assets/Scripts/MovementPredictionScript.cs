@@ -11,7 +11,8 @@ public class MovementPredictionScript : MonoBehaviour
 
     [SerializeField]
     private float castRange = 100f;
-    
+
+    private bool isStart = true;    
     
     private LineRenderer lineRenderer;
     // Start is called before the first frame update
@@ -25,8 +26,20 @@ public class MovementPredictionScript : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (!isStart)
+        {
+            UpdateStartPoint();
+        }
+    }
+
     public void SetPointsRaycast(Vector3 start, Vector3 dir)
     {
+        if (isStart)
+        {
+            isStart = false;
+        }
         Vector3 end;
         RaycastHit2D hit = Physics2D.Raycast(start, dir, castRange, wallLayerMask);
         if (hit)
@@ -35,21 +48,22 @@ public class MovementPredictionScript : MonoBehaviour
         }
         else
         {
-            SetPoints(start,dir*castRange);
+            SetPoints(dir*castRange);
 
             return;
         }
-        RaycastHit2D hitBack = Physics2D.Raycast(start, -dir, castRange, wallLayerMask);
-        if (hitBack)
-        {
-            start = hitBack.point;
-        }
-        SetPoints(start,end);
+
+        SetPoints(end);
     }
 
-    public void SetPoints(Vector3 start, Vector3 end)
+    public void SetPoints( Vector3 end)
     {
-        lineRenderer.SetPosition(0,start);
         lineRenderer.SetPosition(1,end);
+    }
+
+    public void UpdateStartPoint()
+    {
+        lineRenderer.SetPosition(0,transform.position);
+
     }
 }
