@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D col)
     {
         movementPredictionScript.SetPointsRaycast(transform.position, rb.velocity.normalized);
-        CameraController.ShakeCamera_S(0.1f);
+        CameraController.ShakeCamera_S(0.15f,.15f);
         // StartCoroutine(DelaySetLine());
     }
 

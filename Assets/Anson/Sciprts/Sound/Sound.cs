@@ -15,7 +15,7 @@ public class Sound : MonoBehaviour
 
     public AudioSource Source => source;
 
-    [Range(0f, 1f)]
+    [Range(0f, 3f)]
     public float volume = .75f;
 
     [Range(0f, 1f)]
