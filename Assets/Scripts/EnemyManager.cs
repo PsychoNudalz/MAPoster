@@ -15,6 +15,9 @@ public class EnemyManager : MonoBehaviour
     private EnemyEntity[] enemies;
 
     [SerializeField]
+    private List<EnemyEntity> spawnedEnemies = new List<EnemyEntity>();
+
+    [SerializeField]
     private float timeBetweenCheck = 5;
 
     [SerializeField]
@@ -42,7 +45,9 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
+    [SerializeField]
     private Queue<SpawnSet> spawnQueue = new Queue<SpawnSet>();
+
     private Coroutine spawnQueueCoroutine;
 
     [Header("Difficulty")]
@@ -100,14 +105,21 @@ public class EnemyManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Time.time - lastCheckTime > timeBetweenCheck||currentlyAlive==0)
+        if (Time.time - lastCheckTime > timeBetweenCheck || currentlyAlive + spawnQueue.Count == 0)
         {
             lastCheckTime = Time.time;
 
             if (availableCost > Math.Max(minCost, availableCost / 2f))
             {
+
+                if (currentlyAlive != spawnedEnemies.Count)
+                {
+                    Debug.LogError("Alive to count not the same");
+                }
+
                 EnemyEntity currentEnemy;
-                while (availableCost > minCost)
+                bool flag = true;
+                while (flag && availableCost > minCost)
                 {
                     currentEnemy = GetEnemyToSpawn();
                     if (currentEnemy)
@@ -117,23 +129,46 @@ public class EnemyManager : MonoBehaviour
                     }
                     else
                     {
-                        break;
+                        flag = false;
                     }
                 }
             }
         }
     }
+    
 
-    public static void AddKill_S(int cost)
+    public static void AddKill_S(EnemyEntity e,int cost)
     {
-        current.AddKill(cost);
+        current.AddKill(e,cost);
     }
 
-    public void AddKill(int cost)
+    public void AddKill(EnemyEntity e,int cost)
     {
+        if (!spawnedEnemies.Contains(e))
+        {
+            Debug.LogError("Overkill: "+e);
+            return;
+        }
+        spawnedEnemies.Remove(e);
         numberOfKills += 1;
         currentlyAlive -= 1;
+        if (currentlyAlive < 0)
+        {
+            Debug.LogError("Negative alive");
+        }
+
+        ChangeCost(cost);
+        IncreaseCostMax();
+    }
+
+    private void ChangeCost(int cost)
+    {
         availableCost += cost;
+        print("Change cost: " + cost+"  remaining: "+availableCost);
+    }
+
+    private void IncreaseCostMax()
+    {
         availableCost += killToCostIncrease.Evaluate(numberOfKills);
         totalCost += killToCostIncrease.Evaluate(numberOfKills);
     }
@@ -172,8 +207,15 @@ public class EnemyManager : MonoBehaviour
     IEnumerator DelayEnemySpawn(EnemyEntity e, Vector3 currentPoint)
     {
         yield return new WaitForSeconds(spawnDelay);
-        Instantiate(e.gameObject, currentPoint,
-            Quaternion.Euler(0, 0, Random.Range(0, 360)), transform);
+        // float randomRotation = Random.Range(0, 360);
+        // randomRotation = Mathf.Lerp(randomRotation, Vector3.Angle(transform.up, transform.position - currentPoint),
+        // 1);
+        Vector3 dir = (transform.position - currentPoint).normalized;
+        float randomRotation = Vector3.SignedAngle(transform.up, dir, Vector3.forward);
+        EnemyEntity newEnemy= Instantiate(e.gameObject, currentPoint,
+            Quaternion.Euler(0, 0, randomRotation), transform).GetComponent<EnemyEntity>();
+        newEnemy.gameObject.name += Time.time;
+        spawnedEnemies.Add(newEnemy);
     }
 
     void PlayEffect(Vector3 pos)
@@ -186,7 +228,8 @@ public class EnemyManager : MonoBehaviour
 
     void AddStack(SpawnSet spawnSet)
     {
-        availableCost -= spawnSet.E.Cost;
+        ChangeCost(-spawnSet.E.Cost);
+
         currentlyAlive += 1;
 
         spawnQueue.Enqueue(spawnSet);

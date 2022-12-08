@@ -405,7 +405,7 @@ TrailRenderer:
   m_Time: 0.7
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.4
+    widthMultiplier: 0.5
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -3244,7 +3244,7 @@ Transform:
   m_GameObject: {fileID: 933077338905583545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 933077338004576460}
@@ -4210,7 +4210,7 @@ Transform:
   m_GameObject: {fileID: 1261877728477610323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 933077338004576460}
@@ -4410,7 +4410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 8861013531703944591}
-  volume: 3
+  volume: 0.8
   volumeVariance: 0.1
   pitch: 1
   pitchVariance: 0.1
@@ -4749,7 +4749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 9126413841592817576}
-  volume: 3
+  volume: 0.8
   volumeVariance: 0.1
   pitch: 1
   pitchVariance: 0.1
@@ -4896,7 +4896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 2191242266042852672}
-  volume: 3
+  volume: 0.8
   volumeVariance: 0.1
   pitch: 1
   pitchVariance: 0.1
@@ -5043,7 +5043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 4891126746370660823}
-  volume: 3
+  volume: 0.8
   volumeVariance: 0.1
   pitch: 1
   pitchVariance: 0.1

@@ -34,7 +34,6 @@ Transform:
   - {fileID: 3112296363124170627}
   - {fileID: 8759892176566460779}
   - {fileID: 5456057676008334372}
-  - {fileID: 3962419339093580191}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -199,7 +198,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3962419339093580191}
   m_Father: {fileID: 3112296361881362968}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -281,11 +281,11 @@ Transform:
   m_GameObject: {fileID: 5203313481947385878}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.3333333, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3112296361881362968}
-  m_RootOrder: 3
+  m_Father: {fileID: 3112296363124170627}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &4795492028678591472
 TrailRenderer:

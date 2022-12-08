@@ -163,7 +163,7 @@ MonoBehaviour:
   onReleaseEvent:
     m_PersistentCalls:
       m_Calls: []
-  placeTimer: 0.5
+  placeTimer: 0.25
   placeTimerRing: {fileID: 8501549770556897227}
   delayDestroyTimer: 1
   onDeathEvents:
@@ -368,7 +368,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.6
+  m_Radius: 1
 --- !u!114 &5815717287043155296
 MonoBehaviour:
   m_ObjectHideFlags: 0

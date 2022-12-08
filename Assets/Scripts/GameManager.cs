@@ -34,10 +34,10 @@ public class GameManager : MonoBehaviour
         current.AddScore(s);
     }
 
-    public static void AddKill_S(float s, int c)
+    public static void AddKill_S(EnemyEntity e, float s, int c)
     {
         AddScore_S(s);
-        EnemyManager.AddKill_S(c);
+        EnemyManager.AddKill_S(e, c);
         PlayerController.Static_UpdateSpeed();
 
     }

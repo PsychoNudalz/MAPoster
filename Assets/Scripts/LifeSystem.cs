@@ -46,8 +46,13 @@ public class LifeSystem : MonoBehaviour
     {
         LifeState previousState = lifeState;
         lifeState = ls;
+
+        if (ls == LifeState.Dead && previousState != ls)
+        {
+            OnDeath();
+        }
+        
         // print("Player: " + this + " " + previousState + " --> " + lifeState);
-        OnDeath();
     }
 
 

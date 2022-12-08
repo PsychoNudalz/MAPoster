@@ -5992,6 +5992,7 @@ MonoBehaviour:
   - {fileID: 426373907665714372, guid: e9a774ab9d147cd4da2402510db14933, type: 3}
   - {fileID: 4674784369048989830, guid: c618f46210fb4654a9c46e8dfe62f05e, type: 3}
   - {fileID: 4674784369048989830, guid: ae1b30bf5491d3a4296a991babb93e33, type: 3}
+  spawnedEnemies: []
   timeBetweenCheck: 5
   lastCheckTime: -Infinity
   spawnDelay: 1
@@ -6009,7 +6010,7 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 10
+      time: 20
       value: 0.15
       inSlope: 0
       outSlope: 0
@@ -6018,8 +6019,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 20
-      value: 0
+      time: 40
+      value: 0.01
       inSlope: 0
       outSlope: 0
       tangentMode: 0

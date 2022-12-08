@@ -27,7 +27,6 @@ public class Trigger2DEvents : MonoBehaviour
             return;
         }
 
-        print(gameObject.name);
         onTriggerEnter.Invoke();
     }
 

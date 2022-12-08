@@ -45,5 +45,5 @@ Material:
     - _SegmentSpace: 0.06
     - _Segments: 3
     m_Colors:
-    - _Color: {r: 4.759381, g: 0.10775942, b: 0.10775942, a: 1}
+    - _Color: {r: 5.8146434, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

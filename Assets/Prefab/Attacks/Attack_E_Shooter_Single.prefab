@@ -33,7 +33,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084543518408782272, guid: 0bb6112095cb9e44faf5b12edccce4e2, type: 3}
       propertyPath: m_Name
-      value: Attack_E_Shooter_3Burst
+      value: Attack_E_Shooter_Single
       objectReference: {fileID: 0}
     - target: {fileID: 4084543518408782273, guid: 0bb6112095cb9e44faf5b12edccce4e2, type: 3}
       propertyPath: m_RootOrder

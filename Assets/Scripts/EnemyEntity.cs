@@ -62,10 +62,10 @@ public class EnemyEntity : EntityObject
         {
             attackSet.SetActive(false);
         }
+        print(gameObject+" Add cost: " + cost);
 
+        GameManager.AddKill_S(this,score,cost);
         base.OnDeath();
-        GameManager.AddKill_S(score,cost);
-
     }
 
     public void OnDeath_Collision()

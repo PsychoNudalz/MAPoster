@@ -107,7 +107,7 @@ public class EntityObject : MonoBehaviour, IPointerEnterHandler, IPointerDownHan
 
         EntityState previousState = entityState;
         entityState = es;
-        print("Entity: " + this + " " + previousState + " --> " + entityState);
+        // print("Entity: " + this + " " + previousState + " --> " + entityState);
 
         switch (es)
         {
@@ -196,7 +196,7 @@ public class EntityObject : MonoBehaviour, IPointerEnterHandler, IPointerDownHan
 
     public virtual void OnDeath()
     {
-        if (entityState == EntityState.Placing)
+        if (entityState == EntityState.Death)
         {
             return;
         }
