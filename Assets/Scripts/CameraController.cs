@@ -8,6 +8,9 @@ using Random = UnityEngine.Random;
 public class CameraController : MonoBehaviour
 {
     [SerializeField]
+    private float lerpSpeed = 10f;
+
+    [SerializeField]
     private Vector2 maxMousePos = new Vector2(4, 4);
 
     [SerializeField]
@@ -27,6 +30,8 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     private AnimationCurve rotationToPosMap_y;
 
+    private Vector3 rotationLerpTarget;
+
     [Space(5)]
     [Header("Move")]
     [SerializeField]
@@ -40,6 +45,9 @@ public class CameraController : MonoBehaviour
 
     [SerializeField]
     private AnimationCurve moveToPosMap_y;
+
+    private Vector3 moveLerpTarget;
+
 
     [Space(5)]
     [Header("Shake")]
@@ -57,19 +65,32 @@ public class CameraController : MonoBehaviour
 
 
     private Mouse mouse;
-    private Camera camera1;
+    [SerializeField]
+    private Camera rayCamera;
+
+    [SerializeField]
+    private Transform targetCameraTransform;
+    
+    [SerializeField]
+    private Camera mainCamera;
+    
+    
     public static CameraController current;
 
 
     private void Start()
     {
+        UpdateMousePos();
+        UpdateMoveLayer();
+        UpdateRotationLayer();
+
     }
 
     private void Awake()
     {
         current = this;
         mouse = Mouse.current;
-        camera1 = Camera.main;
+        rayCamera = Camera.main;
     }
 
     private void LateUpdate()
@@ -77,6 +98,14 @@ public class CameraController : MonoBehaviour
         UpdateMousePos();
         UpdateMoveLayer();
         UpdateRotationLayer();
+
+    }
+
+    private void Update()
+    {
+        
+        UpdateLerp();
+        UpdateCamera();
     }
 
     void UpdateMousePos()
@@ -86,7 +115,7 @@ public class CameraController : MonoBehaviour
         //     mousePos.z = 0f;
         //     mouseWorld.position = mousePos;
         //     inverseMouseWorld.position = new Vector3(-mousePos.x, -mousePos.y, mousePos.z);
-        Ray ray = camera1.ScreenPointToRay(Mouse.current.position.ReadValue());
+        Ray ray = rayCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
 
         float mouseCastDistance = 1000f;
         Debug.DrawRay(ray.origin, ray.direction * mouseCastDistance, Color.cyan, 1f);
@@ -109,8 +138,9 @@ public class CameraController : MonoBehaviour
 
         float x = SampleCurveMouse(rotationToPosMap_x, mouseWorld.localPosition.x, maxMousePos.x, maxEulerRotation.x);
         float y = SampleCurveMouse(rotationToPosMap_y, mouseWorld.localPosition.y, maxMousePos.y, maxEulerRotation.y);
-        Vector3 eulerRotation = new Vector3(y, x, 0);
-        rotationLayer.localEulerAngles = eulerRotation;
+        rotationLerpTarget = new Vector3(y, x, 0);
+
+        rotationLayer.localEulerAngles = rotationLerpTarget;
     }
 
     void UpdateMoveLayer()
@@ -118,8 +148,24 @@ public class CameraController : MonoBehaviour
         float x = SampleCurveMouse(moveToPosMap_x, mouseWorld.position.x, maxMousePos.x, -maxMove.x);
         float y = SampleCurveMouse(moveToPosMap_y, mouseWorld.position.y, maxMousePos.y, -maxMove.y);
 
+        // moveLerpTarget = new Vector3(x, y, moveLayer.position.z);
 
         moveLayer.position = new Vector3(x, y, moveLayer.position.z);
+    }
+
+
+    void UpdateLerp()
+    {
+    //     rotationLayer.localEulerAngles =
+    //         Vector3.Lerp(rotationLayer.localEulerAngles, rotationLerpTarget, lerpSpeed * Time.deltaTime);
+    //
+    //     moveLayer.position = Vector3.Lerp(moveLayer.position, moveLerpTarget, lerpSpeed * Time.deltaTime);
+    }
+
+    void UpdateCamera()
+    {
+        mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position,targetCameraTransform.position,lerpSpeed*Time.deltaTime);
+        mainCamera.transform.rotation = Quaternion.Lerp(mainCamera.transform.rotation,targetCameraTransform.rotation,lerpSpeed*Time.deltaTime);
     }
 
     float SampleCurveMouse(AnimationCurve curve, float pos, float maxMouse, float max)
