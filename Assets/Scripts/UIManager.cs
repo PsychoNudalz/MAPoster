@@ -9,6 +9,12 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private Animator gameOverAnimator;
 
+    [SerializeField]
+    private TextMeshProUGUI score;
+
+    [SerializeField]
+    private TextMeshProUGUI highScore;
+
 
     public static UIManager current;
 
@@ -18,17 +24,20 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public static void GameOver_S()
+    public static void GameOver_S(float s,float h)
     {
-        current.GameOver();
+        current.GameOver(s,h);
     }
 
-    public void GameOver()
+    public void GameOver(float s,float h)
     {
         if (gameOverAnimator)
         {
             gameOverAnimator.Play("GameOver");
         }
+        score?.SetText($"SCORE:{s}");
+        highScore?.SetText($"HIGHEST:{h}");
+        
     }
 
     public void Restart()

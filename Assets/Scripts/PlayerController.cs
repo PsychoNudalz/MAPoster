@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private float speedCurrent;
 
+    [Header("Speed")]
     [SerializeField]
     private Vector2 speedRange = new Vector2(10, 15);
 
@@ -29,6 +30,10 @@ public class PlayerController : MonoBehaviour
 
 
     Rigidbody2D rb;
+    
+    [Header("Bonus")]
+    [SerializeField]
+    float bonusLostPerWall = .5f;
 
     [Header("Components")]
     [SerializeField]
@@ -115,6 +120,7 @@ public class PlayerController : MonoBehaviour
     {
         movementPredictionScript.SetPointsRaycast(transform.position, rb.velocity.normalized);
         CameraController.ShakeCamera_S(0.15f,.15f);
+        GameManager.ChangeBonus_S(-bonusLostPerWall);
         // StartCoroutine(DelaySetLine());
     }
 
