@@ -153,7 +153,7 @@ def ConvertTxt2(s):
 # ConvertTxt("OriginalAscii/Meeting.txt","I go my meeting and listen to endless talking")
 # ConvertTxt("OriginalAscii/Meeting.txt","Having to make big decisions every second ")
 # ConvertTxt("OriginalAscii/BM-Lunch.txt","I enjoy the little peace I have with my Goose with red cabbage and dumpling")
-# ConvertTxt("OriginalAscii/Firing.txt","I have to firing one of them. they are under performing")
+ConvertTxt("OriginalAscii/Firing.txt","I have to firing one of them. they are under performing")
 # ConvertTxt("OriginalAscii/DriveToWork.txt","I finish my work and drive home for dinner. What should I eat?")
 # ConvertTxt("OriginalAscii/BM-Dinner.txt","I cook my steak until medium rare... and eat it")
 # ConvertTxt("OriginalAscii/BM-VideoCall.txt","I video call my family on the other side of the world")
