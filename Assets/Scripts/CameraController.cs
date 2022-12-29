@@ -70,9 +70,10 @@ public class CameraController : MonoBehaviour
 
     [SerializeField]
     private Transform targetCameraTransform;
-    
+
     [SerializeField]
-    private Camera mainCamera;
+    Transform mainCameraTransform;
+
     
     
     public static CameraController current;
@@ -164,8 +165,8 @@ public class CameraController : MonoBehaviour
 
     void UpdateCamera()
     {
-        mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position,targetCameraTransform.position,lerpSpeed*Time.deltaTime);
-        mainCamera.transform.rotation = Quaternion.Lerp(mainCamera.transform.rotation,targetCameraTransform.rotation,lerpSpeed*Time.deltaTime);
+        mainCameraTransform.position = Vector3.Lerp(mainCameraTransform.position,targetCameraTransform.position,lerpSpeed*Time.deltaTime);
+        mainCameraTransform.rotation = Quaternion.Lerp(mainCameraTransform.rotation,targetCameraTransform.rotation,lerpSpeed*Time.deltaTime);
     }
 
     float SampleCurveMouse(AnimationCurve curve, float pos, float maxMouse, float max)
@@ -184,7 +185,7 @@ public class CameraController : MonoBehaviour
         current.ShakeCamera(duration, magnitude);
     }
 
-    public void ShakeCamera(float duration = 0.5f, float magnitude = 0.05f)
+    public void ShakeCamera(float duration = 0.5f, float magnitude = 0.5f)
     {
         if (shakeCoroutine != null)
         {
@@ -194,7 +195,7 @@ public class CameraController : MonoBehaviour
         shakeCoroutine = StartCoroutine(Shake(duration, magnitude));
     }
 
-    public IEnumerator Shake(float duration = 0.5f, float magnitude = 0.05f)
+    public IEnumerator Shake(float duration = 0.5f, float magnitude = 0.5f)
     {
         Vector3 originalPos = screenShakeLayer.localPosition;
 
